@@ -1,0 +1,15 @@
+* Means out of stock
+
+Expensive(More than 20000) : 
+    Quadkart : https://www.quadkart.in/
+    TujoRc : https://tujorc.com/
+    *XtremeRc : https://xtreamrc.com/
+
+Cheap(Less than 20000) : 
+    Drona Aviation : https://www.dronaaviation.com/
+    Quadkopters : https://www.quadkopters.com/
+    AnubisRC : https://anubisrc.com/
+    DrkDrones : https://www.drkstore.in/
+    RCmumbai : https://rcmumbai.com/
+    FPV Project : https://thefpvproject.com/
+    Flying electronics : https://flyingelectronics.com/
