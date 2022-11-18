@@ -1,0 +1,220 @@
+Prinkal Doshi
+    1.Domain
+    Agriculture 
+
+    2.Project Title
+    Crop Monitoring
+
+    3.Features
+    - user can select drone area as well as drone path.
+    - multiple photos in depth will be clicked at user-specified interval
+    - quick analysis will be generated specifying of the entire area that sepcifies which crop has been debilitated & which is healthy (red color implies low health whereas green implies good health)
+    - (optional)
+    will provide water to the debilitated crops.
+
+    4.Additional sensors for drone
+    photoelectric sensor
+
+    5.Perspective of selling point for Sponsorship
+    - farmers having large farms can take greater advantage by getting in dept information about each and every crop without actually monitoring individually.
+    - also, much time can be saved by using drone as compared to humans
+    ----------------------------------------------------------------------------------------------------------------------------------
+    1.Domain
+    Firefighting
+
+    2.Project Title
+    Putting out fire in mins.
+
+    3.Features
+    - To extinguish a fire by putting water on it
+    - To detect victims inside the building
+
+    4.Additional sensors for drone
+    smoke detector, face detector 
+
+    5.Perspective of selling point for Sponsorship
+    Companies who have big buildings can take greater advantage of these drones.
+    ----------------------------------------------------------------------------------------------------------------------------------
+    1.Domain
+    Transportation 
+
+    2.Project Title
+    Disaster relief 
+
+    3.Features
+    Providing food & medicines at a natural disaster site
+
+    4.Additional sensors for drone
+
+    5.Perspective of selling point for Sponsorship
+    By taking the advance of drones speed, one can provide essential medicines, food or any other item.
+
+Mihir Panchal
+    1.Domain
+    Sports 
+
+    2.Project Title
+    Track and field sports player positioning
+
+    3.Features
+    - Object Detection of people
+    - Real time player tracking
+    - Distance/Speed/Time calculation from drone
+    - Overall Mapping of players on ground on a web application 
+
+    4.Additional sensors for drone
+    - Heat Sensor to mapping people 
+
+    5.Perspective of selling point for Sponsorship
+    - Olympics and other sports require drone to capture real time game footage
+    - Having a drone calculate insights about the sport in real time can be beneficial
+    ----------------------------------------------------------------------------------------------------------------------------------
+
+    1.Domain
+    Crime / Surveillance
+
+    2.Project Title
+    Traffic Breach Detection
+
+    3.Features
+    - 360 camera to view any traffic breaches on red light
+    - calls the local traffic police if a car rans a red light
+    - follows the suspect and gives real time positioning to police officer
+    - captures proof of running on a red light for evidence
+    - name plate detection
+
+    4.Additional sensors for drone
+    - 360 camera 
+
+
+    5.Perspective of selling point for Sponsorship
+    - Traffic lights are pretty useless in some countries like India, Africa.
+    - Having an additional security system to prevent accidents can be useful
+
+Sarid Qureshi
+    1. Domain
+    - Search and rescue
+
+    2. Project Title
+    - To detect people lost/injured in crowded places.
+
+    3. Features
+    - can detect people/children lost from their family in crowded places.
+    - can also act as surveillance in case of any theft.
+
+    4. Additional sensors for drone
+    - thermal sensor for detecting human
+
+    5. Perspective of selling point for Sponsorship
+    - we can identify a child separated from his/her family in a crowded area
+    - can also be used for detecting humans trapped in certain area
+    ----------------------------------------------------------------------------------------------------------------------------------
+
+    1. Domain
+    - Site inspection
+
+    2. Project Title
+    - To inspect the conditions of the equipments in places that are hard to reach by the human
+
+    3. Features
+    - can check the quality of the material 
+    - can check if the equipment is damaged
+
+    4. Additional sensors for drone
+    - proximity sensor for detecting equipments
+
+    5. Perspective of selling point for Sponsorship
+    - can be used to check the quality of the equipment/the whole site and for inspecting the equipments in places difficult to reach by a human
+    ----------------------------------------------------------------------------------------------------------------------------------
+
+    1. Domain
+    - wildlife exploration
+
+    2. Project Title
+    - To study the lifestyle of wild animals
+
+    3. Features
+    - can study about the behaviour of animals
+    - can study about their lifestyles
+
+    4. Additional sensors for drone
+
+    5. Perspective of selling point for Sponsorship 
+    - wildlife exploration can be done and behaviour of animals can be studied and analyzed with the help of this application
+
+Tanay Desai
+    1. Domain
+    - Medical Transport
+
+    2. Project Title
+    - Drone as medical transport systems
+
+    3. Features
+    - can deliver automated external defibrillators (AFDs) for the patients who are in cardiac arrest in 2 minutes within a 1.2 km radius.
+    - can deliver the samples of the laboratory to the hospitals for tuberculosis treatment, could deliver the sample viable enough for testing.
+    4. Additional sensors for drone
+    - no sensors but a camera required.
+
+    5. Perspective of selling point for Sponsorship
+    - we can save a patient from dying by delivering the AFDs as fast as possible.
+    ----------------------------------------------------------------------------------------------------------------------------------
+
+    1. Domain
+    - Public Health and Disaster Relief 
+
+    2. Project Title
+    - To inspect the health hazards.
+
+    3. Features
+    - to check and predict cancer risk from high level copper concentrations in agricultural areas
+
+    4. Additional sensors for drone
+    - sensor for detecting the copper concentrations
+
+    5. Perspective of selling point for Sponsorship
+    -  we can reduce the risk of cancer for the agricultural farmers.
+
+ArshKumar Sakaria
+    1.Domain
+    - Security
+
+    2.Project Title
+    - Ultimate Police Drone
+
+    3.Features
+    - detect people identify them using ML recognition techniques
+    - follow a certain individual
+    - useful to keep an eye on suspicious or unidentified objects remotely
+
+    4.Additional sensors for drone
+    - camera
+    - speaker
+    - infrared sensor
+
+    5.Perspective of selling point for Sponsorship
+    - government police
+    - private security company
+    ----------------------------------------------------------------------------------------------------------------------------------
+    
+    1.Domain
+    - Disaster Management
+
+    2.Project Title
+    - Rescue Operation Helper
+
+    3.Features
+    - reduce time required to locate victims and time required for subsequent intervention by searching a larger area in a short period of time
+    - provide critical information to rescuers about rescue that needs to be taken during search and rescue operation  
+    - victim interaction (optional)
+    - alive victim detection
+
+    4.Additional sensors for drone
+    - camera
+    - infrared
+    - speaker
+    - binary sensing
+    - vibration
+    - noise sensing
+
+    5.Perspective of selling point for Sponsorship
+    - Government (Disaster Management)
