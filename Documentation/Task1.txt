@@ -1,0 +1,32 @@
+On 28th Monday, a meeting has been scheduled for final year project idea presentation in front of Neeta Ma'am, Abhijit Sir, Anita Ma'am
+
+Below I have shared the project idea presentation template
+
+Work Assignment
+
+Drone Idea Number         Name                      Domain                                              Branch Name
+1                         ArshKumar Sakaria         Surveillance and Security/Disaster Management       A1
+2                         Prinkal Doshi             Agriculture                                         P1
+3                         Tanay Desai               Healthcare                                          T1
+4                         Sarid Qureshi             Wildlife Exploration                                S1
+
+*5                        Mihir Panchal             Drone Parts and Monetary PPT                        M4
+
+
+Everyone Complete your PPTs before the 28th November 2022 ,(Recommended to complete them before the PT preparations)
+
+Steps to submit the PPT on github
+
+1. Create a new branch from main branch with branchname(given in table above)
+    - git branch (should show main)
+    - git checkout -b branchname
+2. Add your PPT with ppt name = (branchname - Idea) Ex : M4 - Idea.pptx
+    - git add .
+    - git commit -m "Project Idea M4 added"
+    - git push
+3. Create an issue about your pull request 
+    - (refer https://github.com/MihirRajeshPanchal/Final-Year-Project-Drone/issues/4)
+4. Create a pull request and add the necessay information in description
+    - Also attach the issue id in your pull request
+    - Also create a task on clickup and add clickup task link in your pull request
+    - (refer https://github.com/MihirRajeshPanchal/Final-Year-Project-Drone/pull/5)
