@@ -1,0 +1,75 @@
+                        ML Students         IOT Students
+
+E-Commerce              Tanay Desai         Prinkal Doshi
+
+
+Cloud Computing         Mihir Panchal      
+                        Sarid Qureshi
+                        Arshkumar Sakaria
+
+Wireless networks
+
+
+Common Skills
+1.C/C++/Java/Python
+2.HTML/CSS/JavaScript
+3.Logic
+4.Oracle Database/MySQL
+
+Mihir Panchal 
+1.Android App Development(Dart-Flutter)//Not whole
+2.Go(Upto Control/Iterative statements)
+3.PHP
+4.Github
+5.Figma
+6.Unity C#
+7.Django Vue.JavaScript
+8.Postgres
+
+Sarid Qureshi
+1.Android App Development(Kotlin)
+2.Azure
+3.Github
+4.Django Vue.JavaScript
+5.Postgres
+
+Tanay Desai
+1.BootStrap
+2.Figma
+3.React
+4.Vue
+5.Github 
+6.Node
+
+Prinkal Doshi
+1.IOT
+2.Figma
+3.Android App Development(Dart-Flutter)//Not whole
+4.Github
+5.SEO and other website supporting technologies
+
+Temperature sensor
+light sensor led
+Motion sensor
+
+Arshkumar Sakaria
+1.Postgres
+2.Advanced Java
+3.AWS
+4.Github
+
+Team Roles:
+Mihir Panchal : ML Model + Drone Coding + Review
+Prinkal Doshi : Drone + documentation + website
+Sarid Qureshi : ML Model + Drone Coding
+Tanay Desai : Website + documentation
+Arshkumar Sakaria : Drone Coding + Backend
+
+
+IT Drone Team 
+
+Mihir Panchal : https://github.com/MihirRajeshPanchal
+Prinkal Doshi : https://github.com/prinkaldoshi27
+Sarid Qureshi : https://github.com/Sarid10
+Tanay Desai : https://github.com/TanayDesai-1510
+Arshkumar Sakaria : https://github.com/Hahaha1801
