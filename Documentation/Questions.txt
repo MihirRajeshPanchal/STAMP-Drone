@@ -86,3 +86,24 @@ Submit it before 12th November
 
  team building 1
  1 week idea 3 idea 1 idea
+
+
+
+
+New Questions 04-01-2023
+
+1. Is the idea feasable?
+2. OpenCV in c++ or python
+3. Web application design and languages
+4. Our team name - STAMP?
+5. Slide Distribution
+6. Should we write a Research paper? in the free time 
+    - will boost our documentation for final year + CV 
+
+Complete project before 2 months
+Do documentation
+compete in competitions
+distribute the work
+full department to one person
+assign documentation to 2 people
+dont touch project in last 2 months

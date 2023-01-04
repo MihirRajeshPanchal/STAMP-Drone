@@ -1,0 +1,37 @@
+1st Mode - Surveillance
+    Drone can drive or fly at specific height along a specific color line path
+        - One Model to follow a particular line and path
+2nd Mode - Security
+    Drone Follows and specific man or object
+        - One Model for face recognition and follow
+3rd Mode - Search Operation 
+    Auto Mode Fly yourself
+        - No Model only camera feed
+
+Applications of Mode 1:
+    - For bank vault safe
+    - museum
+    - airports
+
+Applications of Mode 2:
+    - following particular person (PM / Famous Personality)
+    - Selfie
+    - Bloggers
+
+Applications of Mode 3:
+    - Search Operation
+    - Location mapping of specific object
+
+Features in all modes
+    1. Get Direction measurements on web Application
+    2. Dashboard for Flight time , Battery status , Drone health
+        Reward pilot for achievements
+    3. Video Display
+    4. Speaker in Drone
+    5. Simple Smart Contract on Blockchain to make our application web3 
+    6. Cloud Integration for video files generated
+    7. Convert Video file to VR and make it downloadable from cloud 
+
+Additional Features
+    1. Detect a specific object like - barcode (for containers)
+    2. Mic to record voice and give answer based on google assistant (Sasta Siri on drone)
