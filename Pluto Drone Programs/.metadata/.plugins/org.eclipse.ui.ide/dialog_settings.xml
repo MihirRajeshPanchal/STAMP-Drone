@@ -13,4 +13,7 @@
 		<item value="org.eclipse.platform:4.6.3.v20170301-0400"/>
 		<item value="org.eclipse.rcp:4.6.3.v20170301-0400"/>
 	</list>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item value="D:\Mihir\Hackathons\HackNiche" key="OUTSIDE_LOCATION"/>
+	</section>
 </section>

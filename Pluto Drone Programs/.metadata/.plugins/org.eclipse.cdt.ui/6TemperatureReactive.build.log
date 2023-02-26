@@ -1,0 +1,12 @@
+19:32:24 **** Build of configuration Release for project 6TemperatureReactive ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  77004	   1236	   7760	  86000	  14ff0	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
+
+19:32:33 Build Finished (took 9s.912ms)
+

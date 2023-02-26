@@ -1,0 +1,2100 @@
+Archive member included to satisfy reference by file (symbol)
+
+./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
+                              (Reset_Handler)
+./libs\libpluto_0.3.a(system_stm32f30x.o)
+                              ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o) (SystemInit)
+./libs\libpluto_0.3.a(main.o)
+                              ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o) (main)
+./libs\libpluto_0.3.a(mw.o)   main.o (symbol from plugin) (loop)
+./libs\libpluto_0.3.a(altitudehold.o)
+                              mw.o (symbol from plugin) (applyAltHold)
+./libs\libpluto_0.3.a(failsafe.o)
+                              main.o (symbol from plugin) (failsafeInit)
+./libs\libpluto_0.3.a(pid.o)  mw.o (symbol from plugin) (pidResetErrorAngle)
+./libs\libpluto_0.3.a(imu.o)  main.o (symbol from plugin) (imuInit)
+./libs\libpluto_0.3.a(mixer.o)
+                              main.o (symbol from plugin) (mixerInit)
+./libs\libpluto_0.3.a(filter.o)
+                              mw.o (symbol from plugin) (filterApplyPt1)
+./libs\libpluto_0.3.a(system.o)
+                              main.o (symbol from plugin) (micros)
+./libs\libpluto_0.3.a(beeper.o)
+                              mw.o (symbol from plugin) (beeperSilence)
+./libs\libpluto_0.3.a(rc_controls.o)
+                              mw.o (symbol from plugin) (isUsingSticksForArming)
+./libs\libpluto_0.3.a(rc_curves.o)
+                              rc_controls.o (symbol from plugin) (generatePitchRollCurve)
+./libs\libpluto_0.3.a(serial.o)
+                              mw.o (symbol from plugin) (findNextSharedSerialPort)
+./libs\libpluto_0.3.a(serial_cli.o)
+                              mw.o (symbol from plugin) (cliMode)
+./libs\libpluto_0.3.a(serial_msp.o)
+                              mw.o (symbol from plugin) (mspReleasePortIfAllocated)
+./libs\libpluto_0.3.a(statusindicator.o)
+                              beeper.o (symbol from plugin) (warningLedEnable)
+./libs\libpluto_0.3.a(rx.o)   main.o (symbol from plugin) (rxInit)
+./libs\libpluto_0.3.a(pwm.o)  rx.o (symbol from plugin) (rxPwmInit)
+./libs\libpluto_0.3.a(msp.o)  serial_msp.o (symbol from plugin) (rxMspFrameReceive)
+./libs\libpluto_0.3.a(sbus.o)
+                              rx.o (symbol from plugin) (sbusInit)
+./libs\libpluto_0.3.a(sumd.o)
+                              rx.o (symbol from plugin) (sumdInit)
+./libs\libpluto_0.3.a(sumh.o)
+                              rx.o (symbol from plugin) (sumhInit)
+./libs\libpluto_0.3.a(spektrum.o)
+                              rx.o (symbol from plugin) (spektrumInit)
+./libs\libpluto_0.3.a(xbus.o)
+                              rx.o (symbol from plugin) (xBusInit)
+./libs\libpluto_0.3.a(acceleration.o)
+                              main.o (symbol from plugin) (accSetCalibrationCycles)
+./libs\libpluto_0.3.a(battery.o)
+                              mw.o (symbol from plugin) (updateBattery)
+./libs\libpluto_0.3.a(boardalignment.o)
+                              main.o (symbol from plugin) (initBoardAlignment)
+./libs\libpluto_0.3.a(compass.o)
+                              main.o (symbol from plugin) (compassInit)
+./libs\libpluto_0.3.a(gyro.o)
+                              main.o (symbol from plugin) (gyroSetCalibrationCycles)
+./libs\libpluto_0.3.a(initialisation.o)
+                              main.o (symbol from plugin) (sensorsAutodetectmpu)
+./libs\libpluto_0.3.a(stm32f30x_rcc.o)
+                              system.o (symbol from plugin) (RCC_GetClocksFreq)
+./libs\libpluto_0.3.a(stm32f30x_misc.o)
+                              system.o (symbol from plugin) (NVIC_PriorityGroupConfig)
+./libs\libpluto_0.3.a(acrobats.o)
+                              mw.o (symbol from plugin) (flip)
+./libs\libpluto_0.3.a(posControl.o)
+                              mw.o (symbol from plugin) (resetPosController)
+./libs\libpluto_0.3.a(posEstimate.o)
+                              main.o (symbol from plugin) (updatePosGains)
+./libs\libpluto_0.3.a(opticflow.o)
+                              posControl.o (symbol from plugin) (accel_hf_prev)
+./libs\libpluto_0.3.a(command.o)
+                              mw.o (symbol from plugin) (executeCommand())
+./libs\libpluto_0.3.a(localisationCommand.o)
+                              mw.o (symbol from plugin) (command_jump(short))
+./libs\libpluto_0.3.a(Peripheral.o)
+                              main.o (symbol from plugin) (GPIO_P::init(unibus, GPIO_Mode_e))
+./libs\libpluto_0.3.a(XRanging.o)
+                              main.o (symbol from plugin) (xRangingInit)
+./libs\libpluto_0.3.a(Sensor.o)
+                              obj/PLUTOX/src/main/PlutoPilot.o (symbol from plugin) (Accelerometer_P::getNetAcc())
+./libs\libpluto_0.3.a(Control.o)
+                              command.o (symbol from plugin) (DesiredPosition_P::setRelative(axis_e, long))
+./libs\libpluto_0.3.a(Utils.o)
+                              obj/PLUTOX/src/main/PlutoPilot.o (symbol from plugin) (LED_P::set(led_e, led_state_e))
+./libs\libpluto_0.3.a(User.o)
+                              mw.o (symbol from plugin) (FlightMode_P::set(flight_mode_e))
+./libs\libpluto_0.3.a(API-Utils.o)
+                              main.o (symbol from plugin) (resetUser)
+./libs\libpluto_0.3.a(opticflow_paw3903.o)
+                              main.o (symbol from plugin) (initOpticFlow)
+./libs\libpluto_0.3.a(adc.o)  rx.o (symbol from plugin) (adcGetChannel)
+./libs\libpluto_0.3.a(adc_stm32f30x.o)
+                              main.o (symbol from plugin) (adcInit)
+./libs\libpluto_0.3.a(accgyro_mpu.o)
+                              initialisation.o (symbol from plugin) (detectMpu)
+./libs\libpluto_0.3.a(accgyro_mpu6500.o)
+                              initialisation.o (symbol from plugin) (mpu6500AccDetect)
+./libs\libpluto_0.3.a(bus_i2c_stm32f30x.o)
+                              main.o (symbol from plugin) (i2cInit)
+./libs\libpluto_0.3.a(bus_spi.o)
+                              main.o (symbol from plugin) (spiInit)
+./libs\libpluto_0.3.a(compass_ak8963.o)
+                              initialisation.o (symbol from plugin) (ak8963Detect)
+./libs\libpluto_0.3.a(gpio_stm32f30x.o)
+                              Peripheral.o (symbol from plugin) (gpioInit)
+./libs\libpluto_0.3.a(light_led_stm32f30x.o)
+                              main.o (symbol from plugin) (ledInit)
+./libs\libpluto_0.3.a(pwm_mapping.o)
+                              main.o (symbol from plugin) (pwmInit)
+./libs\libpluto_0.3.a(pwm_output.o)
+                              Peripheral.o (symbol from plugin) (pwmOutConfig)
+./libs\libpluto_0.3.a(pwm_rx.o)
+                              rx.o (symbol from plugin) (isPPMDataBeingReceived)
+./libs\libpluto_0.3.a(serial_uart.o)
+                              serial.o (symbol from plugin) (uartOpen)
+./libs\libpluto_0.3.a(serial_uart_stm32f30x.o)
+                              serial_uart.o (symbol from plugin) (serialUSART1)
+./libs\libpluto_0.3.a(system_stm32f30x.o)
+                              serial_msp.o (symbol from plugin) (systemReset)
+./libs\libpluto_0.3.a(timer.o)
+                              main.o (symbol from plugin) (timerDataConfiguration)
+./libs\libpluto_0.3.a(barometer_ms5611.o)
+                              initialisation.o (symbol from plugin) (ms5611Detect)
+./libs\libpluto_0.3.a(barometer.o)
+                              altitudehold.o (symbol from plugin) (isBaroCalibrationComplete)
+./libs\libpluto_0.3.a(debug.o)
+                              serial_msp.o (symbol from plugin) (debug)
+./libs\libpluto_0.3.a(version.o)
+                              serial_msp.o (symbol from plugin) (buildTime)
+./libs\libpluto_0.3.a(config.o)
+                              rc_controls.o (symbol from plugin) (getCurrentControlRateProfile)
+./libs\libpluto_0.3.a(runtime_config.o)
+                              mw.o (symbol from plugin) (enableFlightMode)
+./libs\libpluto_0.3.a(maths.o)
+                              mw.o (symbol from plugin) (sin_approx)
+./libs\libpluto_0.3.a(printf.o)
+                              main.o (symbol from plugin) (printfSupportInit)
+./libs\libpluto_0.3.a(typeconversion.o)
+                              printf.o (symbol from plugin) (uli2a)
+./libs\libpluto_0.3.a(lowpass.o)
+                              battery.o (symbol from plugin) (lowpassFixed)
+./libs\libpluto_0.3.a(serial.o)
+                              serial_msp.o (symbol from plugin) (serialWrite)
+./libs\libpluto_0.3.a(stm32f30x_gpio.o)
+                              API-Utils.o (symbol from plugin) (GPIO_Init)
+./libs\libpluto_0.3.a(stm32f30x_spi.o)
+                              Peripheral.o (symbol from plugin) (SPI_I2S_DeInit)
+./libs\libpluto_0.3.a(stm32f30x_adc.o)
+                              API-Utils.o (symbol from plugin) (ADC_Init)
+./libs\libpluto_0.3.a(stm32f30x_tim.o)
+                              timer.o (symbol from plugin) (TIM_TimeBaseInit)
+./libs\libpluto_0.3.a(stm32f30x_usart.o)
+                              serial_uart.o (symbol from plugin) (USART_Init)
+./libs\libpluto_0.3.a(stm32f30x_syscfg.o)
+                              gpio_stm32f30x.o (symbol from plugin) (SYSCFG_EXTILineConfig)
+./libs\libpluto_0.3.a(stm32f30x_flash.o)
+                              config.o (symbol from plugin) (FLASH_Unlock)
+./libs\libpluto_0.3.a(stm32f30x_i2c.o)
+                              bus_i2c_stm32f30x.o (symbol from plugin) (I2C_Init)
+./libs\libpluto_0.3.a(stm32f30x_dma.o)
+                              API-Utils.o (symbol from plugin) (DMA_DeInit)
+./libs\libpluto_0.3.a(stm32f30x_exti.o)
+                              accgyro_mpu.o (symbol from plugin) (EXTI_GetITStatus)
+./libs\libpluto_0.3.a(ranging_vl53l0x.o)
+                              XRanging.o (symbol from plugin) (LaserSensor::init())
+./libs\libpluto_0.3.a(vl53l0x_api.o)
+                              ranging_vl53l0x.o (symbol from plugin) (VL53L0X_SetDeviceAddress)
+./libs\libpluto_0.3.a(vl53l0x_api_strings.o)
+                              vl53l0x_api.o (symbol from plugin) (VL53L0X_get_device_info)
+./libs\libpluto_0.3.a(vl53l0x_api_calibration.o)
+                              vl53l0x_api.o (symbol from plugin) (VL53L0X_perform_xtalk_calibration)
+./libs\libpluto_0.3.a(vl53l0x_api_core.o)
+                              vl53l0x_api.o (symbol from plugin) (VL53L0X_measurement_poll_for_completion)
+./libs\libpluto_0.3.a(vl53l0x_platform.o)
+                              vl53l0x_api_calibration.o (symbol from plugin) (VL53L0X_WriteMulti)
+./libs\libpluto_0.3.a(vl53l0x_i2c_platform.o)
+                              vl53l0x_platform.o (symbol from plugin) (VL53L0X_write_multi)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_cos.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o (cosf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_lrint.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o (lrintf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_sin.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o (sinf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o (acosf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_asin.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o (asinf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_atan2.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o (atan2f)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_log.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o (logf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_sqrt.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o (sqrtf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_acos.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o) (__ieee754_acosf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_asin.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_asin.o) (__ieee754_asinf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_atan2.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_atan2.o) (__ieee754_atan2f)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_log.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_log.o) (__ieee754_logf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_rem_pio2.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_cos.o) (__ieee754_rem_pio2f)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_sqrt.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_sqrt.o) (__ieee754_sqrtf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_cos.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_cos.o) (__kernel_cosf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_rem_pio2.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_rem_pio2.o) (__kernel_rem_pio2f)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_sin.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_cos.o) (__kernel_sinf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_lib_ver.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o) (__fdlib_version)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_matherr.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o) (matherr)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_nan.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o) (nan)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_atan.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_atan2.o) (atanf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_fabs.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o) (fabsf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_floor.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_rem_pio2.o) (floorf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_scalbn.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_rem_pio2.o) (scalbnf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_copysign.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_scalbn.o) (copysignf)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o) (__errno)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o) (_impure_ptr)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcpy.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o (memcpy)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o (memset)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strchr.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o (strchr)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strlen.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o (strlen)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_ashrdi3.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o (__aeabi_lasr)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o) (__aeabi_f2d)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_sqrt.o) (__aeabi_ddiv)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_truncdfsf2.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o) (__aeabi_d2f)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_ldivmod.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o (__aeabi_ldivmod)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixsfdi.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o (__aeabi_f2lz)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixunssfdi.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixsfdi.o) (__aeabi_f2ulz)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_ldivmod.o) (__udivmoddi4)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
+                              C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o (__aeabi_unwind_cpp_pr0)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(libunwind.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o) (restore_core_regs)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o) (__gnu_unwind_execute)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_dvmd_tls.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_ldivmod.o) (__aeabi_ldiv0)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixunssfdi.o) (__aeabi_d2uiz)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-abort.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o) (abort)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-abort.o) (raise)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signalr.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o) (_kill_r)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o) (_malloc_r)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mlock.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o) (__malloc_lock)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-reent.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signalr.o) (errno)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-sbrkr.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o) (_sbrk_r)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-freer.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o) (_free_r)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mlock.o) (__retarget_lock_acquire_recursive)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(getpid.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signalr.o) (_getpid)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(kill.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signalr.o) (_kill)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(sbrk.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-sbrkr.o) (_sbrk)
+d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
+                              d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-abort.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+__lock___atexit_recursive_mutex
+                    0x1               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+__lock___arc4random_mutex
+                    0x1               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+errno               0x4               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-reent.o)
+__lock___env_recursive_mutex
+                    0x1               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+__lock___sinit_recursive_mutex
+                    0x1               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+__lock___malloc_recursive_mutex
+                    0x1               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+__lock___at_quick_exit_mutex
+                    0x1               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+__lock___dd_hash_mutex
+                    0x1               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+__lock___tz_mutex   0x1               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+cachedRccCsrValue   0x4               system.o (symbol from plugin)
+__lock___sfp_recursive_mutex
+                    0x1               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 obj/PLUTOX/src/main/PlutoPilot.o (symbol from plugin)
+ .text          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .text          0x00000000      0x9f0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .data          0x00000000       0xf3 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .bss           0x00000000        0x1 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .ARM.exidx     0x00000000        0x8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .debug_info    0x00000000     0x2eb1 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .debug_abbrev  0x00000000      0x338 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .debug_loc     0x00000000     0x1b68 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .debug_ranges  0x00000000      0x180 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .debug_line    0x00000000      0x72e C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .debug_str     0x00000000     0x1153 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .comment       0x00000000       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .debug_frame   0x00000000       0x44 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .ARM.attributes
+                0x00000000       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+ .text.unlikely
+                0x00000000       0x3c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+ .ARM.extab.text.unlikely
+                0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+ .ARM.exidx.text.unlikely
+                0x00000000        0x8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+ .bss           0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+ .ARM.extab.text.startup
+                0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+ .rodata        0x00000000        0x1 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+ .rodata        0x00000000        0x1 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+ .bss           0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+ .data          0x00000000       0x10 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans19.ltrans.o
+ .bss           0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans19.ltrans.o
+ .text          0x00000000       0x14 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
+ .data          0x00000000        0x0 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
+ .bss           0x00000000        0x0 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
+ .text          0x00000000        0x0 system_stm32f30x.o (symbol from plugin)
+ .text          0x00000000        0x0 main.o (symbol from plugin)
+ .text          0x00000000        0x0 mw.o (symbol from plugin)
+ .text          0x00000000        0x0 altitudehold.o (symbol from plugin)
+ .text          0x00000000        0x0 failsafe.o (symbol from plugin)
+ .text          0x00000000        0x0 pid.o (symbol from plugin)
+ .text          0x00000000        0x0 imu.o (symbol from plugin)
+ .text          0x00000000        0x0 mixer.o (symbol from plugin)
+ .text          0x00000000        0x0 filter.o (symbol from plugin)
+ .text          0x00000000        0x0 system.o (symbol from plugin)
+ .text          0x00000000        0x0 beeper.o (symbol from plugin)
+ .text          0x00000000        0x0 rc_controls.o (symbol from plugin)
+ .text          0x00000000        0x0 rc_curves.o (symbol from plugin)
+ .text          0x00000000        0x0 serial.o (symbol from plugin)
+ .text          0x00000000        0x0 serial_cli.o (symbol from plugin)
+ .text          0x00000000        0x0 serial_msp.o (symbol from plugin)
+ .text          0x00000000        0x0 statusindicator.o (symbol from plugin)
+ .text          0x00000000        0x0 rx.o (symbol from plugin)
+ .text          0x00000000        0x0 pwm.o (symbol from plugin)
+ .text          0x00000000        0x0 msp.o (symbol from plugin)
+ .text          0x00000000        0x0 sbus.o (symbol from plugin)
+ .text          0x00000000        0x0 sumd.o (symbol from plugin)
+ .text          0x00000000        0x0 sumh.o (symbol from plugin)
+ .text          0x00000000        0x0 spektrum.o (symbol from plugin)
+ .text          0x00000000        0x0 xbus.o (symbol from plugin)
+ .text          0x00000000        0x0 acceleration.o (symbol from plugin)
+ .text          0x00000000        0x0 battery.o (symbol from plugin)
+ .text          0x00000000        0x0 boardalignment.o (symbol from plugin)
+ .text          0x00000000        0x0 compass.o (symbol from plugin)
+ .text          0x00000000        0x0 gyro.o (symbol from plugin)
+ .text          0x00000000        0x0 initialisation.o (symbol from plugin)
+ .text          0x00000000        0x0 stm32f30x_rcc.o (symbol from plugin)
+ .text          0x00000000        0x0 stm32f30x_misc.o (symbol from plugin)
+ .text          0x00000000        0x0 acrobats.o (symbol from plugin)
+ .text          0x00000000        0x0 posControl.o (symbol from plugin)
+ .text          0x00000000        0x0 posEstimate.o (symbol from plugin)
+ .text          0x00000000        0x0 opticflow.o (symbol from plugin)
+ .text          0x00000000        0x0 command.o (symbol from plugin)
+ .text          0x00000000        0x0 localisationCommand.o (symbol from plugin)
+ .text          0x00000000        0x0 Peripheral.o (symbol from plugin)
+ .text          0x00000000        0x0 XRanging.o (symbol from plugin)
+ .text          0x00000000        0x0 Sensor.o (symbol from plugin)
+ .text          0x00000000        0x0 Control.o (symbol from plugin)
+ .text          0x00000000        0x0 Utils.o (symbol from plugin)
+ .text          0x00000000        0x0 User.o (symbol from plugin)
+ .text          0x00000000        0x0 API-Utils.o (symbol from plugin)
+ .text          0x00000000        0x0 opticflow_paw3903.o (symbol from plugin)
+ .text          0x00000000        0x0 adc.o (symbol from plugin)
+ .text          0x00000000        0x0 adc_stm32f30x.o (symbol from plugin)
+ .text          0x00000000        0x0 accgyro_mpu.o (symbol from plugin)
+ .text          0x00000000        0x0 accgyro_mpu6500.o (symbol from plugin)
+ .text          0x00000000        0x0 bus_i2c_stm32f30x.o (symbol from plugin)
+ .text          0x00000000        0x0 bus_spi.o (symbol from plugin)
+ .text          0x00000000        0x0 compass_ak8963.o (symbol from plugin)
+ .text          0x00000000        0x0 gpio_stm32f30x.o (symbol from plugin)
+ .text          0x00000000        0x0 light_led_stm32f30x.o (symbol from plugin)
+ .text          0x00000000        0x0 pwm_mapping.o (symbol from plugin)
+ .text          0x00000000        0x0 pwm_output.o (symbol from plugin)
+ .text          0x00000000        0x0 pwm_rx.o (symbol from plugin)
+ .text          0x00000000        0x0 serial_uart.o (symbol from plugin)
+ .text          0x00000000        0x0 serial_uart_stm32f30x.o (symbol from plugin)
+ .text          0x00000000        0x0 system_stm32f30x.o (symbol from plugin)
+ .text          0x00000000        0x0 timer.o (symbol from plugin)
+ .text          0x00000000        0x0 barometer_ms5611.o (symbol from plugin)
+ .text          0x00000000        0x0 barometer.o (symbol from plugin)
+ .text          0x00000000        0x0 debug.o (symbol from plugin)
+ .text          0x00000000        0x0 version.o (symbol from plugin)
+ .text          0x00000000        0x0 config.o (symbol from plugin)
+ .text          0x00000000        0x0 runtime_config.o (symbol from plugin)
+ .text          0x00000000        0x0 maths.o (symbol from plugin)
+ .text          0x00000000        0x0 printf.o (symbol from plugin)
+ .text          0x00000000        0x0 typeconversion.o (symbol from plugin)
+ .text          0x00000000        0x0 lowpass.o (symbol from plugin)
+ .text          0x00000000        0x0 serial.o (symbol from plugin)
+ .text          0x00000000        0x0 stm32f30x_gpio.o (symbol from plugin)
+ .text          0x00000000        0x0 stm32f30x_spi.o (symbol from plugin)
+ .text          0x00000000        0x0 stm32f30x_adc.o (symbol from plugin)
+ .text          0x00000000        0x0 stm32f30x_tim.o (symbol from plugin)
+ .text          0x00000000        0x0 stm32f30x_usart.o (symbol from plugin)
+ .text          0x00000000        0x0 stm32f30x_syscfg.o (symbol from plugin)
+ .text          0x00000000        0x0 stm32f30x_flash.o (symbol from plugin)
+ .text          0x00000000        0x0 stm32f30x_i2c.o (symbol from plugin)
+ .text          0x00000000        0x0 stm32f30x_dma.o (symbol from plugin)
+ .text          0x00000000        0x0 stm32f30x_exti.o (symbol from plugin)
+ .text          0x00000000        0x0 ranging_vl53l0x.o (symbol from plugin)
+ .text          0x00000000        0x0 vl53l0x_api.o (symbol from plugin)
+ .text          0x00000000        0x0 vl53l0x_api_strings.o (symbol from plugin)
+ .text          0x00000000        0x0 vl53l0x_api_calibration.o (symbol from plugin)
+ .text          0x00000000        0x0 vl53l0x_api_core.o (symbol from plugin)
+ .text          0x00000000        0x0 vl53l0x_platform.o (symbol from plugin)
+ .text          0x00000000        0x0 vl53l0x_i2c_platform.o (symbol from plugin)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_cos.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_cos.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_cos.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_lrint.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_lrint.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_lrint.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_sin.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_sin.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_sin.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_asin.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_asin.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_asin.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_atan2.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_atan2.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_atan2.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_log.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_log.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_log.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_sqrt.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_sqrt.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_sqrt.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_acos.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_acos.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_acos.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_asin.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_asin.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_asin.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_atan2.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_atan2.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_atan2.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_log.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_log.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_log.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_rem_pio2.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_rem_pio2.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_rem_pio2.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_sqrt.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_sqrt.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_sqrt.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_cos.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_cos.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_cos.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_rem_pio2.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_rem_pio2.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_rem_pio2.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_sin.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_sin.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_sin.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_lib_ver.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_lib_ver.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_lib_ver.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_matherr.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_matherr.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_matherr.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_nan.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_nan.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_nan.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_atan.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_atan.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_atan.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_fabs.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_fabs.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_fabs.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_floor.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_floor.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_floor.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_scalbn.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_scalbn.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_scalbn.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_copysign.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_copysign.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_copysign.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcpy.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strchr.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strchr.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strchr.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strlen.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strlen.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_ashrdi3.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_ashrdi3.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_ldivmod.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_ldivmod.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixsfdi.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixsfdi.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixunssfdi.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixunssfdi.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
+ .ARM.extab     0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
+ .debug_frame   0x00000000      0x2f4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(libunwind.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(libunwind.o)
+ .ARM.attributes
+                0x00000000       0x22 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(libunwind.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
+ .debug_frame   0x00000000      0x104 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_dvmd_tls.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-abort.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-abort.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-abort.o)
+ .debug_frame   0x00000000       0x28 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-abort.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-abort.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+ .text._init_signal_r.part.0
+                0x00000000       0x28 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+ .text._init_signal_r
+                0x00000000       0x10 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+ .text._signal_r
+                0x00000000       0x44 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+ .text.__sigtramp_r
+                0x00000000       0x5c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+ .text.signal   0x00000000       0x10 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+ .text._init_signal
+                0x00000000       0x18 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+ .text.__sigtramp
+                0x00000000       0x10 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+ .debug_frame   0x00000000      0x108 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signalr.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signalr.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signalr.o)
+ .debug_frame   0x00000000       0x3c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signalr.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signalr.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+ .text._malloc_r
+                0x00000000      0x560 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+ .bss.__malloc_current_mallinfo
+                0x00000000       0x28 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+ .bss.__malloc_max_sbrked_mem
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+ .bss.__malloc_max_total_mem
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+ .bss.__malloc_top_pad
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+ .data.__malloc_av_
+                0x00000000      0x408 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+ .data.__malloc_sbrk_base
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+ .data.__malloc_trim_threshold
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+ .debug_frame   0x00000000       0x58 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mlock.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mlock.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mlock.o)
+ .text.__malloc_lock
+                0x00000000        0xc d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mlock.o)
+ .text.__malloc_unlock
+                0x00000000        0xc d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mlock.o)
+ .debug_frame   0x00000000       0x30 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mlock.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-reent.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-reent.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x00000000       0x1c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-reent.o)
+ .text._reclaim_reent
+                0x00000000       0x88 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-reent.o)
+ .debug_frame   0x00000000       0x58 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-reent.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-reent.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-sbrkr.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-sbrkr.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x00000000       0x24 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-sbrkr.o)
+ .debug_frame   0x00000000       0x2c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-sbrkr.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-freer.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-freer.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-freer.o)
+ .text._malloc_trim_r
+                0x00000000       0xa0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-freer.o)
+ .text._free_r  0x00000000      0x1cc d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-freer.o)
+ .debug_frame   0x00000000       0x74 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-freer.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-freer.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .text.__retarget_lock_init
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .text.__retarget_lock_init_recursive
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .text.__retarget_lock_close
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .text.__retarget_lock_close_recursive
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .text.__retarget_lock_acquire
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .text.__retarget_lock_acquire_recursive
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire_recursive
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .text.__retarget_lock_release
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .text.__retarget_lock_release_recursive
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .debug_frame   0x00000000       0xb0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ COMMON         0x00000000       0x21 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(getpid.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(getpid.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(getpid.o)
+ .stab          0x00000000       0x24 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(getpid.o)
+ .debug_frame   0x00000000       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(getpid.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(getpid.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(kill.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(kill.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(kill.o)
+ .stab          0x00000000       0x18 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(kill.o)
+                                 0x24 (size before relaxing)
+ .debug_frame   0x00000000       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(kill.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(kill.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(sbrk.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(sbrk.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(sbrk.o)
+ .text._sbrk    0x00000000       0x1c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(sbrk.o)
+ .bss.heap_end.5239
+                0x00000000        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(sbrk.o)
+ .debug_frame   0x00000000       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(sbrk.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(sbrk.o)
+ .text          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
+ .data          0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
+ .bss           0x00000000        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
+ .debug_frame   0x00000000       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
+ .ARM.attributes
+                0x00000000       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x0003f000         xr
+RAM              0x20000000         0x0000a000         xrw
+MEMORY_B1        0x60000000         0x00000000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD obj/PLUTOX/src/main/PlutoPilot.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans2.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans19.ltrans.o
+LOAD d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a
+LOAD ./libs\libpluto_0.3.a
+LOAD d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libstdc++.a
+LOAD d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a
+LOAD d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a
+START GROUP
+LOAD d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a
+LOAD d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a
+LOAD d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a
+END GROUP
+START GROUP
+LOAD d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a
+LOAD d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a
+LOAD d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a
+END GROUP
+                0x2000a000                _estack = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00000000                _Min_Heap_Size = 0x0
+                0x00000400                _Min_Stack_Size = 0x400
+
+.isr_vector     0x08000000      0x188
+                0x08000000                . = ALIGN (0x4)
+                [!provide]                PROVIDE (isr_vector_table_base, .)
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x188 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
+                0x08000000                g_pfnVectors
+                0x08000188                . = ALIGN (0x4)
+
+.text           0x080001c0    0x1223c
+                0x080001c0                . = ALIGN (0x4)
+ *(.text)
+ .text          0x080001c0     0x1718 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+                0x080001c0                init()
+ .text          0x080018d8     0x1090 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+                0x080018d8                processRx()
+ .text          0x08002968      0xbd0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+                0x08002968                headSerialResponse(unsigned char, unsigned char) [clone .lto_priv.171]
+                0x080029a8                headSerialReply(unsigned char) [clone .lto_priv.192]
+                0x080029ae                read32() [clone .lto_priv.195]
+                0x080029c0                processOutCommand(unsigned char) [clone .lto_priv.277]
+ .text          0x08003538      0x8a8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+                0x08003588                NVIC_Init.part.0.constprop.156
+                0x080035c4                VL53L0X_calc_timeout_mclks.constprop.146
+                0x080035ec                get_next_good_spad.constprop.137
+                0x08003638                enable_ref_spads.constprop.135
+                0x080036f4                SPIClass::Write(unsigned char, unsigned char) [clone .constprop.102]
+                0x08003730                SPIClass::Read(unsigned char, int) [clone .constprop.100]
+                0x080037c0                spektrumInit.constprop.90
+                0x08003840                useRcControlsConfig.constprop.48
+                0x08003880                resetSerialConfig(serialConfig_s*) [clone .constprop.47]
+                0x080038e0                FLASH_WaitForLastOperation.constprop.42
+                0x08003904                headSerialError(unsigned char) [clone .constprop.30]
+                0x0800390c                calculateThrottleStatus.constprop.23
+                0x08003940                reset(bool) [clone .constprop.10]
+                0x080039a4                updateCompass.constprop.6
+                0x08003b44                VL53L0X_RdDWord
+                0x08003b68                VL53L0X_RdWord
+                0x08003b94                VL53L0X_RdByte
+                0x08003bae                VL53L0X_UpdateByte
+                0x08003bea                VL53L0X_WrWord
+                0x08003c12                VL53L0X_WrByte
+                0x08003c28                VL53L0X_ref_calibration_io.constprop.149
+                0x08003cc6                VL53L0X_ClearInterruptMask.constprop.148
+                0x08003d1e                VL53L0X_set_measurement_timing_budget_micro_seconds
+ .text          0x08003de0      0x988 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+                0x08003e4a                perform_ref_signal_measurement
+                0x08004548                set_ref_spad_map
+                0x08004564                VL53L0X_GetSequenceStepEnables
+                0x0800459c                VL53L0X_GetDeviceParameters
+                0x08004750                LaserSensor::setAddress(unsigned char)
+ .text          0x08004768      0xc9c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+                0x08004780                read8() [clone .lto_priv.193]
+                0x08004794                read16() [clone .lto_priv.194]
+                0x080047a8                serialize8(unsigned char) [clone .lto_priv.202]
+                0x080047cc                serialize16(unsigned short) [clone .lto_priv.203]
+                0x080047de                serialize32(unsigned long) [clone .lto_priv.204]
+                0x080047f0                openSerialPort
+                0x08004868                findNextSerialPortConfig
+                0x080048ac                findSerialPortConfig
+                0x080048b8                generateThrottleCurve
+                0x08004938                generatePitchRollCurve
+                0x08004970                isRangeActive(unsigned char, channelRange_s*) [clone .part.1]
+                0x080049b8                beeperSilence
+                0x080049cc                beeper
+                0x08004a18                beeperConfirmationBeeps
+                0x08004a50                micros
+                0x08004a88                delayMicroseconds
+                0x08004a9e                delay
+                0x08004ab2                failureMode
+                0x08004b70                SysTick_Handler
+                0x08004b80                EXTI3_IRQHandler
+                0x08004b84                EXTI15_10_IRQHandler
+                0x08004b88                filterApplyPt1
+                0x08004be0                writeMotors
+                0x08004c8c                drift_correction(float)
+                0x08005340                normalize()
+ .text          0x08005404      0x81c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+                0x08005404                ppmEdgeCallback(timerCCHandlerRec_s*, unsigned short) [clone .lto_priv.282]
+                0x080054dc                ppmOverflowCallback(timerOvrHandlerRec_s*, unsigned short) [clone .lto_priv.283]
+                0x080054ec                pwmWriteStandard(unsigned char, unsigned short) [clone .lto_priv.280]
+                0x08005500                pwmWriteBrushed(unsigned char, unsigned short) [clone .lto_priv.281]
+                0x08005524                ak8963Read
+                0x080055e8                ak8963Init
+                0x080056d4                uartReconfigure.lto_priv.186
+                0x080057f8                ledOperator
+                0x08005868                gpioInit
+                0x080058bc                pwmOutConfig
+                0x08005ae8                initSpi2
+ .text          0x08005c20      0xd8c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+                0x08005c20                xBusReadRawRC(rxRuntimeConfig_s*, unsigned char) [clone .lto_priv.300]
+                0x08005cc8                spektrumReadRawRC.lto_priv.168
+                0x08005cf4                sumhReadRawRC.lto_priv.293
+                0x08005d0c                sumdReadRawRC.lto_priv.291
+                0x08005d20                sbusReadRawRC.lto_priv.289
+                0x08005d54                rxMspReadRawRC.lto_priv.302
+                0x08005d64                ppmReadRawRC.lto_priv.304
+                0x08005d70                pwmReadRawRC.lto_priv.303
+                0x08005d7c                nullReadRawRC(rxRuntimeConfig_s*, unsigned char) [clone .lto_priv.170]
+                0x08005d80                xBusDataReceive(unsigned short) [clone .lto_priv.301]
+                0x08005e48                spektrumDataReceive.lto_priv.169
+                0x08005e90                sumhDataReceive.lto_priv.294
+                0x08005ed8                sumdDataReceive.lto_priv.292
+                0x08005f7c                sbusDataReceive.lto_priv.290
+                0x08005fc8                batteryAdcToVoltage
+                0x08005ff8                updateBatteryVoltage() [clone .lto_priv.278]
+                0x080061fc                getRxfailValue(unsigned char) [clone .lto_priv.231]
+                0x0800624c                resumeRxSignal
+                0x0800627c                suspendRxSignal
+                0x080062ac                processInCommand() [clone .lto_priv.276]
+ .text          0x080069ac      0xdf8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+                0x080069ac                pidMultiWii23(pidProfile_s*, controlRateConfig_s*, unsigned short, rollAndPitchTrims_t*, rxConfig_s*) [clone .lto_priv.213]
+                0x08006c70                pidMultiWii(pidProfile_s*, controlRateConfig_s*, unsigned short, rollAndPitchTrims_t*, rxConfig_s*) [clone .lto_priv.211]
+                0x08006efc                pidLuxFloat(pidProfile_s*, controlRateConfig_s*, unsigned short, rollAndPitchTrims_t*, rxConfig_s*) [clone .lto_priv.212]
+                0x0800724c                pidResetErrorGyro
+                0x0800726c                pidResetErrorAngle
+                0x08007288                failsafeOnLowBattery
+                0x0800729c                updateGains
+                0x080072ec                apmCalculateEstimatedAltitude
+ .text          0x080077a4      0xfd0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+                0x08008308                renorm(float const*, float*)
+                0x080083bc                dcmFromEuler(float, float, float)
+                0x08008480                imuCalculateAcceleration(unsigned long)
+                0x0800872c                pidSetController
+ .text          0x08008774      0xb14 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+                0x08008774                PosXYEstimate
+                0x08008a40                flip.part.0
+                0x08008e40                RCC_ADCCLKConfig
+                0x08008e60                RCC_GetClocksFreq
+                0x08009150                alignSensors
+ .text          0x08009288      0x6b4 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+                0x08009400                timCCxHandler(TIM_TypeDef*, timerConfig_s*) [clone .lto_priv.185]
+                0x08009486                TIM1_CC_IRQHandler
+                0x08009494                configTimeBase
+                0x08009530                lookupTimerIndex(TIM_TypeDef const*) [clone .lto_priv.208]
+                0x08009588                USART2_IRQHandler
+                0x08009590                USART1_IRQHandler
+                0x08009598                DMA1_Channel4_IRQHandler
+                0x080095d4                uartOpen
+ .text          0x0800993c      0x6e0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+                0x08009964                mpuGyroRead
+                0x080099a8                mpuAccRead
+                0x08009a30                mpu6500GyroInit
+                0x08009ad8                mpu6500AccInit
+                0x08009aec                i2cRead
+                0x08009be0                mpuReadRegisterI2C(unsigned char, unsigned char, unsigned char*) [clone .lto_priv.317]
+                0x08009bf6                i2cWriteBuffer
+                0x08009ce4                i2cWrite
+                0x08009cf8                mpuWriteRegisterI2C(unsigned char, unsigned char) [clone .lto_priv.318]
+                0x08009d00                mode_0_init()
+ .text          0x0800a01c      0xb80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+                0x0800a01c                ms5611_calculate(long*, long*, unsigned long, unsigned long) [clone .lto_priv.315]
+                0x0800a1bc                ms5611_start_up() [clone .lto_priv.313]
+                0x0800a1c6                ms5611_start_ut() [clone .lto_priv.311]
+                0x0800a1f8                ms5611_get_up() [clone .lto_priv.314]
+                0x0800a1fa                ms5611_get_ut() [clone .lto_priv.312]
+                0x0800a1fc                activateControlRateConfig()
+                0x0800a244                isEEPROMContentValid() [clone .lto_priv.172]
+                0x0800a290                readEEPROM
+                0x0800a510                resetConf() [clone .lto_priv.196]
+                0x0800a9e4                apmBaroCalibrationRead()
+                0x0800aa3c                apmBaroUpdate
+                0x0800ab34                TIM1_TRG_COM_TIM17_IRQHandler
+                0x0800ab44                TIM1_BRK_TIM15_IRQHandler
+                0x0800ab54                TIM8_CC_IRQHandler
+                0x0800ab64                TIM8_UP_IRQHandler
+                0x0800ab68                TIM4_IRQHandler
+                0x0800ab78                TIM3_IRQHandler
+                0x0800ab88                TIM2_IRQHandler
+                0x0800ab98                TIM1_UP_TIM16_IRQHandler
+ .text          0x0800ab9c      0x6b4 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+                0x0800abba                VL53L0X_get_vcsel_pulse_period
+                0x0800abec                set_sequence_step_timeout
+                0x0800acf6                get_sequence_step_timeout
+                0x0800ae3c                VL53L0X_device_read_strobe
+                0x0800ae80                VL53L0X_isqrt
+                0x0800aeaa                VL53L0X_measurement_poll_for_completion
+                0x0800af0e                VL53L0X_perform_single_ref_calibration
+                0x0800af3e                VL53L0X_perform_ref_calibration
+                0x0800afce                VL53L0X_perform_ref_spad_management
+ .text          0x0800b250      0x630 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+                0x0800b250                DMA_StructInit
+                0x0800b26a                DMA_Init
+                0x0800b2a6                DMA_DeInit
+                0x0800b398                FLASH_GetStatus
+                0x0800b3c0                ADC_RegularChannelConfig
+                0x0800b478                GPIO_Init
+                0x0800b506                serialRead
+                0x0800b50c                serialWrite
+                0x0800b512                _putc(void*, char) [clone .lto_priv.324]
+                0x0800b516                applyDeadband
+                0x0800b534                sin_approx
+                0x0800b5f8                buildRotationMatrix
+                0x0800b6b4                reset_FSI
+                0x0800b6cc                set_FSI
+                0x0800b6e0                disableFlightMode
+                0x0800b700                enableFlightMode
+                0x0800b71c                featureClear
+                0x0800b72c                featureSet
+                0x0800b73c                writeEEPROM
+                0x0800b86c                saveConfigAndNotify
+ .text          0x0800b880      0x158 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+                0x0800b880                mwArm
+                0x0800b918                mwDisarm
+                0x0800b994                isCalibrating()
+ .text          0x0800b9d8       0x68 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans19.ltrans.o
+                0x0800b9d8                SystemInit
+ .text          0x0800ba40      0x134 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcpy.o)
+                0x0800ba40                memcpy
+ *fill*         0x0800bb74        0xc 
+ .text          0x0800bb80       0xdc d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strlen.o)
+                0x0800bb80                strlen
+ .text          0x0800bc5c       0x1c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_ashrdi3.o)
+                0x0800bc5c                __aeabi_lasr
+                0x0800bc5c                __ashrdi3
+ .text          0x0800bc78      0x370 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
+                0x0800bc78                __aeabi_drsub
+                0x0800bc80                __aeabi_dsub
+                0x0800bc80                __subdf3
+                0x0800bc84                __aeabi_dadd
+                0x0800bc84                __adddf3
+                0x0800befc                __floatunsidf
+                0x0800befc                __aeabi_ui2d
+                0x0800bf1c                __floatsidf
+                0x0800bf1c                __aeabi_i2d
+                0x0800bf40                __aeabi_f2d
+                0x0800bf40                __extendsfdf2
+                0x0800bf7c                __floatundidf
+                0x0800bf7c                __aeabi_ul2d
+                0x0800bf8c                __floatdidf
+                0x0800bf8c                __aeabi_l2d
+ .text          0x0800bfe8      0x424 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
+                0x0800bfe8                __aeabi_dmul
+                0x0800bfe8                __muldf3
+                0x0800c23c                __divdf3
+                0x0800c23c                __aeabi_ddiv
+ .text          0x0800c40c       0xa0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_truncdfsf2.o)
+                0x0800c40c                __truncdfsf2
+                0x0800c40c                __aeabi_d2f
+ .text          0x0800c4ac       0xa0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_ldivmod.o)
+                0x0800c4ac                __aeabi_ldivmod
+ .text          0x0800c54c       0x24 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixsfdi.o)
+                0x0800c54c                __fixsfdi
+                0x0800c54c                __aeabi_f2lz
+ .text          0x0800c570       0x4c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixunssfdi.o)
+                0x0800c570                __fixunssfdi
+                0x0800c570                __aeabi_f2ulz
+ .text          0x0800c5bc      0x2dc d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
+                0x0800c5bc                __udivmoddi4
+ .text          0x0800c898      0x9cc d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
+                0x0800cb58                _Unwind_GetCFA
+                0x0800cb5c                __gnu_Unwind_RaiseException
+                0x0800cbbc                __gnu_Unwind_ForcedUnwind
+                0x0800cbd0                __gnu_Unwind_Resume
+                0x0800cc14                __gnu_Unwind_Resume_or_Rethrow
+                0x0800cc24                _Unwind_Complete
+                0x0800cc28                _Unwind_DeleteException
+                0x0800cc34                _Unwind_VRS_Get
+                0x0800cc80                _Unwind_VRS_Set
+                0x0800ccd0                __gnu_Unwind_Backtrace
+                0x0800d010                __aeabi_unwind_cpp_pr0
+                0x0800d014                __aeabi_unwind_cpp_pr1
+                0x0800d018                __aeabi_unwind_cpp_pr2
+                0x0800d01c                _Unwind_VRS_Pop
+ .text          0x0800d264      0x1ac d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(libunwind.o)
+                0x0800d264                __restore_core_regs
+                0x0800d264                restore_core_regs
+                0x0800d27c                __gnu_Unwind_Restore_VFP
+                0x0800d284                __gnu_Unwind_Save_VFP
+                0x0800d28c                __gnu_Unwind_Restore_VFP_D
+                0x0800d294                __gnu_Unwind_Save_VFP_D
+                0x0800d29c                __gnu_Unwind_Restore_VFP_D_16_to_31
+                0x0800d2a4                __gnu_Unwind_Save_VFP_D_16_to_31
+                0x0800d2ac                __gnu_Unwind_Restore_WMMXD
+                0x0800d2f0                __gnu_Unwind_Save_WMMXD
+                0x0800d334                __gnu_Unwind_Restore_WMMXC
+                0x0800d348                __gnu_Unwind_Save_WMMXC
+                0x0800d35c                ___Unwind_RaiseException
+                0x0800d35c                _Unwind_RaiseException
+                0x0800d380                _Unwind_Resume
+                0x0800d380                ___Unwind_Resume
+                0x0800d3a4                _Unwind_Resume_or_Rethrow
+                0x0800d3a4                ___Unwind_Resume_or_Rethrow
+                0x0800d3c8                _Unwind_ForcedUnwind
+                0x0800d3c8                ___Unwind_ForcedUnwind
+                0x0800d3ec                ___Unwind_Backtrace
+                0x0800d3ec                _Unwind_Backtrace
+ .text          0x0800d410      0x380 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
+                0x0800d468                __gnu_unwind_execute
+                0x0800d738                __gnu_unwind_frame
+                0x0800d760                _Unwind_GetRegionStart
+                0x0800d76c                _Unwind_GetLanguageSpecificData
+                0x0800d780                _Unwind_GetTextRelBase
+                0x0800d788                _Unwind_GetDataRelBase
+ .text          0x0800d790        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_dvmd_tls.o)
+                0x0800d790                __aeabi_idiv0
+                0x0800d790                __aeabi_ldiv0
+ .text          0x0800d794       0x40 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
+                0x0800d794                __aeabi_d2uiz
+                0x0800d794                __fixunsdfsi
+ *(.text*)
+ .text.startup  0x0800d7d4     0x249c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+                0x0800d7d4                main
+ .text.startup  0x0800fc70       0x10 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+ .text.Reset_Handler
+                0x0800fc80       0x68 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
+                0x0800fc80                Reset_Handler
+ .text.Default_Handler
+                0x0800fce8        0x2 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
+                0x0800fce8                RTC_Alarm_IRQHandler
+                0x0800fce8                TIM8_TRG_COM_IRQHandler
+                0x0800fce8                DebugMon_Handler
+                0x0800fce8                HardFault_Handler
+                0x0800fce8                USB_HP_IRQHandler
+                0x0800fce8                PVD_IRQHandler
+                0x0800fce8                PendSV_Handler
+                0x0800fce8                NMI_Handler
+                0x0800fce8                EXTI0_IRQHandler
+                0x0800fce8                I2C2_EV_IRQHandler
+                0x0800fce8                FPU_IRQHandler
+                0x0800fce8                EXTI2_TS_IRQHandler
+                0x0800fce8                UsageFault_Handler
+                0x0800fce8                ADC1_2_IRQHandler
+                0x0800fce8                SPI1_IRQHandler
+                0x0800fce8                TIM6_DAC_IRQHandler
+                0x0800fce8                DMA2_Channel2_IRQHandler
+                0x0800fce8                USART3_IRQHandler
+                0x0800fce8                DMA1_Channel7_IRQHandler
+                0x0800fce8                CAN1_RX1_IRQHandler
+                0x0800fce8                UART5_IRQHandler
+                0x0800fce8                ADC3_IRQHandler
+                0x0800fce8                DMA2_Channel1_IRQHandler
+                0x0800fce8                I2C1_EV_IRQHandler
+                0x0800fce8                DMA1_Channel6_IRQHandler
+                0x0800fce8                UART4_IRQHandler
+                0x0800fce8                DMA2_Channel4_IRQHandler
+                0x0800fce8                RCC_IRQHandler
+                0x0800fce8                DMA1_Channel1_IRQHandler
+                0x0800fce8                Default_Handler
+                0x0800fce8                USBWakeUp_RMP_IRQHandler
+                0x0800fce8                TIM7_IRQHandler
+                0x0800fce8                EXTI9_5_IRQHandler
+                0x0800fce8                TAMPER_STAMP_IRQHandler
+                0x0800fce8                RTC_WKUP_IRQHandler
+                0x0800fce8                SPI2_IRQHandler
+                0x0800fce8                MemManage_Handler
+                0x0800fce8                SVC_Handler
+                0x0800fce8                DMA2_Channel5_IRQHandler
+                0x0800fce8                DMA1_Channel5_IRQHandler
+                0x0800fce8                USB_LP_IRQHandler
+                0x0800fce8                EXTI4_IRQHandler
+                0x0800fce8                USB_LP_CAN1_RX0_IRQHandler
+                0x0800fce8                USB_HP_CAN1_TX_IRQHandler
+                0x0800fce8                DMA1_Channel3_IRQHandler
+                0x0800fce8                ADC4_IRQHandler
+                0x0800fce8                WWDG_IRQHandler
+                0x0800fce8                COMP7_IRQHandler
+                0x0800fce8                COMP1_2_3_IRQHandler
+                0x0800fce8                EXTI1_IRQHandler
+                0x0800fce8                COMP4_5_6_IRQHandler
+                0x0800fce8                I2C2_ER_IRQHandler
+                0x0800fce8                DMA1_Channel2_IRQHandler
+                0x0800fce8                TIM8_BRK_IRQHandler
+                0x0800fce8                CAN1_SCE_IRQHandler
+                0x0800fce8                FLASH_IRQHandler
+                0x0800fce8                BusFault_Handler
+                0x0800fce8                SPI3_IRQHandler
+                0x0800fce8                I2C1_ER_IRQHandler
+                0x0800fce8                USBWakeUp_IRQHandler
+                0x0800fce8                DMA2_Channel3_IRQHandler
+ *fill*         0x0800fcea        0x2 
+ .text.cosf     0x0800fcec       0x90 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_cos.o)
+                0x0800fcec                cosf
+ .text.lrintf   0x0800fd7c       0x98 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_lrint.o)
+                0x0800fd7c                lrintf
+ .text.sinf     0x0800fe14       0x94 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_sin.o)
+                0x0800fe14                sinf
+ .text.acosf    0x0800fea8       0xb8 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o)
+                0x0800fea8                acosf
+ .text.asinf    0x0800ff60       0xb8 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_asin.o)
+                0x0800ff60                asinf
+ .text.atan2f   0x08010018        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_atan2.o)
+                0x08010018                atan2f
+ .text.logf     0x0801001c       0xf8 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_log.o)
+                0x0801001c                logf
+ .text.sqrtf    0x08010114       0xac d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_sqrt.o)
+                0x08010114                sqrtf
+ .text.__ieee754_acosf
+                0x080101c0      0x244 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_acos.o)
+                0x080101c0                __ieee754_acosf
+ .text.__ieee754_asinf
+                0x08010404      0x1f8 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_asin.o)
+                0x08010404                __ieee754_asinf
+ .text.__ieee754_atan2f
+                0x080105fc      0x180 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_atan2.o)
+                0x080105fc                __ieee754_atan2f
+ .text.__ieee754_logf
+                0x0801077c      0x218 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_log.o)
+                0x0801077c                __ieee754_logf
+ .text.__ieee754_rem_pio2f
+                0x08010994      0x290 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_rem_pio2.o)
+                0x08010994                __ieee754_rem_pio2f
+ .text.__ieee754_sqrtf
+                0x08010c24        0x8 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_sqrt.o)
+                0x08010c24                __ieee754_sqrtf
+ .text.__kernel_cosf
+                0x08010c2c      0x104 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_cos.o)
+                0x08010c2c                __kernel_cosf
+ .text.__kernel_rem_pio2f
+                0x08010d30      0x690 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_rem_pio2.o)
+                0x08010d30                __kernel_rem_pio2f
+ .text.__kernel_sinf
+                0x080113c0       0x90 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_sin.o)
+                0x080113c0                __kernel_sinf
+ .text.matherr  0x08011450        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_matherr.o)
+                0x08011450                matherr
+ *fill*         0x08011454        0x4 
+ .text.nan      0x08011458       0x10 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_nan.o)
+                0x08011458                nan
+ .text.atanf    0x08011468      0x1b0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_atan.o)
+                0x08011468                atanf
+ .text.fabsf    0x08011618       0x10 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_fabs.o)
+                0x08011618                fabsf
+ .text.floorf   0x08011628       0x90 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_floor.o)
+                0x08011628                floorf
+ .text.scalbnf  0x080116b8       0xd0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_scalbn.o)
+                0x080116b8                scalbnf
+ .text.copysignf
+                0x08011788       0x18 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_copysign.o)
+                0x08011788                copysignf
+ .text.__errno  0x080117a0        0xc d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
+                0x080117a0                __errno
+ .text.memset   0x080117ac       0x9c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
+                0x080117ac                memset
+ .text.strchr   0x08011848       0xe8 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strchr.o)
+                0x08011848                strchr
+ .text.abort    0x08011930       0x10 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-abort.o)
+                0x08011930                abort
+ .text._raise_r
+                0x08011940       0x60 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+                0x08011940                _raise_r
+ .text.raise    0x080119a0       0x10 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signal.o)
+                0x080119a0                raise
+ .text._kill_r  0x080119b0       0x28 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signalr.o)
+                0x080119b0                _kill_r
+ .text._getpid_r
+                0x080119d8        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-signalr.o)
+                0x080119d8                _getpid_r
+ .text._getpid  0x080119dc       0x10 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(getpid.o)
+                0x080119dc                _getpid
+ .text._kill    0x080119ec       0x10 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(kill.o)
+                0x080119ec                _kill
+ .text._exit    0x080119fc        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
+                0x080119fc                _exit
+ *(.rodata)
+ .rodata        0x08011a00      0x10e C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .rodata        0x08011b0e       0x3c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+ .rodata        0x08011b4a       0x30 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ *fill*         0x08011b7a        0x2 
+ .rodata        0x08011b7c       0x14 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+                0x08011b7c                refArrayQuadrants
+                0x08011b8c                serialPortIdentifiers
+ .rodata        0x08011b90      0x120 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+                0x08011cac                magneticDeclination
+ .rodata        0x08011cb0      0x150 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+                0x08011cb0                _ZL5boxes.lto_priv.197
+ .rodata        0x08011e00       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+                0x08011e1c                SystemCoreClock
+ .rodata        0x08011e20       0x15 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+ *(.rodata*)
+ .rodata.str1.1
+                0x08011e35       0x23 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ .rodata.str1.1
+                0x08011e58       0xa1 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+                                 0xa8 (size before relaxing)
+ .rodata.str1.1
+                0x08011ef9       0xe2 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+ .rodata.str1.1
+                0x08011fdb        0x9 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+ .rodata.TWO23  0x08011fe4        0x8 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_lrint.o)
+ .rodata.acosf.str1.4
+                0x08011fec        0x6 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o)
+                                  0x9 (size before relaxing)
+ *fill*         0x08011ff2        0x2 
+ .rodata.asinf.str1.4
+                0x08011ff4        0x6 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_asin.o)
+                                  0x9 (size before relaxing)
+ *fill*         0x08011ffa        0x2 
+ .rodata.logf.str1.4
+                0x08011ffc        0x5 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_log.o)
+                                  0x9 (size before relaxing)
+ *fill*         0x08012001        0x3 
+ .rodata.sqrtf.str1.4
+                0x08012004        0x8 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_sqrt.o)
+                                  0x6 (size before relaxing)
+ .rodata.npio2_hw
+                0x0801200c       0x80 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_rem_pio2.o)
+ .rodata.two_over_pi
+                0x0801208c      0x318 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_rem_pio2.o)
+ .rodata.PIo2   0x080123a4       0x2c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_rem_pio2.o)
+ .rodata.init_jk
+                0x080123d0        0xc d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_rem_pio2.o)
+ .rodata.atanhi
+                0x080123dc       0x10 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_atan.o)
+ .rodata.atanlo
+                0x080123ec       0x10 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_atan.o)
+ *(.glue_7)
+ .glue_7        0x080123fc        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x080123fc        0x0 linker stubs
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+                0x080123fc                . = ALIGN (0x4)
+                0x080123fc                _etext = .
+
+.vfp11_veneer   0x080123fc        0x0
+ .vfp11_veneer  0x080123fc        0x0 linker stubs
+
+.v4_bx          0x080123fc        0x0
+ .v4_bx         0x080123fc        0x0 linker stubs
+
+.iplt           0x080123fc        0x0
+ .iplt          0x080123fc        0x0 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
+
+.ARM.extab      0x080123fc       0x90
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ .ARM.extab.text.startup
+                0x080123fc        0xc C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+ .ARM.extab     0x08012408        0xc C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ .ARM.extab     0x08012414        0xc C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+ .ARM.extab     0x08012420        0xc C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+ .ARM.extab     0x0801242c       0x18 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+ .ARM.extab     0x08012444       0x24 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+ .ARM.extab     0x08012468        0xc C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+ .ARM.extab     0x08012474       0x18 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
+
+.ARM            0x0801248c      0x1e8
+                0x0801248c                __exidx_start = .
+ *(.ARM.exidx*)
+ .ARM.exidx.text.startup
+                0x08012664        0x8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+ .ARM.exidx     0x0801248c        0x8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .ARM.exidx     0x08012494        0x8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+ .ARM.exidx     0x0801249c       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ .ARM.exidx     0x080124bc       0x10 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+                                 0x40 (size before relaxing)
+ .ARM.exidx     0x080124cc        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx     0x080124cc       0x28 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+                                 0x90 (size before relaxing)
+ .ARM.exidx.text.startup
+                0x0801266c        0x8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+ .ARM.exidx     0x080124f4        0x8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+                                 0x38 (size before relaxing)
+ .ARM.exidx     0x080124fc        0x8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+                                 0x50 (size before relaxing)
+ .ARM.exidx     0x08012504       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+                                 0x40 (size before relaxing)
+ .ARM.exidx     0x08012524       0x30 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+                                 0x38 (size before relaxing)
+ .ARM.exidx     0x08012554       0x10 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x08012564       0x10 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+                                 0x20 (size before relaxing)
+ .ARM.exidx     0x08012574       0x28 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+                                 0x40 (size before relaxing)
+ .ARM.exidx     0x0801259c       0x18 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+                                 0xa0 (size before relaxing)
+ .ARM.exidx     0x080125b4        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+                                 0x70 (size before relaxing)
+ .ARM.exidx     0x080125b4        0x0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x080125b4        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
+                                  0x8 (size before relaxing)
+ .ARM.exidx     0x080125b4       0x78 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
+                                 0xd8 (size before relaxing)
+ .ARM.exidx     0x0801262c       0x38 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
+                                 0x48 (size before relaxing)
+                0x08012674                __exidx_end = .
+
+.rel.dyn        0x08012674        0x0
+ .rel.iplt      0x08012674        0x0 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
+
+.preinit_array  0x08012674        0x0
+                [!provide]                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array*)
+                [!provide]                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x08012674        0x4
+                [!provide]                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array*)
+ .init_array    0x08012674        0x4 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+                [!provide]                PROVIDE (__init_array_end, .)
+
+.fini_array     0x08012678        0x0
+                [!provide]                PROVIDE (__fini_array_start, .)
+ *(.fini_array*)
+ *(SORT(.fini_array.*))
+                [!provide]                PROVIDE (__fini_array_end, .)
+                0x08012678                _sidata = .
+
+.data           0x20000000      0x4d8 load address 0x08012678
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sdata = .
+ *(.data)
+ .data          0x20000000        0xb C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+ .data          0x2000000b        0x2 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+                0x2000000b                _ZL18rxIsInFailsafeMode.lto_priv.253
+                0x2000000c                _ZL31rxIsInFailsafeModeNotDataDriven.lto_priv.255
+ *fill*         0x2000000d        0x3 
+ .data          0x20000010        0x5 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+                0x20000010                _ZL13rcReadRawFunc.lto_priv.230
+                0x20000014                _ZL18isUsingSticksToArm.lto_priv.226
+ *fill*         0x20000015        0x3 
+ .data          0x20000018       0x2c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+                0x20000018                dcm_matrix
+ .data          0x20000044        0xc C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+ .data          0x20000050        0x4 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+                0x20000050                command_status
+                0x20000052                max_altitude
+ .data          0x20000054        0x9 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+                0x2000005c                velocityControl
+ *fill*         0x2000005d        0x3 
+ .data          0x20000060        0x8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+                0x20000060                headFreeModeHold
+                0x20000064                pid_controller
+ .data          0x20000068       0x33 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+                0x2000009a                _ZL22standardBoardAlignment.lto_priv.319
+ *fill*         0x2000009b        0x1 
+ .data          0x2000009c        0x2 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+                0x2000009c                acc_1G
+ .data          0x2000009e        0x6 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+                0x2000009e                setLandTimer
+                0x200000a0                takeOffHeight
+                0x200000a2                landThrottle
+ *(.data*)
+ .data.__fdlib_version
+                0x200000a4        0x1 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_lib_ver.o)
+                0x200000a4                __fdlib_version
+ *fill*         0x200000a5        0x3 
+ .data._impure_ptr
+                0x200000a8        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
+                0x200000a8                _impure_ptr
+ *fill*         0x200000ac        0x4 
+ .data.impure_data
+                0x200000b0      0x428 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
+                0x200004d8                . = ALIGN (0x4)
+                0x200004d8                _edata = .
+
+.igot.plt       0x200004d8        0x0 load address 0x08012b50
+ .igot.plt      0x200004d8        0x0 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
+                0x200004d8                . = ALIGN (0x4)
+
+.bss            0x200004d8     0x1a4c load address 0x08012b50
+                0x200004d8                _sbss = .
+                0x200004d8                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x200004d8      0x2ce C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+                0x200004f8                gyroAlign
+                0x2000054c                acc
+                0x20000558                accAlign
+                0x200005b0                smallAngle
+                0x200005b4                previousTime
+                0x200005c8                _ZL12batteryState.lto_priv.286
+                0x200005ca                batteryWarningVoltage
+                0x200005cc                batteryCriticalVoltage
+                0x200005e4                _ZL8mspPorts.lto_priv.308
+                0x2000067e                _ZL13rxRefreshRate.lto_priv.288
+                0x200006c4                _ZL12currentMixer.lto_priv.279
+                0x20000784                motorControlEnable
+                0x200007a4                GPIO
+                0x200007a5                batteryCellCount
+ *fill*         0x200007a6        0x2 
+ .bss           0x200007a8      0x140 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .bss           0x200008e8      0x110 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+                0x200008e8                _ZL10rxUpdateAt.lto_priv.252
+                0x20000910                _ZL16rxSignalReceived.lto_priv.236
+                0x20000911                _ZL29rxSignalReceivedNotDataDriven.lto_priv.254
+                0x20000913                _ZL13rcSampleIndex.lto_priv.287
+                0x20000990                _ZL8rxConfig.lto_priv.305
+                0x20000994                _ZL8disarmAt.lto_priv.232
+                0x2000099b                isThrottleStickArmed
+                0x2000099c                netAccMagnitude
+                0x200009a0                calibratingG
+                0x200009a2                AccInflightCalibrationMeasurementDone
+                0x200009a3                AccInflightCalibrationSavetoEEProm
+                0x200009a6                InflightcalibratingA
+                0x200009a8                AccInflightCalibrationActive
+                0x200009aa                isHeadSet
+                0x200009ac                rcInvalidPulsPeriod
+                0x200009f4                calibratingB
+                0x200009f6                isChukedArmed
+                0x200009f7                isTookOff
+ .bss           0x200009f8       0x98 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+                0x200009f8                _ZL14enabledSensors.lto_priv.222
+                0x200009fc                _ZL16activeBoxIdCount.lto_priv.307
+                0x200009fd                _ZL12activeBoxIds.lto_priv.306
+                0x20000a1a                accSmooth
+                0x20000a20                gyroADC
+                0x20000a26                motor
+                0x20000a3e                inclination_generalised
+                0x20000a44                heading
+                0x20000a48                _ZL6EstAlt.lto_priv.220
+                0x20000a4c                vario
+                0x20000a50                mAhDrawn
+                0x20000a54                rssi
+                0x20000a58                amperage
+                0x20000a5c                _ZL15serialPortCount.lto_priv.321
+                0x20000a60                _ZL19serialPortUsageList.lto_priv.205
+ .bss           0x20000a90      0x616 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+                0x20000a94                rxRuntimeConfigPtr.lto_priv.273
+                0x20000a98                rxRuntimeConfig
+                0x20000a9c                masterConfig
+                0x20000fec                spek_chan_shift.lto_priv.272
+                0x20000fed                spek_chan_mask.lto_priv.274
+                0x20000fee                spekHiRes.lto_priv.188
+                0x20000ff0                _ZL17escAndServoConfig.lto_priv.223
+                0x20000ff4                _ZL10pidProfile.lto_priv.224
+                0x20000ff8                _ZL19activeFeaturesLatch.lto_priv.190
+                0x20000ffc                rcData
+                0x20001020                _ZL5uart2.lto_priv.245
+                0x20001024                omega_I
+                0x20001030                omega_P
+                0x2000103c                omega_yaw_P
+                0x20001048                omega
+                0x20001054                anglerad
+                0x20001060                currentTime
+                0x20001068                compassLastUpdatedAt
+                0x2000106c                magADC
+                0x20001074                mag
+                0x2000107c                magAlign
+                0x2000107d                stateFlags
+                0x20001084                have_initial_yaw
+                0x20001098                _ZL7magInit.lto_priv.309
+                0x2000109c                _ZL5uart3.lto_priv.246
+                0x200010a0                UART
+                0x200010a1                spi
+ *fill*         0x200010a6        0x2 
+ .bss           0x200010a8       0xb9 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+                0x200010a8                extiHandlerConfigs.lto_priv.322
+                0x200010b0                _ZL13mspSerialPort.lto_priv.238
+                0x200010b6                lookupThrottleRC
+                0x200010ce                lookupPitchRollRC
+                0x200010dc                _ZL10beeperIsOn.lto_priv.243
+                0x200010e0                _ZL20beeperNextToggleTime.lto_priv.242
+                0x200010e4                _ZL9beeperPos.lto_priv.244
+                0x200010e8                _ZL18currentBeeperEntry.lto_priv.241
+                0x20001104                usTicks.lto_priv.323
+                0x20001108                cycleTime
+                0x2000110a                motorCount
+                0x2000112e                accADC
+                0x20001134                ra_deltaT
+                0x20001154                ra_sum
+                0x20001160                _ZL15warningLedState.lto_priv.240
+ *fill*         0x20001161        0x3 
+ .bss           0x20001164      0x158 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+                0x20001164                ppmDev
+                0x200011ac                _ZL8captures.lto_priv.189
+                0x200011c4                _ZL13ppmFrameCount.lto_priv.256
+                0x200011c8                _ZL6motors.lto_priv.207
+ *fill*         0x200012bc        0x4 
+ .bss           0x200012c0      0x289 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+                0x200012f9                _ZL16xBusChannelCount.lto_priv.298
+                0x200012fa                _ZL17xBusFrameReceived.lto_priv.258
+                0x200012fc                spekChannelData.lto_priv.275
+                0x2000132c                sumhChannels.lto_priv.261
+                0x2000134c                sumdChannels.lto_priv.266
+                0x2000136c                sbusChannelData.lto_priv.269
+                0x200013dc                _ZL17xBusFramePosition.lto_priv.296
+                0x200013dd                _ZL16xBusDataIncoming.lto_priv.295
+                0x200013de                _ZL15xBusFrameLength.lto_priv.297
+                0x200013df                _ZL12xBusProvider.lto_priv.299
+                0x200013e5                spekFrame.lto_priv.271
+                0x200013f5                rcFrameComplete.lto_priv.270
+                0x200013fd                sumhFrame.lto_priv.260
+                0x20001412                sumhFrameDone.lto_priv.259
+                0x20001419                sumdFrameDone.lto_priv.262
+                0x2000141a                crc.lto_priv.263
+                0x2000141c                sumdChannelCount.lto_priv.264
+                0x2000141d                sumd.lto_priv.265
+                0x20001449                sbusFrame.lto_priv.268
+                0x20001462                sbusFrameDone.lto_priv.267
+                0x20001464                batteryConfig
+                0x20001468                adcConfig
+                0x20001478                adcValues
+                0x20001480                vbatLatestADC
+                0x20001510                vbat
+                0x20001514                _ZL20suspendRxSignalUntil.lto_priv.229
+                0x20001518                _ZL13skipRxSamples.lto_priv.228
+                0x2000151c                _ZL11currentPort.lto_priv.201
+                0x20001520                armingFlags
+                0x20001522                magHold
+                0x20001524                rxMspFrameDone.lto_priv.257
+                0x20001526                motor_disarmed
+                0x2000153e                isLanding
+                0x2000153f                current_command
+                0x20001540                calibratingA
+                0x20001544                _ZL12serialConfig.lto_priv.206
+                0x20001548                _ZL17isRebootScheduled.lto_priv.239
+ *fill*         0x20001549        0x3 
+ .bss           0x2000154c      0x104 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+                0x200015a4                gyro
+                0x200015c8                _ZL19initialThrottleHold.lto_priv.235
+                0x200015cc                errorVelocityI
+                0x200015d0                altHoldThrottleAdjustment
+                0x200015d8                baroGroundTemperature
+                0x200015dc                baroGroundPressure
+                0x20001644                AltHold
+                0x20001648                setVelocity
+ .bss           0x20001650       0xc0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+                0x20001670                rcCommand
+                0x20001678                PIDweight
+                0x2000167c                _ZL10PTermState.lto_priv.216
+                0x20001688                _ZL10errorGyroI.lto_priv.214
+                0x2000169a                axisPID
+                0x200016a0                _ZL11errorAngleI.lto_priv.215
+                0x200016a8                dynP8
+                0x200016c0                _ZL10DTermState.lto_priv.217
+                0x200016cc                dynD8
+                0x200016e0                _ZL11errorGyroIf.lto_priv.218
+                0x200016ec                _ZL12errorAngleIf.lto_priv.219
+                0x200016fc                accZoffsetCalCycle
+ .bss           0x20001710      0x110 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+                0x20001714                new_position
+                0x20001738                accSum
+                0x20001744                accSumXYZ
+                0x20001750                accSumCountXYZ
+                0x20001754                accTimeSum
+                0x200017a0                accVelScale
+                0x200017a4                k3
+                0x200017a8                k2
+                0x200017ac                k1
+                0x200017cc                flipState
+                0x200017d0                flipStartTime
+                0x200017d4                rcModeActivationMask
+                0x200017d8                VelocityZ
+                0x200017dc                flipDirection
+                0x200017e0                stateon
+                0x200017e4                inclination
+                0x200017f0                _ZL13boardRotation.lto_priv.320
+                0x20001814                posZ
+                0x20001816                posY
+                0x20001818                posX
+                0x2000181c                accSumCount
+ .bss           0x20001820      0x4a8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+ .bss           0x20001cc8       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+                0x20001cc8                i2c1ErrorCount.lto_priv.199
+                0x20001cca                i2c2ErrorCount.lto_priv.200
+                0x20001ccc                mpuConfiguration
+                0x20001cdc                _ZL16mpuIntExtiConfig.lto_priv.316
+                0x20001ce4                I2Cx.lto_priv.198
+ .bss           0x20001ce8      0x230 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+                0x20001ce8                _ZL8ms5611_c.lto_priv.310
+                0x20001cf8                currentControlRateProfile
+                0x20001cfc                lookupYawRC
+                0x20001d0c                currentProfile
+                0x20001d10                _ZL30currentControlRateProfileIndex.lto_priv.225
+                0x20001d14                _ZL8rxConfig.lto_priv.184
+                0x20001d18                adjustmentStates
+                0x20001d48                _ZL10gyroConfig.lto_priv.248
+                0x20001d4c                _ZL14failsafeConfig.lto_priv.227
+                0x20001d50                _ZL13failsafeState.lto_priv.191
+                0x20001d74                crashTimer
+                0x20001d80                _ZL17accelerationTrims.lto_priv.247
+                0x20001d84                _ZL14flight3DConfig.lto_priv.234
+                0x20001d88                _ZL17escAndServoConfig.lto_priv.182
+                0x20001d8c                _ZL11mixerConfig.lto_priv.233
+                0x20001d90                _ZL8rxConfig.lto_priv.183
+                0x20001da4                _ZL16imuRuntimeConfig.lto_priv.209
+                0x20001da8                _ZL11accDeadband.lto_priv.210
+                0x20001dac                throttleAngleScale
+                0x20001db0                _ZL10pidProfile.lto_priv.175
+                0x20001db4                _ZL16rcControlsConfig.lto_priv.179
+                0x20001db8                _ZL17escAndServoConfig.lto_priv.181
+                0x20001dbc                _ZL8_updated.lto_priv.249
+                0x20001dc0                temperatureSum
+                0x20001dc4                temperatureCount
+                0x20001dc8                _ZL11pressureSum.lto_priv.250
+                0x20001dcc                _ZL13pressureCount.lto_priv.251
+                0x20001dd0                baroTemperature
+                0x20001dd4                baroPressure
+                0x20001dd8                baro
+                0x20001df0                sysTickUptime.lto_priv.187
+                0x20001df4                _ZL12_last_update.lto_priv.221
+                0x20001e00                timerConfig
+ .bss           0x20001f18        0x4 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+                0x20001f18                flightIndicatorFlag
+                0x20001f1a                flightModeFlags
+ .bss           0x20001f1c        0x3 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+                0x20001f1c                isCalibrated
+                0x20001f1d                _ZL12isBatteryLow.lto_priv.237
+                0x20001f1e                isTakeOffHeightSet
+ *(SORT(.bss*))
+ *(COMMON)
+ *fill*         0x20001f1f        0x1 
+ COMMON         0x20001f20        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-reent.o)
+                0x20001f20                errno
+                0x20001f24                . = ALIGN (0x4)
+                0x20001f24                _ebss = .
+                0x20001f24                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x20001f24      0x400 load address 0x08012b50
+                0x20001f24                . = ALIGN (0x4)
+                0x20001f24                PROVIDE (end, .)
+                [!provide]                PROVIDE (_end, .)
+                0x20001f24                . = (. + _Min_Heap_Size)
+                0x20002324                . = (. + _Min_Stack_Size)
+ *fill*         0x20001f24      0x400 
+                0x20002324                . = ALIGN (0x4)
+
+.memory_b1_text
+ *(.mb1text)
+ *(.mb1text*)
+ *(.mb1rodata)
+ *(.mb1rodata*)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x00000000       0x37
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+ .ARM.attributes
+                0x00000037       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .ARM.attributes
+                0x0000006e       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+ .ARM.attributes
+                0x000000a5       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ .ARM.attributes
+                0x000000dc       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+ .ARM.attributes
+                0x00000113       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+ .ARM.attributes
+                0x0000014a       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+ .ARM.attributes
+                0x00000181       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+ .ARM.attributes
+                0x000001b8       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+ .ARM.attributes
+                0x000001ef       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+ .ARM.attributes
+                0x00000226       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+ .ARM.attributes
+                0x0000025d       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+ .ARM.attributes
+                0x00000294       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+ .ARM.attributes
+                0x000002cb       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+ .ARM.attributes
+                0x00000302       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+ .ARM.attributes
+                0x00000339       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+ .ARM.attributes
+                0x00000370       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+ .ARM.attributes
+                0x000003a7       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+ .ARM.attributes
+                0x000003de       0x37 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans19.ltrans.o
+ .ARM.attributes
+                0x00000415       0x21 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
+ .ARM.attributes
+                0x00000436       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_cos.o)
+ .ARM.attributes
+                0x0000046a       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_lrint.o)
+ .ARM.attributes
+                0x0000049e       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_sin.o)
+ .ARM.attributes
+                0x000004d2       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o)
+ .ARM.attributes
+                0x00000506       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_asin.o)
+ .ARM.attributes
+                0x0000053a       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_atan2.o)
+ .ARM.attributes
+                0x0000056e       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_log.o)
+ .ARM.attributes
+                0x000005a2       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_sqrt.o)
+ .ARM.attributes
+                0x000005d6       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_acos.o)
+ .ARM.attributes
+                0x0000060a       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_asin.o)
+ .ARM.attributes
+                0x0000063e       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_atan2.o)
+ .ARM.attributes
+                0x00000672       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_log.o)
+ .ARM.attributes
+                0x000006a6       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_rem_pio2.o)
+ .ARM.attributes
+                0x000006da       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_sqrt.o)
+ .ARM.attributes
+                0x0000070e       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_cos.o)
+ .ARM.attributes
+                0x00000742       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_rem_pio2.o)
+ .ARM.attributes
+                0x00000776       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_sin.o)
+ .ARM.attributes
+                0x000007aa       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_lib_ver.o)
+ .ARM.attributes
+                0x000007de       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_matherr.o)
+ .ARM.attributes
+                0x00000812       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_nan.o)
+ .ARM.attributes
+                0x00000846       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_atan.o)
+ .ARM.attributes
+                0x0000087a       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_fabs.o)
+ .ARM.attributes
+                0x000008ae       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_floor.o)
+ .ARM.attributes
+                0x000008e2       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_scalbn.o)
+ .ARM.attributes
+                0x00000916       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_copysign.o)
+ .ARM.attributes
+                0x0000094a       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
+ .ARM.attributes
+                0x0000097e       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000009b2       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x000009d2       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000a06       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strchr.o)
+ .ARM.attributes
+                0x00000a3a       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x00000a5a       0x22 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_ashrdi3.o)
+ .ARM.attributes
+                0x00000a7c       0x22 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000a9e       0x22 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000ac0       0x22 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x00000ae2       0x22 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_ldivmod.o)
+ .ARM.attributes
+                0x00000b04       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixsfdi.o)
+ .ARM.attributes
+                0x00000b38       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixunssfdi.o)
+ .ARM.attributes
+                0x00000b6c       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x00000ba0       0x22 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000bc2       0x22 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
+OUTPUT(obj/Experience_PLUTOX.elf elf32-littlearm)
+
+.debug_info     0x00000000    0x296a0
+ .debug_info    0x00000000     0x4564 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+ .debug_info    0x00004564     0x7101 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .debug_info    0x0000b665     0x1efd C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+ .debug_info    0x0000d562     0x141b C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ .debug_info    0x0000e97d     0x43b3 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+ .debug_info    0x00012d30     0x2e18 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+ .debug_info    0x00015b48     0x20c4 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+ .debug_info    0x00017c0c     0x29ea C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+ .debug_info    0x0001a5f6     0x21c2 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+ .debug_info    0x0001c7b8     0x1499 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+ .debug_info    0x0001dc51     0x1456 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+ .debug_info    0x0001f0a7      0xbba C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+ .debug_info    0x0001fc61     0x206e C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+ .debug_info    0x00021ccf     0x1c0c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+ .debug_info    0x000238db     0x293d C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+ .debug_info    0x00026218     0x1dcb C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+ .debug_info    0x00027fe3     0x137c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+ .debug_info    0x0002935f      0x2aa C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+ .debug_info    0x00029609       0x97 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans19.ltrans.o
+
+.debug_abbrev   0x00000000     0x4ce6
+ .debug_abbrev  0x00000000      0x5bb C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+ .debug_abbrev  0x000005bb      0x4f4 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .debug_abbrev  0x00000aaf      0x35f C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+ .debug_abbrev  0x00000e0e      0x388 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ .debug_abbrev  0x00001196      0x5ab C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+ .debug_abbrev  0x00001741      0x3f8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+ .debug_abbrev  0x00001b39      0x5b3 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+ .debug_abbrev  0x000020ec      0x482 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+ .debug_abbrev  0x0000256e      0x55b C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+ .debug_abbrev  0x00002ac9      0x3f8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+ .debug_abbrev  0x00002ec1      0x351 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+ .debug_abbrev  0x00003212      0x343 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+ .debug_abbrev  0x00003555      0x4b8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+ .debug_abbrev  0x00003a0d      0x3cf C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+ .debug_abbrev  0x00003ddc      0x558 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+ .debug_abbrev  0x00004334      0x368 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+ .debug_abbrev  0x0000469c      0x47b C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+ .debug_abbrev  0x00004b17      0x15c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+ .debug_abbrev  0x00004c73       0x73 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans19.ltrans.o
+
+.debug_loc      0x00000000    0x14558
+ .debug_loc     0x00000000     0x222b C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+ .debug_loc     0x0000222b     0x237d C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .debug_loc     0x000045a8     0x11c2 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+ .debug_loc     0x0000576a      0xcb1 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ .debug_loc     0x0000641b     0x172b C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+ .debug_loc     0x00007b46     0x2d3e C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+ .debug_loc     0x0000a884      0xe86 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+ .debug_loc     0x0000b70a     0x13f1 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+ .debug_loc     0x0000cafb      0xc05 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+ .debug_loc     0x0000d700      0xfc9 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+ .debug_loc     0x0000e6c9     0x1414 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+ .debug_loc     0x0000fadd      0x54c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+ .debug_loc     0x00010029      0xfc4 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+ .debug_loc     0x00010fed      0xd65 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+ .debug_loc     0x00011d52      0x68f C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+ .debug_loc     0x000123e1     0x1803 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+ .debug_loc     0x00013be4      0x974 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+
+.debug_aranges  0x00000000      0x270
+ .debug_aranges
+                0x00000000       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+ .debug_aranges
+                0x00000020       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .debug_aranges
+                0x00000040       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+ .debug_aranges
+                0x00000060       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ .debug_aranges
+                0x00000080       0x28 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+ .debug_aranges
+                0x000000a8       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+ .debug_aranges
+                0x000000c8       0x28 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+ .debug_aranges
+                0x000000f0       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+ .debug_aranges
+                0x00000110       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+ .debug_aranges
+                0x00000130       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+ .debug_aranges
+                0x00000150       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+ .debug_aranges
+                0x00000170       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+ .debug_aranges
+                0x00000190       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+ .debug_aranges
+                0x000001b0       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+ .debug_aranges
+                0x000001d0       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+ .debug_aranges
+                0x000001f0       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+ .debug_aranges
+                0x00000210       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+ .debug_aranges
+                0x00000230       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+ .debug_aranges
+                0x00000250       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans19.ltrans.o
+
+.debug_ranges   0x00000000     0x3820
+ .debug_ranges  0x00000000      0xaa8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+ .debug_ranges  0x00000aa8      0xbd8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .debug_ranges  0x00001680      0x740 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+ .debug_ranges  0x00001dc0      0x150 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ .debug_ranges  0x00001f10      0x200 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+ .debug_ranges  0x00002110      0x340 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+ .debug_ranges  0x00002450      0x378 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+ .debug_ranges  0x000027c8      0x210 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+ .debug_ranges  0x000029d8      0x1a8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+ .debug_ranges  0x00002b80      0x1d0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+ .debug_ranges  0x00002d50      0x170 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+ .debug_ranges  0x00002ec0      0x130 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+ .debug_ranges  0x00002ff0      0x168 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+ .debug_ranges  0x00003158       0x28 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+ .debug_ranges  0x00003180      0x3b8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+ .debug_ranges  0x00003538      0x1c8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+ .debug_ranges  0x00003700      0x120 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+
+.debug_line     0x00000000     0x98db
+ .debug_line    0x00000000     0x121d C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+ .debug_line    0x0000121d     0x13e9 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .debug_line    0x00002606      0x991 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+ .debug_line    0x00002f97      0x6a5 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ .debug_line    0x0000363c      0xa92 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+ .debug_line    0x000040ce      0x761 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+ .debug_line    0x0000482f      0x96a C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+ .debug_line    0x00005199      0x72e C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+ .debug_line    0x000058c7      0x7fe C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+ .debug_line    0x000060c5      0x780 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+ .debug_line    0x00006845      0x67b C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+ .debug_line    0x00006ec0      0x69f C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+ .debug_line    0x0000755f      0x621 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+ .debug_line    0x00007b80      0x491 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+ .debug_line    0x00008011      0x963 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+ .debug_line    0x00008974      0x5dc C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+ .debug_line    0x00008f50      0x5eb C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+ .debug_line    0x0000953b      0x25c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+ .debug_line    0x00009797      0x144 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans19.ltrans.o
+
+.debug_str      0x00000000     0xc9f7
+ .debug_str     0x00000000     0x1c14 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+                               0x1e44 (size before relaxing)
+ .debug_str     0x00001c14     0x2aaa C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+                               0x358d (size before relaxing)
+ .debug_str     0x000046be      0xd46 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+                               0x1555 (size before relaxing)
+ .debug_str     0x00005404      0x4c3 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+                                0xcd4 (size before relaxing)
+ .debug_str     0x000058c7     0x199b C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+                               0x2d6d (size before relaxing)
+ .debug_str     0x00007262      0xcd8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+                               0x1932 (size before relaxing)
+ .debug_str     0x00007f3a      0x9b9 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+                               0x1981 (size before relaxing)
+ .debug_str     0x000088f3      0x7a8 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+                               0x13e0 (size before relaxing)
+ .debug_str     0x0000909b      0xc95 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+                               0x19ca (size before relaxing)
+ .debug_str     0x00009d30      0x677 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+                                0xd50 (size before relaxing)
+ .debug_str     0x0000a3a7      0x42d C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+                                0xb49 (size before relaxing)
+ .debug_str     0x0000a7d4      0x399 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+                                0x8c5 (size before relaxing)
+ .debug_str     0x0000ab6d      0x434 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+                                0xf30 (size before relaxing)
+ .debug_str     0x0000afa1      0x32a C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+                                0xc7d (size before relaxing)
+ .debug_str     0x0000b2cb      0xd50 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+                               0x2531 (size before relaxing)
+ .debug_str     0x0000c01b      0x59c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+                               0x1124 (size before relaxing)
+ .debug_str     0x0000c5b7      0x364 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+                                0xcf9 (size before relaxing)
+ .debug_str     0x0000c91b       0xd1 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+                                0x406 (size before relaxing)
+ .debug_str     0x0000c9ec        0xb C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans19.ltrans.o
+                                0x211 (size before relaxing)
+
+.comment        0x00000000       0x7f
+ .comment       0x00000000       0x7f C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+                                 0x80 (size before relaxing)
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans19.ltrans.o
+
+.debug_frame    0x00000000     0x1fe8
+ .debug_frame   0x00000000       0x54 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans0.ltrans.o
+ .debug_frame   0x00000054       0x44 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans1.ltrans.o
+ .debug_frame   0x00000098       0x50 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans3.ltrans.o
+ .debug_frame   0x000000e8       0xa4 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans4.ltrans.o
+ .debug_frame   0x0000018c      0x2b4 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans5.ltrans.o
+ .debug_frame   0x00000440       0xdc C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans6.ltrans.o
+ .debug_frame   0x0000051c      0x308 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans7.ltrans.o
+ .debug_frame   0x00000824      0x140 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans8.ltrans.o
+ .debug_frame   0x00000964      0x21c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans9.ltrans.o
+ .debug_frame   0x00000b80      0x17c C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans10.ltrans.o
+ .debug_frame   0x00000cfc      0x1a4 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans11.ltrans.o
+ .debug_frame   0x00000ea0       0xe4 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans12.ltrans.o
+ .debug_frame   0x00000f84      0x178 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans13.ltrans.o
+ .debug_frame   0x000010fc      0x154 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans14.ltrans.o
+ .debug_frame   0x00001250      0x1e4 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans15.ltrans.o
+ .debug_frame   0x00001434      0x160 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans16.ltrans.o
+ .debug_frame   0x00001594      0x1b0 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans17.ltrans.o
+ .debug_frame   0x00001744       0x68 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans18.ltrans.o
+ .debug_frame   0x000017ac       0x20 C:\Users\Mihir\AppData\Local\Temp\ccBvapDO.ltrans19.ltrans.o
+ .debug_frame   0x000017cc       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_cos.o)
+ .debug_frame   0x00001800       0x48 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_lrint.o)
+ .debug_frame   0x00001848       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_sin.o)
+ .debug_frame   0x0000187c       0x44 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o)
+ .debug_frame   0x000018c0       0x44 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_asin.o)
+ .debug_frame   0x00001904       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_atan2.o)
+ .debug_frame   0x00001924       0x50 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_log.o)
+ .debug_frame   0x00001974       0x50 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_sqrt.o)
+ .debug_frame   0x000019c4       0x64 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_acos.o)
+ .debug_frame   0x00001a28       0x70 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_asin.o)
+ .debug_frame   0x00001a98       0x48 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_atan2.o)
+ .debug_frame   0x00001ae0       0x4c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_log.o)
+ .debug_frame   0x00001b2c       0x3c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_rem_pio2.o)
+ .debug_frame   0x00001b68       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_sqrt.o)
+ .debug_frame   0x00001b88       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_cos.o)
+ .debug_frame   0x00001ba8       0x5c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_rem_pio2.o)
+ .debug_frame   0x00001c04       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-kf_sin.o)
+ .debug_frame   0x00001c24       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_matherr.o)
+ .debug_frame   0x00001c44       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_nan.o)
+ .debug_frame   0x00001c64       0x2c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_atan.o)
+ .debug_frame   0x00001c90       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_fabs.o)
+ .debug_frame   0x00001cb0       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_floor.o)
+ .debug_frame   0x00001cd0       0x44 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_scalbn.o)
+ .debug_frame   0x00001d14       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_copysign.o)
+ .debug_frame   0x00001d34       0x20 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
+ .debug_frame   0x00001d54       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
+ .debug_frame   0x00001d88       0x50 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strchr.o)
+ .debug_frame   0x00001dd8       0xac d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00001e84       0x50 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00001ed4       0x24 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .debug_frame   0x00001ef8       0x44 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_ldivmod.o)
+ .debug_frame   0x00001f3c       0x28 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixsfdi.o)
+ .debug_frame   0x00001f64       0x2c d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixunssfdi.o)
+ .debug_frame   0x00001f90       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00001fc4       0x24 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
+
+.stabstr        0x00000000       0x76
+ .stabstr       0x00000000       0x76 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(getpid.o)
