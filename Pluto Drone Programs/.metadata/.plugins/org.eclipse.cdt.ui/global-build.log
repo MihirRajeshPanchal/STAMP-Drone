@@ -1,0 +1,112 @@
+19:32:22 **** Clean-only build of configuration Release for project 6TemperatureReactive ****
+make -f Makefile clean 
+./obj/PLUTOX/src/main/PlutoPilot.o
+rm -f ./obj/Experience_PLUTOX.bin ./obj/Experience_PLUTOX.hex ./obj/Experience_PLUTOX.elf ./obj/PLUTOX/src/main/PlutoPilot.o ./obj/Experience_PLUTOX.map
+rm -rf ./obj/PLUTOX
+cd src/test && /usr/bin/make clean || true
+/bin/sh: line 0: cd: src/test: No such file or directory
+19:32:24 **** Build of configuration Release for project 6TemperatureReactive ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  77004	   1236	   7760	  86000	  14ff0	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
+19:51:11 **** Clean-only build of configuration Release for project 1DebugAPIs ****
+make -f Makefile clean 
+./obj/PLUTOX/src/main/PlutoPilot.o
+rm -f ./obj/Experience_PLUTOX.bin ./obj/Experience_PLUTOX.hex ./obj/Experience_PLUTOX.elf ./obj/PLUTOX/src/main/PlutoPilot.o ./obj/Experience_PLUTOX.map
+rm -rf ./obj/PLUTOX
+cd src/test && /usr/bin/make clean || true
+/bin/sh: line 0: cd: src/test: No such file or directory
+19:51:12 **** Build of configuration Release for project 1DebugAPIs ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  76488	   1244	   7760	  85492	  14df4	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
+19:55:48 **** Clean-only build of configuration Release for project 1DebugAPIs ****
+make -f Makefile clean 
+./obj/PLUTOX/src/main/PlutoPilot.o
+rm -f ./obj/Experience_PLUTOX.bin ./obj/Experience_PLUTOX.hex ./obj/Experience_PLUTOX.elf ./obj/PLUTOX/src/main/PlutoPilot.o ./obj/Experience_PLUTOX.map
+rm -rf ./obj/PLUTOX
+cd src/test && /usr/bin/make clean || true
+/bin/sh: line 0: cd: src/test: No such file or directory
+19:55:50 **** Build of configuration Release for project 1DebugAPIs ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  76488	   1244	   7760	  85492	  14df4	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
+18:09:17 **** Clean-only build of configuration Release for project 2ChuckToArm ****
+make -f Makefile clean 
+./obj/PLUTOX/src/main/PlutoPilot.o
+rm -f ./obj/Experience_PLUTOX.bin ./obj/Experience_PLUTOX.hex ./obj/Experience_PLUTOX.elf ./obj/PLUTOX/src/main/PlutoPilot.o ./obj/Experience_PLUTOX.map
+rm -rf ./obj/PLUTOX
+cd src/test && /usr/bin/make clean || true
+/bin/sh: line 0: cd: src/test: No such file or directory
+18:09:19 **** Build of configuration Release for project 2ChuckToArm ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  75324	   1244	   7756	  84324	  14964	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
+18:18:47 **** Clean-only build of configuration Release for project 2ChuckToArm ****
+make -f Makefile clean 
+./obj/PLUTOX/src/main/PlutoPilot.o
+rm -f ./obj/Experience_PLUTOX.bin ./obj/Experience_PLUTOX.hex ./obj/Experience_PLUTOX.elf ./obj/PLUTOX/src/main/PlutoPilot.o ./obj/Experience_PLUTOX.map
+rm -rf ./obj/PLUTOX
+cd src/test && /usr/bin/make clean || true
+/bin/sh: line 0: cd: src/test: No such file or directory
+18:18:48 **** Build of configuration Release for project 2ChuckToArm ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  75324	   1244	   7756	  84324	  14964	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
+19:42:29 **** Clean-only build of configuration Release for project 2ChuckToArm ****
+make -f Makefile clean 
+./obj/PLUTOX/src/main/PlutoPilot.o
+rm -f ./obj/Experience_PLUTOX.bin ./obj/Experience_PLUTOX.hex ./obj/Experience_PLUTOX.elf ./obj/PLUTOX/src/main/PlutoPilot.o ./obj/Experience_PLUTOX.map
+rm -rf ./obj/PLUTOX
+cd src/test && /usr/bin/make clean || true
+/bin/sh: line 0: cd: src/test: No such file or directory
+19:42:30 **** Build of configuration Release for project 2ChuckToArm ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  75324	   1244	   7756	  84324	  14964	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
+16:18:22 **** Clean-only build of configuration Release for project 2ChuckToArm ****
+make -f Makefile clean 
+./obj/PLUTOX/src/main/PlutoPilot.o
+rm -f ./obj/Experience_PLUTOX.bin ./obj/Experience_PLUTOX.hex ./obj/Experience_PLUTOX.elf ./obj/PLUTOX/src/main/PlutoPilot.o ./obj/Experience_PLUTOX.map
+rm -rf ./obj/PLUTOX
+cd src/test && /usr/bin/make clean || true
+/bin/sh: line 0: cd: src/test: No such file or directory
+16:18:23 **** Build of configuration Release for project 2ChuckToArm ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  75324	   1244	   7756	  84324	  14964	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
