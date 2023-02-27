@@ -12,7 +12,7 @@ face_id = input('\n enter user id end press <return> ==>  ')
 
 print("\n [INFO] Initializing face capture. Look the camera and wait ...")
 # Initialize individual sampling face count
-count = 0
+count = -30
 
 while(True):
 
