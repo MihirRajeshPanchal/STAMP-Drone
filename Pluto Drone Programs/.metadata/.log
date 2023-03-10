@@ -525,3 +525,90 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.ui 4 4 2023-02-17 16:21:01.085
 !MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@24b4f4a} vs {coreplugin.handlers.DfuFlasher}
+!SESSION 2023-03-10 09:21:56.603 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2023-03-10 09:22:08.588
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://coreapplication.intro/coreapplication.intro.LifeCycleManager
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:22:10.828
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:22:10.828
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:22:14.289
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:22:14.298
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@4f64d9cb} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:22:20.952
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler@18918d70} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:22:20.952
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@4f64d9cb} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:35:39.808
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler@18918d70} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:35:39.824
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@4f64d9cb} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:40:45.885
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler@18918d70} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:40:45.885
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@4f64d9cb} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:40:45.885
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler@18918d70} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:40:45.900
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@4f64d9cb} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:45:21.026
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler@18918d70} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 09:45:21.026
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@4f64d9cb} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-03-10 10:02:18.729
+!MESSAGE Indexed '8XRanger' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 10:02:20.708
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler@18918d70} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 10:02:20.708
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@4f64d9cb} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-03-10 10:36:42.606
+!MESSAGE Indexed '10WallisLava' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 10:36:45.060
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler@18918d70} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 10:36:45.060
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@4f64d9cb} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 10:43:51.109
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler@18918d70} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 10:43:51.171
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@4f64d9cb} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 10:46:54.491
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler@18918d70} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 10:46:54.491
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@4f64d9cb} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 10:48:05.366
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler@18918d70} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-10 10:48:05.366
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@4f64d9cb} vs {coreplugin.handlers.DfuFlasher}

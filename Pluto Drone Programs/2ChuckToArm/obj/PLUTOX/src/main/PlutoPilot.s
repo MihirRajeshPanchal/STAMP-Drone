@@ -13,15 +13,15 @@
 	.file	"PlutoPilot.cpp"
 	.text
 .Ltext0:
-	.section	.gnu.lto_.profile.5efd7eba,"",%progbits
+	.section	.gnu.lto_.profile.c9f37a11,"",%progbits
 	.ascii	"x\234ce`b`a```d(P\006\000\001\203\000\240"
 	.text
-	.section	.gnu.lto_.icf.5efd7eba,"",%progbits
+	.section	.gnu.lto_.icf.c9f37a11,"",%progbits
 	.ascii	"x\234ce`bP`@\000V\206\347w\267|\344f\356\3702o#7\313"
 	.ascii	"\375\265\227\247p\262^\3736\375&\017\307\254o\275+X"
 	.ascii	"\030\000\013T\017\230"
 	.text
-	.section	.gnu.lto_.jmpfuncs.5efd7eba,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.c9f37a11,"",%progbits
 	.ascii	"x\234u\220;\016\3020\020Dw\274v\034\301\025\270\034"
 	.ascii	"'\011\015\242\243\2042\205\013\376\237\004Q\244\204"
 	.ascii	"\032\211\003\320p\000\032\016\200\304.QR$\304\262\233"
@@ -33,18 +33,18 @@
 	.ascii	"\3133\177\367\225\212`qT\252\271\012\037X\012 S\"\356"
 	.ascii	"\254\221\267\266ae\033'\015\244/\012\330\\\227"
 	.text
-	.section	.gnu.lto_.inline.5efd7eba,"",%progbits
+	.section	.gnu.lto_.inline.c9f37a11,"",%progbits
 	.ascii	"x\234u\214\313\015\200 \020D\337\356\0021\012&\336\274"
 	.ascii	"q\264\017[\264\001\013\262(!\376\302\301\271L\346\353"
 	.ascii	"Q6>xH\213\024\023\302\236+\241\003\010.\201\025\365"
 	.ascii	"\260a\332\366\034al\035\213T\355\231\346\022\304c}\023"
 	.ascii	"\351\357+\275ZB\367\267\346\004 \227\006\320"
 	.text
-	.section	.gnu.lto_.pureconst.5efd7eba,"",%progbits
+	.section	.gnu.lto_.pureconst.c9f37a11,"",%progbits
 	.ascii	"x\234ce`b\340f```e\220`f`\221`\225\340\220\000\000\003"
 	.ascii	"t\000\214"
 	.text
-	.section	.gnu.lto__Z9plutoLoopv.part.0.5efd7eba,"",%progbits
+	.section	.gnu.lto__Z9plutoLoopv.part.0.c9f37a11,"",%progbits
 	.ascii	"x\234\205\221\275/CQ\030\306\337\347\274\267\037\032"
 	.ascii	"\026\223\310\035-\006\372\207X\374\013b\222\370h\250"
 	.ascii	"\305r\017Q\225J\260 \035\344\336\304P\337\024EM\210"
@@ -68,7 +68,7 @@
 	.ascii	"|\250\273\257\177(\336\331\033\213\321\027\222\346\314"
 	.ascii	"\313"
 	.text
-	.section	.gnu.lto__Z9plutoInitv.5efd7eba,"",%progbits
+	.section	.gnu.lto__Z9plutoInitv.c9f37a11,"",%progbits
 	.ascii	"x\234ce`b\250```\220\002bi fdf`d\232p\216\201\241\221"
 	.ascii	"\203\211\221\021\304h\340`d\250gb\254g\354g\236\316"
 	.ascii	"\314x\250\375\331N&\315\345\015@p`\372&\225\246\206"
@@ -79,7 +79,7 @@
 	.ascii	"e\022\305E\311\372\271\211\231y\372\0019\245%\371\001"
 	.ascii	"\2319\371%z\311\005\005\014\000Y[0r"
 	.text
-	.section	.gnu.lto__Z11onLoopStartv.5efd7eba,"",%progbits
+	.section	.gnu.lto__Z11onLoopStartv.c9f37a11,"",%progbits
 	.ascii	"x\234]N=K\003A\024|\263/\037g\324F,\202\346\017\004"
 	.ascii	"\304\374\225\374\005I\025\210&h\254o\015\034''\250\215"
 	.ascii	"\206\024\262\007\026\321h\014A,\256\013\3012D\021R\331"
@@ -97,7 +97,7 @@
 	.ascii	"m\226\012\353k\345\215B\261\262]\257\026\313\225j}\265"
 	.ascii	"T\253\321/\364\213dL"
 	.text
-	.section	.gnu.lto__Z9plutoLoopv.5efd7eba,"",%progbits
+	.section	.gnu.lto__Z9plutoLoopv.c9f37a11,"",%progbits
 	.ascii	"x\234mQ\317KTQ\024>\337=\357\307\3559n\254\205\304 "
 	.ascii	"-\202p\323\374+\356[\205+\301R\312v\301\273\211\323"
 	.ascii	"\210B\271)\231\205\334\007.\246\354\207\215i1\256&\225"
@@ -126,7 +126,7 @@
 	.ascii	"jI\316h\311\201\246el\275\227/\015\226.\234\037\272"
 	.ascii	"X\032\030\27626204<2vvpt\224~\003\301\005\325\242"
 	.text
-	.section	.gnu.lto__Z12onLoopFinishv.5efd7eba,"",%progbits
+	.section	.gnu.lto__Z12onLoopFinishv.c9f37a11,"",%progbits
 	.ascii	"x\234]N=K\003A\024|\263/\037G\320.H\320\374\2014\006"
 	.ascii	"\377I\376\202\244\012D\0234\326\273\006\216H\004\265"
 	.ascii	"\321\020A\366\300\"z~ay\335\021,EAHe\027A\301\217VP"
@@ -143,7 +143,7 @@
 	.ascii	"r\211\313\241+kd\260\"*\254\256T\313K\213\265\345r\245"
 	.ascii	"\276\326jTj\365Fk\276\332l\322\017*\336d\271"
 	.text
-	.section	.gnu.lto_.symbol_nodes.5efd7eba,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.c9f37a11,"",%progbits
 	.ascii	"x\234U\215\275\015\3020\020\205\337\371|\211\035';0"
 	.ascii	"\012LvFb\000\012F\240\244\204\002:$\352\314\200P\346"
 	.ascii	"@\304&H\\u\337\373\321;\201C\"\000nP`?\002\012\272\356"
@@ -154,12 +154,12 @@
 	.ascii	"\031~\320c:\035\002\013\360\272\234\003\207\245\201"
 	.ascii	"\017\346\007<\303"
 	.text
-	.section	.gnu.lto_.refs.5efd7eba,"",%progbits
+	.section	.gnu.lto_.refs.c9f37a11,"",%progbits
 	.ascii	"x\234\025\307\301\001\000\020\014\004\301\275\215\240"
 	.ascii	"\012\375\227\211\371M#\007(L\374*Cc;\343\252\354\027"
 	.ascii	".\011\033\000n"
 	.text
-	.section	.gnu.lto_.decls.5efd7eba,"",%progbits
+	.section	.gnu.lto_.decls.c9f37a11,"",%progbits
 	.ascii	"x\234\255X{P\024G\032\237\236^\226\335eA\022\275\234"
 	.ascii	"\251\362\256\274<\010\225\224\370\212\027\275\244\256"
 	.ascii	"\202\272\022+\004<@MR\244\366\020W\331\012\257\300\352"
@@ -357,7 +357,7 @@
 	.ascii	"u\025\277$>\024|6\037\210\011\277\030#\354OV\214\302"
 	.ascii	"_z\321\027a\026sL\364\377\000dD\203\205"
 	.text
-	.section	.gnu.lto_.symtab.5efd7eba,"",%progbits
+	.section	.gnu.lto_.symtab.c9f37a11,"",%progbits
 	.ascii	"_Z9plutoInitv\000"
 	.ascii	"\000"
 	.ascii	"\000"
