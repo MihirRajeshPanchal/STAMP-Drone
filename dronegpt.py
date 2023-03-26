@@ -49,7 +49,7 @@ class ChatMessage(ft.Row):
 
 def main(page: ft.Page):
     page.horizontal_alignment = "stretch"
-    page.title = "Flet Chat"
+    page.title = "DroneGPT"
 
     def join_chat_click(e):
         if not join_user_name.value:
@@ -65,12 +65,12 @@ def main(page: ft.Page):
     def send_message_click(e):
         if new_message.value != "":
             page.pubsub.send_all(Message(page.session.get("user_name"), new_message.value, message_type="chat_message"))
+            new_message.value = ""
+            new_message.focus()
             res=chatgpt(new_message.value)
             if len(res) > 220: # adjust the maximum length as needed
                 res = '\n'.join([res[i:i+220] for i in range(0, len(res), 220)])
             page.pubsub.send_all(Message("DroneGPT", res, message_type="chat_message"))
-            new_message.value = ""
-            new_message.focus()
             page.update()
 
     def chatgpt(message):
@@ -168,3 +168,4 @@ def main(page: ft.Page):
     )
 
 ft.app(port=8550, target=main, view=ft.WEB_BROWSER)
+# ft.app(target=main)
