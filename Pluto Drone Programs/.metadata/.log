@@ -732,3 +732,9 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.ui 4 4 2023-03-26 16:49:14.924
 !MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@71567f33} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-26 17:41:34.617
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler@68af8288} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-03-26 17:41:34.618
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@71567f33} vs {coreplugin.handlers.DfuFlasher}

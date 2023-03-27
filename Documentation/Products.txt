@@ -1,0 +1,7 @@
+Drone
+Web Application Frontend React
+Web Application Backend Flask
+Coco dataset yolo object detection Done
+Face recognition haar cascade Done 
+Flutter app chatgpt Done 
+Flet app chatgpt Done  

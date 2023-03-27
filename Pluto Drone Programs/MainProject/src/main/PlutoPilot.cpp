@@ -32,6 +32,7 @@ void plutoLoop ()
 	{
 		Command.arm(); /*Arm the drone*/
 		LED. set (RED, ON);
+
 		LED. set (GREEN, ON);
 	}
 	if (XRanging.getRange(LEFT)< 500 && XRanging.getRange(LEFT)> 0 )

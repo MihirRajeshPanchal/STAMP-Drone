@@ -1,11 +1,10 @@
 import cv2
 import numpy as np
-import os 
 
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 recognizer.read('trainer/trainer.yml')
 cascadePath = "haarcascade_frontalface_default.xml"
-faceCascade = cv2.CascadeClassifier(cascadePath);
+faceCascade = cv2.CascadeClassifier(cascadePath)
 
 font = cv2.FONT_HERSHEY_SIMPLEX
 
@@ -16,7 +15,7 @@ id = 0
 names = ['None', 'Mihir', 'Prinkal', 'Sarid', 'Tanay', 'Arsh'] 
 
 # Initialize and start realtime video capture
-cam = cv2.VideoCapture(0)
+cam = cv2.VideoCapture("./testVideo2.mp4")
 cam.set(3, 640) # set video widht
 cam.set(4, 480) # set video height
 
@@ -24,11 +23,15 @@ cam.set(4, 480) # set video height
 minW = 0.1*cam.get(3)
 minH = 0.1*cam.get(4)
 
+# Define the codec and create VideoWriter object
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+out = cv2.VideoWriter('output2.mp4',fourcc, 20.0, (640,480))
+
 while True:
 
     ret, img =cam.read()
     img = cv2.flip(img, 1) # Flip vertically
-
+    # img=cv2.imread("./test.jpg",1)
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
     faces = faceCascade.detectMultiScale( 
@@ -57,11 +60,14 @@ while True:
     
     cv2.imshow('camera',img) 
 
+    # Write the frame into the output video file
+    out.write(img)
+
     k = cv2.waitKey(10) & 0xff # Press 'ESC' for exiting video
     if k == 27:
         break
 
-# Do a bit of cleanup
-print("\n [INFO] Exiting Program and cleanup stuff")
+# Release everything if job is finished
 cam.release()
+out.release()
 cv2.destroyAllWindows()
