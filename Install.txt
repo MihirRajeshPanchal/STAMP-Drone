@@ -1,0 +1,5 @@
+npm install @rainbow-me/rainbowkit wagmi ethers@^5
+pip install flet
+pip install opencv-contrib-python==4.7.0.72
+pip install openai
+pip install Flask

@@ -16,6 +16,7 @@ import {
     useColorModeValue,
     useBreakpointValue,
     useDisclosure,
+    useColorMode,
   } from '@chakra-ui/react';
   import {
     HamburgerIcon,
@@ -23,10 +24,11 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
-  
+  import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+  import Wallet from '../blockchain/Wallet';
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
-  
+    const { colorMode, toggleColorMode } = useColorMode();
     return (
       <Box>
         <Flex
@@ -72,29 +74,15 @@ import {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
-            <Button
-              as={'a'}
-              fontSize={'sm'}
-              fontWeight={400}
-              variant={'link'}
-              href={'#'}>
-              Sign In
+            <Button onClick={toggleColorMode}>
+                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
             </Button>
-            <Button
-              as={'a'}
-              display={{ base: 'none', md: 'inline-flex' }}
-              fontSize={'sm'}
-              fontWeight={600}
-              color={'white'}
-              bg={'blue.400'}
-              href={'#'}
-              _hover={{
-                bg: 'blue.500',
-                color: 'white'
-              }}>
-              Sign Up
-            </Button>
+<<<<<<< HEAD
           </Stack> */}
+=======
+            <Wallet></Wallet>
+          </Stack>
+>>>>>>> 813b1eff747ed5f64308a56030a622dba3dc7b01
         </Flex>
   
         <Collapse in={isOpen} animateOpacity>
