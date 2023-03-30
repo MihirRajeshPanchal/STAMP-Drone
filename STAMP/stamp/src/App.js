@@ -12,8 +12,9 @@ import {
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Homepage from './pages/Homepage';
-import About from './components/About';
+import About from './pages/About';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path='/about' element={<About />} />
       </Routes>
       </BrowserRouter>
+      <Footer/>
     </ChakraProvider>
   );
 }

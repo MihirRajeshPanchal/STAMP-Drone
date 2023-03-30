@@ -26,6 +26,8 @@ import {
   } from '@chakra-ui/icons';
   import { MoonIcon, SunIcon } from '@chakra-ui/icons';
   import Wallet from '../blockchain/Wallet';
+  import LogoSTAMP from '../assets/logo.png';
+
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
     const { colorMode, toggleColorMode } = useColorMode();
@@ -55,13 +57,18 @@ import {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          {/* <Image src={logo} alt='Logo' /> */}
+          {/* <Image src={Logo} alt='Logo'  boxSize='50px' objectFit='cover'/> */}
+          <Box w='6%' h='10%'>
+     <Image src={LogoSTAMP}></Image>
+</Box>
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
               
-              <a href = "/">STAMP</a>
+              <a href = "/">
+              
+              </a>
             </Text>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -77,12 +84,9 @@ import {
             <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
             </Button>
-<<<<<<< HEAD
           </Stack> */}
-=======
             <Wallet></Wallet>
-          </Stack>
->>>>>>> 813b1eff747ed5f64308a56030a622dba3dc7b01
+          {/* </Stack> */}
         </Flex>
   
         <Collapse in={isOpen} animateOpacity>

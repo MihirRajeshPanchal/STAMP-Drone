@@ -10,19 +10,23 @@ import {
   Button,
 } from '@chakra-ui/react';
 import images from '../assets/images.jpg';
-import mihir from '../assets/mihir-hero.jpg';
-import prinkal from '../assets/prinkal-quarkly.jpg';
+import mihir from '../assets/mihir.jpg';
+import prinkal from '../assets/prinkal.jpg';
 import arsh from '../assets/arsh.jpg';
 import tanay from '../assets/tanay.jpg';
 import sarid from '../assets/sarid.jpg';
 import React from 'react';
-import './about.css';
-
+import '../components/AboutUs/about.css';
+import ContactUs from '../components/AboutUs/ContactUs';
+import TeamMembers from '../components/AboutUs/TeamMembers';
+import Section1 from '../components/AboutUs/Section1';
 const About = () => {
   return (
     <div>
-        
-      <div
+      <Section1></Section1>
+    
+
+      {/* <div
         style={{
           display: 'flex',
           justifyContent: 'center',
@@ -30,7 +34,7 @@ const About = () => {
         }}
       >
         <Heading color={'#4299E1'} marginBottom={'30px'} padding={'10px'}>
-          About
+          About Us
         </Heading>
       </div>
         
@@ -63,9 +67,9 @@ const About = () => {
             </CardBody>
           </Stack>
         </Card>
-        </center>
+        </center> */}
 
-        <div
+        {/* <div
         style={{
           display: 'flex',
           justifyContent: 'center',
@@ -76,9 +80,9 @@ const About = () => {
           About Team Members
         </Heading>
       </div>
-      
-
-      <div
+       */}
+<TeamMembers></TeamMembers>
+      {/* <div
       className='users'
         style={{
           display: 'flex',
@@ -137,8 +141,10 @@ const About = () => {
         >
             <img src={sarid} height={'85px'} width={'86px'}></img>
             SARID</Box></center>
-      </div>
+      </div> */}
+      {/* <ContactUs></ContactUs> */}
     </div>
+    
   );
 };
 
