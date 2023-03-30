@@ -1,0 +1,9 @@
+@media screen and (max-width: 750px) {
+    .users {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-drone {
+        width: 100px;
+    }
+}

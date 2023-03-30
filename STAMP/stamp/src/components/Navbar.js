@@ -53,12 +53,13 @@ import {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Image src={logo} alt='Logo' />
+          {/* <Image src={logo} alt='Logo' /> */}
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-              STAMP
+              
+              <a href = "/">STAMP</a>
             </Text>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -66,7 +67,7 @@ import {
             </Flex>
           </Flex>
   
-          <Stack
+          {/* <Stack
             flex={{ base: 1, md: 0 }}
             justify={'flex-end'}
             direction={'row'}
@@ -93,7 +94,7 @@ import {
               }}>
               Sign Up
             </Button>
-          </Stack>
+          </Stack> */}
         </Flex>
   
         <Collapse in={isOpen} animateOpacity>
@@ -298,4 +299,8 @@ import {
         },
       ],
     },
+    {
+      label: 'About',
+      href: '/about'
+    }
   ];
