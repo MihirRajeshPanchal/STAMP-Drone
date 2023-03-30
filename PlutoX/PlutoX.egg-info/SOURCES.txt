@@ -1,0 +1,7 @@
+README.md
+setup.py
+PlutoX.egg-info/PKG-INFO
+PlutoX.egg-info/SOURCES.txt
+PlutoX.egg-info/dependency_links.txt
+PlutoX.egg-info/top_level.txt
+plutox/__init__.py
