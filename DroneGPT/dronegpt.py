@@ -1,4 +1,5 @@
 import flet as ft
+from plutox import *
 
 class Message():
     def __init__(self, user_name: str, text: str, message_type: str):
@@ -56,11 +57,21 @@ def main(page: ft.Page):
             join_user_name.error_text = "Name cannot be blank!"
             join_user_name.update()
         else:
-            page.session.set("user_name", join_user_name.value)
-            page.dialog.open = False
-            new_message.prefix = ft.Text(f"{join_user_name.value}: ")
-            page.pubsub.send_all(Message(user_name=join_user_name.value, text=f"{join_user_name.value} has joined the chat.", message_type="login_message"))
-            page.update()
+            if join_user_name.value=="3511plutox":
+                page.session.set("user_name", "Admin")
+                page.dialog.open = False
+                new_message.prefix = ft.Text(f"{join_user_name.value}: ")
+                page.pubsub.send_all(Message(user_name=join_user_name.value, text=f"Admin has joined the chat.", message_type="login_message"))
+                page.update()
+            elif join_user_name.value=="Admin":
+                join_user_name.error_text = "Name cannot be Admin"
+                join_user_name.update()
+            else:
+                page.session.set("user_name", join_user_name.value)
+                page.dialog.open = False
+                new_message.prefix = ft.Text(f"{join_user_name.value}: ")
+                page.pubsub.send_all(Message(user_name=join_user_name.value, text=f"{join_user_name.value} has joined the chat.", message_type="login_message"))
+                page.update()
 
     def send_message_click(e):
         if new_message.value != "":
@@ -68,12 +79,65 @@ def main(page: ft.Page):
             temp=new_message.value
             new_message.value = ""
             new_message.focus()
-            res=chatgpt(temp)
-            if len(res) > 220: # adjust the maximum length as needed
-                res = '\n'.join([res[i:i+220] for i in range(0, len(res), 220)])
-            page.pubsub.send_all(Message("DroneGPT", res, message_type="chat_message"))
+            if temp.startswith("/?"):
+                res=chatgpt(temp)
+                if len(res) > 220: # adjust the maximum length as needed
+                    res = '\n'.join([res[i:i+220] for i in range(0, len(res), 220)])
+                page.pubsub.send_all(Message("DroneGPT", res, message_type="chat_message"))
+            elif page.session.get("user_name")=="Admin":
+                if temp=="?takeoff":
+                    res="PlutoX Takeoff Instaniated"
+                    page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    takeoff()
+                elif temp=="?land":
+                    res="PlutoX Landing Instatianted"
+                    page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    land()
+                # elif temp=="?blackflip":
+                #     blackflip()
+                #     res="PlutoX Blackflip Instaniated"
+                #     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                # elif temp=="?frontflip":
+                #     frontflip()
+                #     res="PlutoX Frontflip Instaniated"
+                #     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                # elif temp=="?leftflip":
+                #     leftflip()
+                #     res="PlutoX Leftflip Instaniated"
+                #     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                # elif temp=="?rightflip":
+                #     rightflip()
+                #     res="PlutoX Rightflip Instaniated"
+                #     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+            else:
+                pass
             page.update()
-
+            
+    def takeoff():
+        client = Drone()
+        client.arm()
+        client.takeOff()
+        
+    def land():
+        client = Drone()
+        client.land()
+        
+    # def blackflip():
+    #     client = Drone()
+    #     client.backFlip()
+        
+    # def frontflip():
+    #     client = Drone()
+    #     client.frontflip()
+        
+    # def rightflip():
+    #     client = Drone()
+    #     client.rightflip()
+        
+    # def leftflip():
+    #     client = Drone()
+    #     client.leftflip()
+        
     def chatgpt(message):
         import openai
 
