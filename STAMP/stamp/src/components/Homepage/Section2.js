@@ -108,7 +108,7 @@ export default function App(){
                   />
                 }
               >
-              I STAMP's user interface (UI) is designed to be easy to use and navigate, even for those with little or no drone experience. The UI allows users to access a range of features, including arming and disarming their drone, setting up custom flight paths, and adjusting camera settings.
+                STAMP's user interface (UI) is designed to be easy to use and navigate, even for those with little or no drone experience. The UI allows users to access a range of features, including arming and disarming their drone, setting up custom flight paths, and adjusting camera settings.
               </Feature>
               <Feature
                 title=" Real-time tracking:"
