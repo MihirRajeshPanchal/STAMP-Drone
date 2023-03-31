@@ -281,7 +281,7 @@ import {
       href: '#',
     },
     {
-      label: 'Setting',
+      label: 'Settings',
       children: [
         {
           label: 'Motor Security',
