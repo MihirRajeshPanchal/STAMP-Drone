@@ -9,11 +9,13 @@ import {
   SimpleGrid,
   Icon,
   Button,
+  useColorMode,
 } from "@chakra-ui/react";
 
 export default function App(){
   const topBg = useColorModeValue("gray.100", "gray.700");
   const bottomBg = useColorModeValue("white", "gray.800");
+  const { colorMode, toggleColorMode } = useColorMode();
   const Feature = (props) => {
     return (
       <Flex align="center">
@@ -68,9 +70,10 @@ export default function App(){
               lineHeight="tight"
               bgGradient="linear(to-r, brand.300, brand.600)"
               bgClip="text"
-              color='black'
+              color={colorMode === 'light' ? 'black' : 'white'}
             >
-About STAMP            </Text>
+                About STAMP            
+            </Text>
             <chakra.p
               mb={6}
               fontSize={["lg", , "xl"]}

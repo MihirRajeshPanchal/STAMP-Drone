@@ -61,6 +61,10 @@ import {
           <Box w='6%' h='10%'>
           <a href = "/"><Image src={LogoSTAMP}></Image></a>
 </Box>
+            <a href="/">
+                <Image src={LogoSTAMP}></Image>
+            </a>
+          </Box>
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
@@ -89,7 +93,10 @@ import {
   {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
 </Button>
 <Wallet></Wallet>
-
+            <Button onClick={toggleColorMode} style={{ marginRight: '10px' }}>
+                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+            </Button>
+            <Wallet></Wallet>
           {/* </Stack> */}
           
         </Flex>
@@ -254,6 +261,10 @@ import {
   
   const NAV_ITEMS: Array<NavItem> = [
     {
+      label: 'Home',
+      href: '/',
+    },
+    {
       label: 'Security',
       children: [
         {
@@ -277,7 +288,7 @@ import {
       href: '#',
     },
     {
-      label: 'Setting',
+      label: 'Settings',
       children: [
         {
           label: 'Motor Security',
@@ -297,7 +308,7 @@ import {
       ],
     },
     {
-      label: 'About',
+      label: 'About Us',
       href: '/about'
     }
   ];

@@ -13,15 +13,15 @@ const AboutUs = () => {
   const array = [
     {
       id: 1,
-      text: 'Prinkal Doshi',
-      image: prinkal,
-      subheading: 'Web Developer',
+      text: 'Mihir Panchal',
+      image: mihir,
+      subheading: 'Full Stack Developer',
     },
     {
       id: 2,
-      text: 'Mihir Panchal',
-      image: mihir,
-      subheading: 'Drone Programmer',
+      text: 'Prinkal Doshi',
+      image: prinkal,
+      subheading: 'Web Developer',
     },
     {
       id: 3,
@@ -31,15 +31,15 @@ const AboutUs = () => {
     },
     {
       id: 4,
-      text: 'Arsh Sakaria',
-      image: arsh,
-      subheading: 'Drone Programmer',
+      text: 'Sarid Qureshi',
+      image: sarid,
+      subheading: 'Backend Developer',
     },
     {
       id: 5,
-      text: 'Sarid Qureshi',
-      image: sarid,
-      subheading: 'Drone Pilot',
+      text: 'Arsh Sakaria',
+      image: arsh,
+      subheading: 'Drone Programmer',
     },
   ];
  
