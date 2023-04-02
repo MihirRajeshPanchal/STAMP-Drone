@@ -19,7 +19,23 @@ class MsgType():
         :return: command
         """
         return self.parse.convert([cmd], MSP_SET_COMMAND)
-
+    
+    def right(self):
+        data = [int(1500),int(1500),int(1650),int(1650)]
+        return self.parse.convert(data, MSP_SET_MOTOR)
+    
+    def left(self):
+        data = [int(1650),int(1650),int(1500),int(1500)]
+        return self.parse.convert(data, MSP_SET_MOTOR)
+    
+    def forward(self):
+        data = [int(1650),int(1500),int(1650),int(1500)]
+        return self.parse.convert(data, MSP_SET_MOTOR)     
+    
+    def backward(self):
+        data = [int(1500),int(1650),int(1500),int(1650)]
+        return self.parse.convert(data, MSP_SET_MOTOR)         
+       
     def arming(self, arm: bool):
         """
         This will Arm the Drone.

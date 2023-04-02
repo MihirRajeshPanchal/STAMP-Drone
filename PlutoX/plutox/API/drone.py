@@ -71,6 +71,18 @@ class Drone():
         """
         self.sendData(self.msgType.arming(False), "Disarm")
 
+    def right(self):
+        self.sendData(self.msgType.right(),"Right")
+        
+    def left(self):
+        self.sendData(self.msgType.left(),"Left")
+    
+    def forward(self):
+        self.sendData(self.msgType.forward(),"Forward")
+        
+    def backward(self):
+        self.sendData(self.msgType.backward(),"Backward")
+          
     def sendData(self, data, err):
 
         """
