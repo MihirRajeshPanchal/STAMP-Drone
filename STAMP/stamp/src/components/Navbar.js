@@ -59,7 +59,7 @@ import {
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           {/* <Image src={Logo} alt='Logo'  boxSize='50px' objectFit='cover'/> */}
           <Box w='6%' h='10%'>
-     <Image src={LogoSTAMP}></Image>
+          <a href = "/"><Image src={LogoSTAMP}></Image></a>
 </Box>
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
@@ -85,8 +85,13 @@ import {
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
             </Button>
           </Stack> */}
-            <Wallet></Wallet>
+        <Button onClick={toggleColorMode} style={{ marginRight : '10px' }}>
+  {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+</Button>
+<Wallet></Wallet>
+
           {/* </Stack> */}
+          
         </Flex>
   
         <Collapse in={isOpen} animateOpacity>
