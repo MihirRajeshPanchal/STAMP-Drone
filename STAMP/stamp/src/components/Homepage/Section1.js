@@ -1,123 +1,147 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Flex,
-  useColorModeValue,
-  Text,
-  Stack,
-  SimpleGrid,
-  Icon,
-  Button,
-  useColorMode,
-} from "@chakra-ui/react";
+import { chakra, Box, useColorModeValue, Icon, Image } from "@chakra-ui/react";
+import Dronesbg from '../../assets/dronesbg.jpg';
 
 export default function App(){
-  const topBg = useColorModeValue("gray.100", "gray.700");
-  const bottomBg = useColorModeValue("white", "gray.800");
-  const { colorMode, toggleColorMode } = useColorMode();
-  const Feature = (props) => {
-    return (
-      <Flex align="center">
-        <Flex shrink={0}>
-          <Icon
-            boxSize={5}
-            mt={1}
-            mr={2}
-            color="brand.500"
-            _dark={{ color: "brand.300" }}
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clipRule="evenodd"
-            ></path>
-          </Icon>
-        </Flex>
-        <Box ml={4}>
-          <chakra.span mt={2} color="gray.500" _dark={{ color: "gray.400" }}>
-            {props.children}
-          </chakra.span>
-        </Box>
-      </Flex>
-    );
-  };
+  const bg = useColorModeValue("white", "gray.800");
   return (
-    <Flex
-      boxSize="full"
-      bg="#F9FAFB"
-      _dark={{ bg: "gray.600" }}
-      p={10}
-      alignItems="center"
-      justifyContent="center"
-    >
-      <Box
-        mx="auto"
-        textAlign={{ base: "left", md: "center" }}
-        rounded="md"
-        shadow="base"
-        w="full"
-        bg={bottomBg}
-      >
-        <Box pt={0} rounded="md" bg={topBg}>
-          <Box w="full" px={[10, , 4]} mx="auto">
-            <Text
-              mb={2}
-              fontSize="5xl"
-              fontWeight="bold"
-              lineHeight="tight"
-              bgGradient="linear(to-r, brand.300, brand.600)"
-              bgClip="text"
-              color={colorMode === 'light' ? 'black' : 'white'}
+    <Box pos="relative" overflow="hidden" bg={bg} mt={0}>
+      <Box maxW="7xl" mx="auto">
+        <Box
+          pos="relative"
+          pb={{ base: 8, sm: 16, md: 20, lg: 28, xl: 32 }}
+          maxW={{ lg: "2xl" }}
+          w={{ lg: "full" }}
+          zIndex={1}
+          bg={bg}
+          border="solid 1px transparent"
+        >
+          <Icon
+            display={{ base: "none", lg: "block" }}
+            position="absolute"
+            right={0}
+            top={0}
+            bottom={0}
+            h="full"
+            w={48}
+            color={bg}
+            transform="translateX(50%)"
+            fill="currentColor"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <polygon points="50,0 100,0 50,100 0,100" />
+          </Icon>
+          <Box
+            mx="auto"
+            maxW={{ base: "7xl" }}
+            px={{ base: 4, sm: 6, lg: 8 }}
+            mt={{ base: 8, sm: 10, md: 14, lg: 18, xl: 26 }}
+          >
+            <Box
+              w="full"
+              textAlign={{ sm: "center", lg: "left" }}
+              justifyContent="center"
+              alignItems="center"
             >
-                About STAMP            
-            </Text>
-            <chakra.p
-              mb={6}
-              fontSize={["lg", , "xl"]}
-              color="gray.600"
-              _dark={{ color: "gray.400" }}
-            >
-              Empowering Your Security, One Flight at a Time.
-            </chakra.p>
-          </Box>
-          <Box bgGradient={`linear(to-b, ${topBg} 50%, ${bottomBg} 50%)`}>
-            <Flex
-              rounded="md"
-              mx={10}
-              bg={bottomBg}
-              shadow="xl"
-              mb="100px"
-              textAlign="left"
-              direction={{ base: "column", lg: "row" }}
-            >
-              <Stack spacing={8} p="45px" >
-               
-                <chakra.p
-                  fontSize={["sm", , "md"]}
-                  color="gray.600"
-                  _dark={{ color: "gray.400" }}
+              <chakra.h1
+                fontSize={{ base: "4xl", sm: "5xl", md: "6xl" }}
+                letterSpacing="tight"
+                lineHeight="short"
+                fontWeight="extrabold"
+                color="gray.900"
+                _dark={{ color: "white" }}
+              >
+                <chakra.span display={{ base: "block", xl: "inline" }}>
+                Empowering Your Security, {" "}
+                </chakra.span>
+                <chakra.span
+                  display={{ base: "block", xl: "inline" }}
+                  color="brand.600"
+                  _dark={{ color: "brand.400" }}
                 >
-                  STAMP is a cutting-edge drone services company that offers a range of surveillance, security, and tracking solutions. The company prides itself on providing state-of-the-art technology and highly skilled personnel to ensure the safety and security of its clients.
-<br/><br/>
-One of the key services offered by STAMP is surveillance. The company uses advanced drone technology to provide 24/7 monitoring of any given area. This is especially useful for businesses and organizations that need to keep an eye on large premises, such as warehouses or construction sites. STAMP's surveillance drones are equipped with high-quality cameras that can capture clear, high-resolution footage day or night.
-<br/><br/>
-In addition to surveillance, STAMP also offers security services. The company's drones can be armed with a variety of tools and weapons, including stun guns, pepper spray, and even firearms. This makes them ideal for protecting high-value assets, such as VIPs or important buildings.
-<br/><br/>
-STAMP's tracking services are also highly sought after. The company uses advanced AI algorithms to track people and objects in real-time. This is especially useful for law enforcement agencies and private investigators who need to locate and monitor suspects.
-<br/><br/>
-Another key feature of STAMP's drone services is the user interface (UI). The UI is designed to be intuitive and easy to use, even for those with little or no drone experience. Users can access a range of features, including arming and disarming their drone, setting up custom flight paths, and adjusting camera settings.
-<br/><br/>
-Overall, STAMP is a forward-thinking drone services company that is revolutionizing the way we think about surveillance, security, and tracking. With its cutting-edge technology and highly skilled personnel, the company is well-positioned to become a leader in the industry.
-                </chakra.p>
-            </Stack>
-            </Flex>
+                  One Flight at a Time.
+                </chakra.span>
+              </chakra.h1>
+              <chakra.p
+                mt={{ base: 3, sm: 5, md: 5 }}
+                fontSize={{ sm: "lg", md: "xl" }}
+                maxW={{ sm: "xl" }}
+                mx={{ sm: "auto", lg: 0 }}
+                color="gray.500"
+              >
+                A is a cutting-edge drone services company that specializes in surveillance, security, and locating individuals. Our user-friendly UI offers a range of features, including arming and setting up your drone, making it simple and efficient to manage your security needs.
+              </chakra.p>
+              <Box
+                mt={{ base: 5, sm: 8 }}
+                display={{ sm: "flex" }}
+                justifyContent={{ sm: "center", lg: "start" }}
+                fontWeight="extrabold"
+                fontFamily="fantasy"
+              >
+                <Box rounded="full" shadow="md">
+                  <chakra.a
+                    w="full"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    border="solid 1px transparent"
+                    fontSize={{ base: "md", md: "lg" }}
+                    rounded="md"
+                    color="black"
+                    letterSpacing={ '3px' }
+                    bg="brand.600"
+                    _hover={{ color: '#0e76fd', }}
+                    px={{ base: 8, md: 10 }}
+                    py={{ base: 3, md: 4 }}
+                    cursor="pointer"
+                  >
+                    Get started
+                  </chakra.a>
+                </Box>
+                <Box mt={[3, 0]} ml={[null, 3]}>
+                  <chakra.a
+                    w="full"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    px={{ base: 8, md: 10 }}
+                    letterSpacing={ '3px' }
+                    py={{ base: 3, md: 4 }}
+                    border="solid 1px transparent"
+                    fontSize={{ base: "md", md: "lg" }}
+                    rounded="md"
+                    color="brand.700"
+                    bg="brand.100"
+                    _hover={{ bg: "brand.200" }}
+                    cursor="pointer"
+                  >
+                    Live demo
+                  </chakra.a>
+                </Box>
+              </Box>
+            </Box>
           </Box>
         </Box>
       </Box>
-    </Flex>
+      <Box
+        position={{ lg: "absolute" }}
+        top={{ lg: 0 }}
+        bottom={{ lg: 0 }}
+        right={{ lg: 0 }}
+        w={{ lg: "50%" }}
+        border="solid 1px transparent"
+      >
+        <Image
+          h="84%"
+          w="full"
+          fit="cover"
+          src={Dronesbg}
+          alt=""
+          loading="lazy"
+        />
+      </Box>
+    </Box>
   );
 };
-
