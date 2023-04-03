@@ -136,7 +136,7 @@ import {
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Company</ListHeader>
-              <Link href={'#'}>About us</Link>
+              <Link href={'/about'}>About us</Link>
               <Link href={'#'}>Gallery</Link>
               <Link href={'#'}>Contact us</Link>
               <Link href={'#'}>Our Team</Link>
@@ -144,7 +144,7 @@ import {
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Support</ListHeader>
-              <Link href={'#'}>Surveillance</Link>
+              <Link href={'/surveillance'}>Surveillance</Link>
               <Link href={'#'}>Security</Link>
               <Link href={'#'}>Tracking</Link>
               <Link href={'#'}>Setting</Link>

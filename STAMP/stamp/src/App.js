@@ -19,6 +19,7 @@ import About from './pages/About';
 import ExistingRecord from './pages/Security/ExistingRecord'
 import NewRecord from './pages/Security/NewRecord'
 import CameraViewing from './components/CameraViewing/CameraViewing';
+import Surveillance from './components/Surveillance'
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
