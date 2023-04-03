@@ -10,6 +10,7 @@ import {
   Grid,
   theme,
   Stack,
+  Flex,
 } from '@chakra-ui/react';
 
 import NewRecord from '../../components/Security/NewRecord';
@@ -18,7 +19,23 @@ import Section1 from '../../components/Homepage/Section1';
 function App() {
   return (
  <>
-<NewRecord></NewRecord>
+
+<Flex
+  bg="#edf3f8"
+  _dark={{
+      bg: "#3e3e3e",
+  }}
+  p={50}
+  w="full"
+  alignItems="center"
+  justifyContent="center"
+  >
+
+          <NewRecord></NewRecord>
+
+</Flex>
+
+ 
  </>
   );
 }

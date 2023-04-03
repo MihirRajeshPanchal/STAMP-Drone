@@ -43,7 +43,7 @@
 // export default App
 
 import React from "react";
-import Webcam from "react-webcam";
+// import Webcam from "react-webcam";
 import "./NewRecord.css";
 import Train from "./Train.js";
 import {
@@ -226,7 +226,8 @@ function App() {
         </chakra.form>
       </GridItem>
     </SimpleGrid>
-  </Box></Flex>
+  </Box>
+</Flex>
 </Box>
 
     </>

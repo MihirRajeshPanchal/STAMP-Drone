@@ -1,8 +1,18 @@
 from flask import Flask,jsonify,request,Response,make_response
 from flask_cors import CORS
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
 CORS(app)
+
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USE_SSL'] = True
+app.config['MAIL_USERNAME'] = 'mihirtestprogrammer@gmail.com'
+app.config['MAIL_PASSWORD'] = 'yflrrgfqxxfpyvve'
+app.config['MAIL_DEFAULT_SENDER'] = ('STAMP', 'mihirtestprogrammer@gmail.com')
+
+mail = Mail(app)
 
 dic_apis={
     "/surveillance":"takes video input and runs - Object Detection\yoloVideo.py",
@@ -39,10 +49,32 @@ dic_apis_react_call={
 }
 
 
-@app.route('/dic_apis[i]', methods=['POST'])
-def dicapis():
-    pass
+# @app.route('/dic_apis[i]', methods=['POST'])
+# def dicapis():
+#     pass
 
+@app.route('/surveillance', methods=['POST', 'GET'])
+def surveillance():
+    return jsonify({'message': 'Hello, World!'})
+
+@app.route('/send-email', methods=['POST'])
+def send_email():
+    data = request.json
+    subject = data['subject']
+    recipient = data['recipient']
+    body = data['body']
+    
+    message = Message(subject=subject, recipients=[recipient], body=body)
+    mail.send(message)
+    
+    return {'message': 'Email sent'}
+
+@app.route('/write-file-email', methods=['POST'])
+def write_file():
+    data = request.json['data']
+    with open('STAMP/stamp/src/files/emails.txt', 'a') as f:
+        f.write(data + '\n')
+    return {'success': True}
 
 if __name__ == '__main__':
 	app.run(debug=True)

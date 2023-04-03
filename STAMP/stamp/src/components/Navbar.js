@@ -276,11 +276,11 @@ import {
     },
     {
       label: 'Surveillance',
-      href: '#',
+      href: '/surveillance',
     },
     {
       label: 'Camera Viewing',
-      href: '#',
+      href: '/Cameraviewing',
     },
     {
       label: 'Settings',

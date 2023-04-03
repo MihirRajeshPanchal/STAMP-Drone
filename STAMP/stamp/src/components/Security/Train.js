@@ -25,7 +25,7 @@
     SimpleGrid,
   } from '@chakra-ui/react'
   import React from "react";
-  import Webcam from "react-webcam";
+  // import Webcam from "react-webcam";
   const Train = () => {
     return (
       <div>
@@ -65,7 +65,7 @@
           }}
         >
     <div>
-      <Webcam />
+      {/* <Webcam /> */}
     </div>
           <Box
             px={{

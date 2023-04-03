@@ -18,6 +18,7 @@ import Homepage from './pages/Homepage';
 import About from './pages/About';
 import ExistingRecord from './pages/Security/ExistingRecord'
 import NewRecord from './pages/Security/NewRecord'
+import CameraViewing from './components/CameraViewing/CameraViewing';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path='/Security/ExistingRecord' element={<ExistingRecord />} />
         <Route path='/Security/NewRecord' element={<NewRecord />} />
         <Route path='/Security/Train' element={<Train />} />
+        <Route path='/Cameraviewing' element={< CameraViewing/>} />
       </Routes>
       </BrowserRouter>
       <Footer/>
