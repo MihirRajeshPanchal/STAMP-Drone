@@ -1,3 +1,4 @@
+import time
 import flet as ft
 from plutox import *
 
@@ -86,63 +87,82 @@ def main(page: ft.Page):
                 page.pubsub.send_all(Message("DroneGPT", res, message_type="chat_message"))
             elif page.session.get("user_name")=="Admin":
                 if temp=="?takeoff":
-                    res="PlutoX Takeoff Instaniated"
+                    res="PlutoX Takeoff Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
                     takeoff()
                 elif temp=="?land":
                     res="PlutoX Landing Instatianted"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
                     land()
-                # elif temp=="?blackflip":
-                #     blackflip()
-                #     res="PlutoX Blackflip Instaniated"
-                #     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                # elif temp=="?frontflip":
-                #     frontflip()
-                #     res="PlutoX Frontflip Instaniated"
-                #     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                # elif temp=="?leftflip":
-                #     leftflip()
-                #     res="PlutoX Leftflip Instaniated"
-                #     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                # elif temp=="?rightflip":
-                #     rightflip()
-                #     res="PlutoX Rightflip Instaniated"
-                #     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                elif temp=="?backward":
+                    res="PlutoX Backward Motion Instantiated"
+                    page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    backward()
+                elif temp=="?forward":
+                    res="PlutoX Forward Motion Instantiated"
+                    page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    forward()
+                elif temp=="?left":
+                    res="PlutoX Left Motion Instantiated"
+                    page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    left()
+                elif temp=="?right":
+                    res="PlutoX Right Motion Instantiated"
+                    page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    right()
+                elif temp=="?disarm":
+                    res="PlutoX Disarm Instantiated"
+                    page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    disarm()
+                temp=""
             else:
                 pass
             page.update()
-            
+           
     def takeoff():
-        client = Drone()
+        client = Drone() 
         client.arm()
-        client.takeOff()
+        # client.takeOff()
+        time.sleep(5)
+        client.disArm()
         
     def land():
         client = Drone()
+        client.arm()
         client.land()
+
+    def backward():
+        client = Drone()
+        client.arm()
+        client.backward()
+
         
-    # def blackflip():
-    #     client = Drone()
-    #     client.backFlip()
+    def forward():
+        client = Drone()
+        client.arm()
+        client.forward()
         
-    # def frontflip():
-    #     client = Drone()
-    #     client.frontflip()
+    def right():
+        client = Drone()
+        client.arm()
+        client.right()
         
-    # def rightflip():
-    #     client = Drone()
-    #     client.rightflip()
+    def left():
+        client = Drone()
+        client.arm()
+        client.left()
+
         
-    # def leftflip():
-    #     client = Drone()
-    #     client.leftflip()
+    def disarm():
+        client = Drone()
+        client.arm()
+
         
     def chatgpt(message):
         import openai
 
         # Set up the OpenAI API client
-        openai.api_key = "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"
+        openai.api_key = "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"
 
         # Set up the model and prompt
         model_engine = "text-davinci-003"

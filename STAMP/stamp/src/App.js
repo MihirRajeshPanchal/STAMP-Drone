@@ -19,6 +19,7 @@ import About from './pages/About';
 import ExistingRecord from './pages/Security/ExistingRecord'
 import NewRecord from './pages/Security/NewRecord'
 import Surveillance from './components/Surveillance'
+import Surveillance from './components/Surveillance';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -30,7 +31,6 @@ function App() {
         <Route path='/' element={<Homepage/>} />
         <Route path='/About' element={<About />} />
         <Route path='/Security/ExistingRecord' element={<ExistingRecord />} />
-        <Route path='/Surveillance' element={<Surveillance />} />
         <Route path='/Security/NewRecord' element={<NewRecord />} />
         <Route path='/Security/Train' element={<Train />} />
       </Routes>
