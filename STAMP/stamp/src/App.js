@@ -15,6 +15,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Homepage from './pages/Homepage';
 import About from './pages/About';
+import Surveillance from './components/Surveillance';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage/>} />
         <Route path='/about' element={<About />} />
+        <Route path='/surveillance' element={<Surveillance />} />
       </Routes>
       </BrowserRouter>
       <Footer/>
