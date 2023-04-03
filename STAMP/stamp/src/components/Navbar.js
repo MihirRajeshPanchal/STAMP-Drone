@@ -59,7 +59,7 @@ import {
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           {/* <Image src={Logo} alt='Logo'  boxSize='50px' objectFit='cover'/> */}
           <Box w='6%' h='10%'>
-            <a href="/">
+                   <a href="/">
                 <Image src={LogoSTAMP}></Image>
             </a>
           </Box>
@@ -87,11 +87,13 @@ import {
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
             </Button>
           </Stack> */}
-            <Button onClick={toggleColorMode} style={{ marginRight: '10px' }}>
-                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-            </Button>
-            <Wallet></Wallet>
+        <Button onClick={toggleColorMode} style={{ marginRight : '10px' }}>
+  {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+</Button>
+<Wallet></Wallet>
+        
           {/* </Stack> */}
+          
         </Flex>
   
         <Collapse in={isOpen} animateOpacity>
@@ -263,12 +265,12 @@ import {
         {
             label: 'New Record',
           subLabel: 'User not yet recorded',
-          href: '#',
+          href: '/Security/NewRecord',
         },
         {
           label: 'Existing Record',
           subLabel: 'Find your Record',
-          href: '#',
+          href: '/Security/ExistingRecord',
         },
       ],
     },
@@ -302,6 +304,6 @@ import {
     },
     {
       label: 'About Us',
-      href: '/about'
+      href: '/About'
     }
   ];

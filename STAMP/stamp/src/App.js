@@ -13,8 +13,11 @@ import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Train from './components/Security/Train'
 import Homepage from './pages/Homepage';
 import About from './pages/About';
+import ExistingRecord from './pages/Security/ExistingRecord'
+import NewRecord from './pages/Security/NewRecord'
 import Surveillance from './components/Surveillance';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
@@ -26,7 +29,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage/>} />
         <Route path='/about' element={<About />} />
-        <Route path='/surveillance' element={<Surveillance />} />
       </Routes>
       </BrowserRouter>
       <Footer/>
