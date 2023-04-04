@@ -19,23 +19,63 @@ class MsgType():
         :return: command
         """
         return self.parse.convert([cmd], MSP_SET_COMMAND)
-    
-    def right(self):
-        data = [int(1500),int(1500),int(1650),int(1650)]
-        return self.parse.convert(data, MSP_SET_MOTOR)
-    
-    def left(self):
-        data = [int(1650),int(1650),int(1500),int(1500)]
-        return self.parse.convert(data, MSP_SET_MOTOR)
-    
-    def forward(self):
-        data = [int(1650),int(1500),int(1650),int(1500)]
+ 
+    def forward(self,is_stop):
+        if is_stop:
+            data = [int(1000),int(1000),int(1000),int(1000)]
+        else:
+            data = [int(1650),int(1500),int(1650),int(1500)]
         return self.parse.convert(data, MSP_SET_MOTOR)     
     
-    def backward(self):
-        data = [int(1500),int(1650),int(1500),int(1650)]
+    def backward(self,is_stop):
+        if is_stop:
+            data = [int(1000),int(1000),int(1000),int(1000)]
+        else:
+            data = [int(1500),int(1650),int(1500),int(1650)]
         return self.parse.convert(data, MSP_SET_MOTOR)         
+    
+    def left(self,is_stop):
+        if is_stop:
+            data = [int(1000),int(1000),int(1000),int(1000)]
+        else:
+            data = [int(1650),int(1650),int(1500),int(1500)]
+        return self.parse.convert(data, MSP_SET_MOTOR)
+    
+    def right(self,is_stop):
+        if is_stop:
+            data = [int(1000),int(1000),int(1000),int(1000)]    
+        else:
+            data = [int(1500),int(1500),int(1650),int(1650)]
+        return self.parse.convert(data, MSP_SET_MOTOR)
        
+    def m1(self,is_stop):
+        if is_stop:
+            data = [int(1000),int(1000),int(1000),int(1000)]  
+        else:
+            data = [int(1000),int(1000),int(1000),int(1200)]
+        return self.parse.convert(data, MSP_SET_MOTOR) 
+      
+    def m2(self,is_stop):
+        if is_stop:
+            data = [int(1000),int(1000),int(1000),int(1000)]  
+        else:
+            data = [int(1000),int(1200),int(1000),int(1000)]
+        return self.parse.convert(data, MSP_SET_MOTOR)  
+         
+    def m3(self,is_stop):
+        if is_stop:
+            data = [int(1000),int(1000),int(1000),int(1000)]  
+        else:
+            data = [int(1200),int(1000),int(1000),int(1000)]
+        return self.parse.convert(data, MSP_SET_MOTOR)
+    
+    def m4(self,is_stop):
+        if is_stop:
+            data = [int(1000),int(1000),int(1000),int(1000)]  
+        else:
+            data = [int(1000),int(1000),int(1200),int(1000)]
+        return self.parse.convert(data, MSP_SET_MOTOR)
+    
     def arming(self, arm: bool):
         """
         This will Arm the Drone.

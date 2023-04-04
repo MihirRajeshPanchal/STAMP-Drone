@@ -1,6 +1,7 @@
 {
   "name": "stamp",
   "version": "0.1.0",
+  "proxy": "http://localhost:5000",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.17",
@@ -19,6 +20,10 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
+<<<<<<< HEAD
+=======
+    "react-video-stream": "^1.0.1",
+>>>>>>> 1cf374cca52ef2201dbe55f391bd94cccaf1487f
     "wagmi": "^0.12.8",
     "web-vitals": "^2.1.4"
   },

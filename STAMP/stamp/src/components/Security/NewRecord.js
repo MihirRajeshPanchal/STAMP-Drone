@@ -1,4 +1,8 @@
 import React from "react";
+<<<<<<< HEAD
+=======
+// import Webcam from "react-webcam";
+>>>>>>> 1cf374cca52ef2201dbe55f391bd94cccaf1487f
 import "./NewRecord.css";
 import Train from "./Train.js";
 import {
@@ -47,6 +51,7 @@ function App() {
               md: 2,
             }}
           >
+<<<<<<< HEAD
             <chakra.form
               method="POST"
               shadow="base"
@@ -92,6 +97,119 @@ function App() {
                       rounded="md"
                     />
                   </FormControl>
+=======
+            <SimpleGrid columns={6} spacing={6}>
+              <FormControl isRequired as={GridItem} colSpan={[6, 3]}>
+                <FormLabel 
+                  htmlFor="first_name"
+                  fontSize="sm"
+                  fontWeight="md"
+                  color="gray.700"
+                  _dark={{
+                    color: "gray.50",
+                  }}
+                >
+                  First name
+                </FormLabel>
+                <Input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  autoComplete="given-name"
+                  mt={1}
+                  focusBorderColor="brand.400"
+                  shadow="sm"
+                  size="sm"
+                  w="full"
+                  rounded="md"
+                />
+              </FormControl>
+
+              <FormControl isRequired as={GridItem} colSpan={[6, 3]}>
+                <FormLabel
+                  htmlFor="last_name"
+                  fontSize="sm"
+                  fontWeight="md"
+                  color="gray.700"
+                  _dark={{
+                    color: "gray.50",
+                  }}
+                >
+                  Last name
+                </FormLabel>
+                <Input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  autoComplete="family-name"
+                  mt={1}
+                  focusBorderColor="brand.400"
+                  shadow="sm"
+                  size="sm"
+                  w="full"
+                  rounded="md"
+                />
+              </FormControl>
+
+              <FormControl isRequired as={GridItem} colSpan={[6, 4]}>
+                <FormLabel
+                  htmlFor="email_address"
+                  fontSize="sm"
+                  fontWeight="md"
+                  color="gray.700"
+                  _dark={{
+                    color: "gray.50",
+                  }}
+                >
+                  Email address
+                </FormLabel>
+                <Input
+                  type="text"
+                  name="email_address"
+                  id="email_address"
+                  autoComplete="email"
+                  mt={1}
+                  focusBorderColor="brand.400"
+                  shadow="sm"
+                  size="sm"
+                  w="full"
+                  rounded="md"
+                />
+              </FormControl>
+
+            </SimpleGrid>
+          </Stack>
+          <Box
+            px={{
+              base: 4,
+              sm: 6,
+            }}
+            py={3}
+            bg="gray.50"
+            _dark={{
+              bg: "#121212",
+            }}
+            textAlign="right"
+          >
+            <Button
+              type="submit"
+              onClick={() => 
+                navigate('/Security/Train')
+              }>
+              Save
+            </Button>
+            <Routes>
+          <Route path="/Security/Train" element={<Train/>} />
+        
+        </Routes>
+          </Box>
+        </chakra.form>
+      </GridItem>
+    </SimpleGrid>
+  </Box>
+</Flex>
+</Box>
+>>>>>>> 1cf374cca52ef2201dbe55f391bd94cccaf1487f
 
                   <FormControl isRequired as={GridItem} colSpan={[6, 3]}>
                     <FormLabel
