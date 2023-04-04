@@ -19,7 +19,6 @@ import About from './pages/About';
 import ExistingRecord from './pages/Security/ExistingRecord'
 import NewRecord from './pages/Security/NewRecord'
 import Surveillance from './components/Surveillance'
-import Surveillance from './components/Surveillance';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {

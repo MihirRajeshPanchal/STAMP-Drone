@@ -277,7 +277,6 @@ import {
     {
       label: 'Surveillance',
       href: '/Surveillance',
-      href: '/surveillance',
     },
     {
       label: 'Camera Viewing',
