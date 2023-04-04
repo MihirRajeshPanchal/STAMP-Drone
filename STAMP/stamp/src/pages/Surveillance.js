@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, background } from '@chakra-ui/react';
 import { ImCross } from 'react-icons/im'
-import './surveillance.css';
+import '../components/Surveillance/surveillance.css';
 
 function Surveillance() {
   const [modal, setModal] = useState(false);
@@ -17,14 +17,14 @@ function Surveillance() {
 
   // const [isLargerThan48] = useMediaQuery('(min-width: 48em)');
   return (
-    <center><div style={{height: '200px', width: '500px', backgroundColor: 'rgba(0, 0, 0, 0.08)', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', borderRadius: '20px', padding: '10px'}}>
+    <center><div style={{ height: '200px', width: '500px', backgroundColor: 'rgba(0, 0, 0, 0.08)', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', borderRadius: '20px', padding: '10px' }}>
       <Button colorScheme="blue" onClick={openModal} className="">
         Click Me!
         {modal ? (
           <section className="modal__bg">
             <div className="modal__align">
               <div className="modal__content" modal={modal}>
-              <ImCross
+                <ImCross
                   className="modal__close"
                   arial-label="Close modal"
                   onClick={setModal}

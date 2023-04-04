@@ -1,8 +1,6 @@
 import React from 'react';
 import {
   ChakraProvider,
-  Box,
-  Text,
   Link,
   VStack,
   Code,
@@ -13,13 +11,17 @@ import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Train from './components/Security/Train'
+import Train from './components/Security/Train';
+import Loading from './components/Security/Loading';
 import Homepage from './pages/Homepage';
 import About from './pages/About';
 import ExistingRecord from './pages/Security/ExistingRecord'
 import NewRecord from './pages/Security/NewRecord'
-import Surveillance from './components/Surveillance'
-import Surveillance from './components/Surveillance';
+import TestRecord from './components/Security/TestRecord'
+import Propellers from './pages/Settings/Propellers';
+import Directions from './pages/Settings/Directions';
+
+import Surveillance from './pages/Surveillance'
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -33,6 +35,11 @@ function App() {
         <Route path='/Security/ExistingRecord' element={<ExistingRecord />} />
         <Route path='/Security/NewRecord' element={<NewRecord />} />
         <Route path='/Security/Train' element={<Train />} />
+        <Route path='/Security/Loading' element={<Loading />} />
+        <Route path='/Security/TestRecord' element={<TestRecord />} />
+        <Route path='/Settings/Propellers' element={<Propellers />} />
+        <Route path='/Settings/Directions' element={<Directions />} />
+        <Route path='/Surveillance' element={<Surveillance />} />
       </Routes>
       </BrowserRouter>
       <Footer/>

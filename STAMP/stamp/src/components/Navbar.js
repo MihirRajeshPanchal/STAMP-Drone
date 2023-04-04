@@ -277,7 +277,6 @@ import {
     {
       label: 'Surveillance',
       href: '/Surveillance',
-      href: '/surveillance',
     },
     {
       label: 'Camera Viewing',
@@ -289,12 +288,12 @@ import {
         {
           label: 'Motor Security',
           subLabel: 'Test your Propellers',
-          href: '#',
+          href: '/Settings/Propellers',
         },
         {
           label: 'Drone Security',
           subLabel: 'Callibrate your drone',
-          href: '#',
+          href: '/Settings/Directions',
         },
         {
           label: 'Control Security',
