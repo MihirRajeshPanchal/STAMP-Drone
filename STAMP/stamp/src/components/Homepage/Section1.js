@@ -71,7 +71,7 @@ export default function App(){
                 mx={{ sm: "auto", lg: 0 }}
                 color="gray.500"
               >
-                A is a cutting-edge drone services company that specializes in surveillance, security, and locating individuals. Our user-friendly UI offers a range of features, including arming and setting up your drone, making it simple and efficient to manage your security needs.
+                STAMP is a cutting-edge drone services company that specializes in surveillance, security, and locating individuals. Our user-friendly UI offers a range of features, including arming and setting up your drone, making it simple and efficient to manage your security needs.
               </chakra.p>
               <Box
                 mt={{ base: 5, sm: 8 }}

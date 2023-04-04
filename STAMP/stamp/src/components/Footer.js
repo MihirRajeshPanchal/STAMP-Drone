@@ -12,7 +12,7 @@ import {
     IconButton,
     useColorModeValue,
   } from '@chakra-ui/react';
-  import { ReactNode } from 'react';
+  import { ReactNode, useState } from 'react';
   import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { BiMailSend } from 'react-icons/bi';
   import LogoSTAMP from '../assets/logo.png';
@@ -66,8 +66,47 @@ import {
       </Text>
     );
   };
+
+  const sendEmail = async (subject, recipient, body) => {
+    const response = await fetch('http://localhost:5000/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ subject, recipient, body })
+    });
+    const data = await response.json();
+    console.log(data.message);
+  }
+  
   
   export default function LargeWithNewsletter() {
+
+    const [subject, setSubject] = useState('');
+    const [recipient, setRecipient] = useState('');
+    const [body, setBody] = useState('');
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      setSubject('Stay up to date');
+      setBody('Thanks for subscribing to our newsletter!');
+      
+      // write emails in a file
+      fetch('http://localhost:5000/write-file-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ data: recipient })
+      })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error(error));
+
+      sendEmail(subject, recipient, body);
+      
+    };
+
     return (
       <Box
         bg={useColorModeValue('white.50', 'white.900')}
@@ -121,8 +160,12 @@ import {
                   _focus={{
                     bg: 'whiteAlpha.300',
                   }}
+                  value={recipient}
+                  onChange={(e) => setRecipient(e.target.value)}
                 />
+                
                 <IconButton
+                  onClick={handleSubmit}
                   bg={useColorModeValue('blue.400', 'blue.800')}
                   color={useColorModeValue('white', 'gray.800')}
                   _hover={{

@@ -280,7 +280,7 @@ import {
     },
     {
       label: 'Camera Viewing',
-      href: '#',
+      href: '/Cameraviewing',
     },
     {
       label: 'Settings',
