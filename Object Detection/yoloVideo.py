@@ -91,8 +91,8 @@ def draw_labels(boxes, confs, colors, class_ids, classes, img):
    indexes = cv2.dnn.NMSBoxes(boxes, confs, 0.5, 0.4) #(0.2,0.2) // (0.7,0.6)
    font = cv2.FONT_HERSHEY_DUPLEX
    # image_folder = 'data-set-race-01'
-   video_file = './public/python/videos/proc.mp4'
-   image_size = (416, 416)
+   # video_file = './public/python/videos/proc.mp4'
+   # image_size = (416, 416)
    fps = 24
    # out = cv2.VideoWriter(video_file, cv2.VideoWriter_fourcc('M','P','E','G'), fps, image_size)
 
@@ -115,7 +115,7 @@ def draw_labels(boxes, confs, colors, class_ids, classes, img):
          # out.write(img)
 
    cv2.imshow("Image", img)
-   cv2.imwrite('./public/python/frames/'+str(cnt)+'.jpg',img)
+   # cv2.imwrite('./public/python/frames/'+str(cnt)+'.jpg',img)
    #print('\t',cnt)
    cnt += 1
 

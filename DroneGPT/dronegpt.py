@@ -86,14 +86,10 @@ def main(page: ft.Page):
                     res = '\n'.join([res[i:i+220] for i in range(0, len(res), 220)])
                 page.pubsub.send_all(Message("DroneGPT", res, message_type="chat_message"))
             elif page.session.get("user_name")=="Admin":
-                if temp=="?takeoff":
+                if temp=="?spinall":
                     res="PlutoX Takeoff Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                    takeoff()
-                elif temp=="?land":
-                    res="PlutoX Landing Instatianted"
-                    page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                    land()
+                    spinall()
                 elif temp=="?backward":
                     res="PlutoX Backward Motion Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
@@ -110,52 +106,80 @@ def main(page: ft.Page):
                     res="PlutoX Right Motion Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
                     right()
-                elif temp=="?disarm":
-                    res="PlutoX Disarm Instantiated"
+                elif temp=="?m1":
+                    res="PlutoX M1 Propeller Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                    disarm()
+                    m1()
+                elif temp=="?m2":
+                    res="PlutoX M2 Propeller Instantiated"
+                    page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    m2()
+                elif temp=="?m3":
+                    res="PlutoX M3 Propeller Instantiated"
+                    page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    m3()
+                elif temp=="?m4":
+                    res="PlutoX M4 Propeller Instantiated"
+                    page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    m4()
                 temp=""
             else:
                 pass
             page.update()
            
-    def takeoff():
-        client = Drone() 
-        client.arm()
-        # client.takeOff()
-        time.sleep(5)
-        client.disArm()
-        
-    def land():
+    def spinall():
         client = Drone()
         client.arm()
-        client.land()
+        time.sleep(5)
+        client.disArm()
 
     def backward():
         client = Drone()
-        client.arm()
         client.backward()
+        time.sleep(5)
+        client.backwardstop()
 
-        
     def forward():
         client = Drone()
-        client.arm()
         client.forward()
+        time.sleep(5)
+        client.forwardstop()
         
     def right():
         client = Drone()
-        client.arm()
         client.right()
+        time.sleep(5)
+        client.rightstop()
         
     def left():
         client = Drone()
-        client.arm()
         client.left()
+        time.sleep(5)
+        client.leftstop()
 
-        
-    def disarm():
+    def m1():
         client = Drone()
-        client.arm()
+        client.m1()
+        time.sleep(5)
+        client.m1stop()  
+             
+    def m2():
+        client = Drone()
+        client.m2()
+        time.sleep(5)
+        client.m2stop() 
+              
+    def m3():
+        client = Drone()
+        client.m3()
+        time.sleep(5)
+        client.m3stop() 
+              
+    def m4():
+        client = Drone()
+        client.m4()
+        time.sleep(5)
+        client.m4stop()       
 
         
     def chatgpt(message):
