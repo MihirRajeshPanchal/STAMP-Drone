@@ -1,0 +1,9 @@
+.progress {
+    font-family: sans-serif;
+    margin: 2em auto;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    width: 60%;
+  }
+  

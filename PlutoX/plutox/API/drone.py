@@ -70,19 +70,56 @@ class Drone():
         :return: None
         """
         self.sendData(self.msgType.arming(False), "Disarm")
-
-    def right(self):
-        self.sendData(self.msgType.right(),"Right")
         
-    def left(self):
-        self.sendData(self.msgType.left(),"Left")
-    
     def forward(self):
-        self.sendData(self.msgType.forward(),"Forward")
+        self.sendData(self.msgType.forward(is_stop=False),"Forward")
+        
+    def forwardstop(self):
+        self.sendData(self.msgType.forward(is_stop=True),"Forward Stop")
         
     def backward(self):
-        self.sendData(self.msgType.backward(),"Backward")
-          
+        self.sendData(self.msgType.backward(is_stop=False),"Backward")
+        
+    def backwardstop(self):
+        self.sendData(self.msgType.backward(is_stop=True),"Backward Stop")
+        
+    def left(self):
+        self.sendData(self.msgType.left(is_stop=False),"Left")
+        
+    def leftstop(self):
+        self.sendData(self.msgType.left(is_stop=True),"Left Stop")
+        
+    def right(self):
+        self.sendData(self.msgType.right(is_stop=False),"Right")
+        
+    def rightstop(self):
+        self.sendData(self.msgType.right(is_stop=True),"Right Stop")
+           
+    def m1(self):
+        self.sendData(self.msgType.m1(is_stop=False),"Motor 1")
+           
+    def m1stop(self):
+        self.sendData(self.msgType.m1(is_stop=True),"Motor 1 Stop")
+        
+    def m2(self):
+        self.sendData(self.msgType.m2(is_stop=False),"Motor 2")
+        
+    def m2stop(self):
+        self.sendData(self.msgType.m2(is_stop=True),"Motor 2 Stop")
+        
+    def m3(self):
+        self.sendData(self.msgType.m3(is_stop=False),"Motor 3")
+        
+    def m3stop(self):
+        self.sendData(self.msgType.m3(is_stop=True),"Motor 3 Stop")
+        
+    def m4(self):
+        self.sendData(self.msgType.m4(is_stop=False),"Motor 4")
+        
+    def m4stop(self):
+        self.sendData(self.msgType.m4(is_stop=True),"Motor 4 Stop")
+        
+        
     def sendData(self, data, err):
 
         """
