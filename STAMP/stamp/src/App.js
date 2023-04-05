@@ -22,7 +22,6 @@ import Propellers from './pages/Settings/Propellers';
 import Directions from './pages/Settings/Directions';
 import Surveillance from './pages/Surveillance'
 import CameraViewing from './components/CameraViewing/CameraViewing';
-import Surveillance from './components/Surveillance/Surveillance'
 import Yolo from './components/Surveillance/Yolo'
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 

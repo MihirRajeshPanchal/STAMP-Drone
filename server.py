@@ -1,6 +1,9 @@
 from flask import Flask,jsonify,request,Response,make_response
 from flask_cors import CORS
 from flask_mail import Mail, Message
+from Face_Recognition.one_face_dataset import face_train, add_to_json
+from Face_Recognition.two_face_training import yml_train
+from Face_Recognition.three_face_recognition import face_detect
 import cv2
 import numpy as np
 
@@ -150,6 +153,17 @@ def generate_frames():
 @app.route('/yolo')
 def index():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+@app.route('/new-record')
+def train_face():
+    # data = request.get_json()
+    # print(data)
+    fname = "Mihir"
+    lname = "Panchal"
+    email = "mihirpanchal5400@gmail.com"
+    # face_train(fname, lname, email)
+    # yml_train()
+    # face_detect()
 
 
 

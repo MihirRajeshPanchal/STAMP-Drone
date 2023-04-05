@@ -24,8 +24,13 @@ import {
   SimpleGrid,
   Button,
 } from '@chakra-ui/react'
-import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
-function App() {
+import { BrowserRouter, Route, Routes, useNavigate, } from "react-router-dom";
+import { useState } from 'react'
+function NewRecord() {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [image, setImage] = useState('');
   const navigate = useNavigate();
   return (
     <>
@@ -72,6 +77,8 @@ function App() {
                   size="sm"
                   w="full"
                   rounded="md"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
                 />
               </FormControl>
 
@@ -98,6 +105,8 @@ function App() {
                   size="sm"
                   w="full"
                   rounded="md"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
                 />
               </FormControl>
 
@@ -111,7 +120,7 @@ function App() {
                     color: "gray.50",
                   }}
                 >
-                  Email address
+                  Email address 
                 </FormLabel>
                 <Input
                   type="text"
@@ -124,6 +133,8 @@ function App() {
                   size="sm"
                   w="full"
                   rounded="md"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </FormControl>
 
@@ -158,4 +169,4 @@ function App() {
   );
 }
 
-export default App;
+export default NewRecord;
