@@ -1,64 +1,129 @@
-import React, { useState } from 'react';
-import { Button, background } from '@chakra-ui/react';
-import { ImCross } from 'react-icons/im'
-import '../components/Surveillance/surveillance.css';
+import {
+  CardBody,
+  Image,
+  Card,
+  CardFooter,
+  Button,
+  FormControl,
+  Input,
+  FormLabel,
+  FormErrorMessage,
+  HStack,
+  Box,
+  chakra,
+  Checkbox,
+  Radio,
+  RadioGroup,
+  Divider,
+  Select,
+  Heading,
+  FormHelperText,
+  Flex,
+  GridItem,
+  Stack,
+  Text,
+  SimpleGrid,
+} from '@chakra-ui/react'
+import React from "react";
 
-function Surveillance() {
-  const [modal, setModal] = useState(false);
-  const [videoLoading, setVideoLoading] = useState(true);
+import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 
-  const openModal = () => {
-    setModal(!modal);
-  };
-
-  const spinner = () => {
-    setVideoLoading(!videoLoading);
-  };
-
-  // const [isLargerThan48] = useMediaQuery('(min-width: 48em)');
+const Train = () => {
+  const navigate = useNavigate();
   return (
-    <center><div style={{ height: '200px', width: '500px', backgroundColor: 'rgba(0, 0, 0, 0.08)', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', borderRadius: '20px', padding: '10px' }}>
-      <Button colorScheme="blue" onClick={openModal} className="">
-        Click Me!
-        {modal ? (
-          <section className="modal__bg">
-            <div className="modal__align">
-              <div className="modal__content" modal={modal}>
-                <ImCross
-                  className="modal__close"
-                  arial-label="Close modal"
-                  onClick={setModal}
-                />
-                <div className="modal__video-align">
-                  {videoLoading ? <div className="modal__spinner"></div> : null}
-                  <iframe
-                    className="modal__video-style"
-                    onLoad={spinner}
-                    loading="lazy"
-                    width="800"
-                    height="500"
-                    src="https://www.youtube.com/embed/4UZrsTqkcW4"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-          </section>
-        ) : null}
-      </Button>
+      <div>
+          <Box
+              bg="#edf3f8"
+              _dark={{
+                  bg: "#111",
+              }}
+              p={10}
+          >
+              <Flex justifyContent="center" alignItems="center">
+                  <Box w="80%">
+                      <SimpleGrid
+                          display={{
+                              base: "initial",
+                              md: "grid",
+                          }}
+                          columns={{
+                              md: 1,
+                          }}
+                          spacing={{
+                              md: 6,
+                          }}
+                      >
+                          <GridItem
+                              mt={[5, null, 0]}
+                              colSpan={{
+                                  md: 2,
+                              }}
+                          >
+                              <chakra.form
+                                  method="POST"
+                                  shadow="base"
+                                  rounded={[null, "md"]}
+                                  overflow={{
+                                      sm: "hidden",
+                                  }}
+                              >
+                                  <div>
+                                      <video controls style={{width: '100%'}}>
+                                          <source src="https://www.youtube.com/watch?v=H5v3kku4y6Q" type="video"/>
+                                      </video>
+                                      {/* <Webcam /> */}
+                                  </div>
+                                  <Box
+                                      px={{
+                                          base: 4,
+                                          sm: 6,
+                                      }}
+                                      py={3}
+                                      bg="gray.50"
+                                      _dark={{
+                                          bg: "#121212",
+                                      }}
+                                      textAlign="right"
+                                  >
+                                      <Input placeholder='Output Filename' width="500px"/>
+                                      <Button
+                                          style={{ margin: '0 10px' }}
+                                          type="submit"
+                                      // onClick={() =>
+                                      //   navigate('/Security/Loading')
+                                      // }
+                                      >
+                                          Upload
+                                      </Button>
+                                      <Button
+                                          style={{ margin: '0 10px' }}
+                                          type="submit"
+                                      // onClick={() =>
+                                      //   navigate('/Security/Loading')
+                                      // }
+                                      >
+                                          Save to Disc
+                                      </Button>
+                                      <Button
+                                          style={{ margin: '0 10px' }}
+                                          type="submit"
+                                      // onClick={() =>
+                                      //   navigate('/Security/Loading')
+                                      // }
+                                      >
+                                          Save to Cloud
+                                      </Button>
 
-      <Button colorScheme="blue" className="button">
-        Save in Computer
-      </Button>
+                                  </Box>
+                              </chakra.form>
+                          </GridItem>
+                      </SimpleGrid>
+                  </Box></Flex>
+          </Box>
 
-      <Button colorScheme="blue" className="button">
-        Upload to cloud
-      </Button>
-    </div></center>
+      </div>
+
   );
-}
+};
 
-export default Surveillance;
+export default Train;

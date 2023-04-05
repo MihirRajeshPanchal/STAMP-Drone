@@ -28,7 +28,6 @@ import React from "react";
 import Loading from "./Loading.js";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 
-// import Webcam from "react-webcam";
 const Train = () => {
   const navigate = useNavigate();
   return (
@@ -48,7 +47,7 @@ const Train = () => {
                 md: "grid",
               }}
               columns={{
-                md: 3,
+                md: 1,
               }}
               spacing={{
                 md: 6,
@@ -69,6 +68,7 @@ const Train = () => {
                   }}
                 >
                   <div>
+                    <h1>Camera Model Here</h1>
                     {/* <Webcam /> */}
                   </div>
                   <Box
@@ -85,59 +85,23 @@ const Train = () => {
                   >
                     <Button
                       type="submit"
-                    >
-                      <GridItem
-                        mt={[5, null, 0]}
-                        colSpan={{
-                          md: 2,
-                        }}
-                      >
-                        <chakra.form
-                          method="POST"
-                          shadow="base"
-                          rounded={[null, "md"]}
-                          overflow={{
-                            sm: "hidden",
-                          }}
-                        >
-                          <div>
-                            <h1>Camera Model Here</h1>
-                            {/* <Webcam /> */}
-                          </div>
-                          <Box
-                            px={{
-                              base: 4,
-                              sm: 6,
-                            }}
-                            py={3}
-                            bg="gray.50"
-                            _dark={{
-                              bg: "#121212",
-                            }}
-                            textAlign="right"
-                          >
-                            <Button
-                              type="submit"
-                              onClick={() =>
-                                navigate('/Security/Loading')
-                              }>
-                              Train
-                            </Button>
-                          </Box>
-                        </chakra.form>
-                      </GridItem>
+                      onClick={() =>
+                        navigate('/Security/Loading')
+                      }>
+                      Done
                     </Button>
                     <Routes>
-                      <Route path="/Security/Loading" element={<Loading />} />
-                    </Routes>
+                      <Route path="/Security/Loading" element={<Loading />} /></Routes>
+
                   </Box>
                 </chakra.form>
               </GridItem>
             </SimpleGrid>
-          </Box>
-        </Flex>
+          </Box></Flex>
       </Box>
+
     </div>
+
   );
 };
 

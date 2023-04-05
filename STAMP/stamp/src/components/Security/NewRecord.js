@@ -1,6 +1,6 @@
 import React from "react";
 import "./NewRecord.css";
-import Train from "./Train.js";
+import Loading from "./Loading.js";
 import {
   FormControl,
   Input,
@@ -160,12 +160,12 @@ function App() {
                 <Button
                   type="submit"
                   onClick={() =>
-                    navigate('/Security/Train')
+                    navigate('/Security/Loading')
                   }>
                   Save
                 </Button>
                 <Routes>
-                  <Route path="/Security/Train" element={<Train />} /></Routes>
+                  <Route path="/Security/Loading" element={<Loading />} /></Routes>
               </Box>
             </chakra.form>
           </GridItem>

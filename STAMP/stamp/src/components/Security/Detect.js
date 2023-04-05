@@ -23,14 +23,12 @@ import {
     Stack,
     Text,
     SimpleGrid,
-    Progress,
 } from '@chakra-ui/react'
 import React from "react";
-import "./Loading.css";
-import Detect from "./Detect";
+import Loading from "./Loading.js";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 
-const Loading = () => {
+const Train = () => {
     const navigate = useNavigate();
     return (
         <div>
@@ -69,10 +67,11 @@ const Loading = () => {
                                         sm: "hidden",
                                     }}
                                 >
-
-                                    <div className="progress">
-                                        <h1>Training Model</h1>
-                                        <Progress size="xs" isIndeterminate />
+                                    <div>
+                                        <video controls style={{width: '100%'}}>
+                                            <source src="https://www.youtube.com/watch?v=H5v3kku4y6Q" type="video"/>
+                                        </video>
+                                        {/* <Webcam /> */}
                                     </div>
                                     <Box
                                         px={{
@@ -86,16 +85,35 @@ const Loading = () => {
                                         }}
                                         textAlign="right"
                                     >
+                                        <Input placeholder='Output Filename' width="500px"/>
                                         <Button
+                                            style={{ margin: '0 10px' }}
                                             type="submit"
-                                            onClick={() =>
-                                                navigate('/Security/Detect')
-                                              }>
-                                              Test
-                                            </Button>
-                                            <Routes>
-                                              <Route path="/Security/Detect" element={<Detect />} /></Routes>
-                        
+                                        // onClick={() =>
+                                        //   navigate('/Security/Loading')
+                                        // }
+                                        >
+                                            Upload
+                                        </Button>
+                                        <Button
+                                            style={{ margin: '0 10px' }}
+                                            type="submit"
+                                        // onClick={() =>
+                                        //   navigate('/Security/Loading')
+                                        // }
+                                        >
+                                            Save to Disc
+                                        </Button>
+                                        <Button
+                                            style={{ margin: '0 10px' }}
+                                            type="submit"
+                                        // onClick={() =>
+                                        //   navigate('/Security/Loading')
+                                        // }
+                                        >
+                                            Save to Cloud
+                                        </Button>
+
                                     </Box>
                                 </chakra.form>
                             </GridItem>
@@ -108,4 +126,4 @@ const Loading = () => {
     );
 };
 
-export default Loading;
+export default Train;
