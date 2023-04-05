@@ -1,5 +1,4 @@
 import {
-<<<<<<< HEAD
   Box,
   Image,
   chakra,
@@ -23,7 +22,6 @@ const Logo = (props: any) => {
     <>
       <Box w='70%' h='50%' p={0} color='white'>
         <Image src={LogoSTAMP}></Image>
-=======
     Box,
     Image,
     chakra,
@@ -203,9 +201,7 @@ const Logo = (props: any) => {
             </Stack>
           </SimpleGrid>
         </Container>
->>>>>>> 1cf374cca52ef2201dbe55f391bd94cccaf1487f
       </Box>
-
     </>
   );
 };
