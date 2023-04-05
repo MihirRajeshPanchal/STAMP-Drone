@@ -19,7 +19,8 @@ import About from './pages/About';
 import ExistingRecord from './pages/Security/ExistingRecord'
 import NewRecord from './pages/Security/NewRecord'
 import CameraViewing from './components/CameraViewing/CameraViewing';
-import Surveillance from './components/Surveillance'
+import Surveillance from './components/Surveillance/Surveillance'
+import Yolo from './components/Surveillance/Yolo'
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path='/Security/ExistingRecord' element={<ExistingRecord />} />
         <Route path='/Security/NewRecord' element={<NewRecord />} />
         <Route path='/Security/Train' element={<Train />} />
+        <Route path='/Surveillance' element={<Surveillance />} />
         <Route path='/Cameraviewing' element={< CameraViewing/>} />
       </Routes>
       </BrowserRouter>

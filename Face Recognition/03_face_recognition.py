@@ -15,7 +15,7 @@ id = 0
 names = ['None', 'Mihir', 'Prinkal', 'Sarid', 'Tanay', 'Arsh'] 
 
 # Initialize and start realtime video capture
-cam = cv2.VideoCapture("./testVideo2.mp4")
+cam = cv2.VideoCapture("testVideo.mp4")
 cam.set(3, 640) # set video widht
 cam.set(4, 480) # set video height
 
