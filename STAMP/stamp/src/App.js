@@ -20,9 +20,9 @@ import NewRecord from './pages/Security/NewRecord'
 import TestRecord from './components/Security/TestRecord'
 import Propellers from './pages/Settings/Propellers';
 import Directions from './pages/Settings/Directions';
-import Surveillance from './pages/Surveillance'
+import Surveillance from './components/Surveillance/Surveillance'
 import CameraViewing from './components/CameraViewing/CameraViewing';
-import Yolo from './components/Surveillance/Yolo'
+import Detect from './components/Security/Detect'
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -37,6 +37,7 @@ function App() {
         <Route path='/Security/NewRecord' element={<NewRecord />} />
         <Route path='/Security/Train' element={<Train />} />
         <Route path='/Security/Loading' element={<Loading />} />
+        <Route path='/Security/Detect' element={<Detect />} />
         <Route path='/Security/TestRecord' element={<TestRecord />} />
         <Route path='/Settings/Propellers' element={<Propellers />} />
         <Route path='/Settings/Directions' element={<Directions />} />

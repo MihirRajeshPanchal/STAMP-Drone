@@ -485,6 +485,7 @@ const AboutUs = () => {
             <Image src={arr.image} borderRadius="full" boxSize="60%" objectFit="cover" />
             <Text fontSize="xl" fontWeight="semibold" mt="4">{arr.text}</Text>
             <Text fontSize="sm" color="gray.600">{arr.subheading}</Text>
+            <Button backgroundColor="blue.400" padding="8px" marginTop="10px">Find</Button>    
             <Button backgroundColor="blue.400" padding="8px" marginTop="10px">Retrain</Button>            
           </Flex>
           <Spacer />

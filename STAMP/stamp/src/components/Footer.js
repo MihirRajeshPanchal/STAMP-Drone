@@ -180,7 +180,6 @@ import {
           </SimpleGrid>
         </Container>
       </Box>
-
     </>
   );
 };

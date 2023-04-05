@@ -279,10 +279,6 @@ import {
       href: '/Surveillance',
     },
     {
-      label: 'Camera Viewing',
-      href: '/Cameraviewing',
-    },
-    {
       label: 'Settings',
       children: [
         {
@@ -305,5 +301,10 @@ import {
     {
       label: 'About Us',
       href: '/About'
-    }
+    },
+    {
+      label: 'STAMP Support',
+      href: 'http://127.0.0.1:8550/',
+    },
+    
   ];
