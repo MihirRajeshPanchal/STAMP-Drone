@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, Box, Button, chakra, Flex, SimpleGrid } from "@chakra-ui/react";
-import DroneGPT from '../../assets/dronegpt.jpg';
+import StampSupport from '../../assets/stampsupport.jpg';
 import FaceRecog from '../../assets/faceRecog.png';
 export default function App(){
   return (
@@ -39,7 +39,7 @@ export default function App(){
               _dark={{ color: "gray.400" }}
               lineHeight={{ md: "shorter" }}
             >
-             DroneGPT - Your Personal Drone Services Assistant
+             STAMP Support - Your Personal Drone Services Assistant
             </chakra.h2>
             <chakra.p
               mb={5}
@@ -48,7 +48,7 @@ export default function App(){
               _dark={{ color: "gray.400" }}
               fontSize={{ md: "lg" }}
             >
-DroneGPT is a personal assistant for all drone services needs, providing personalized recommendations and guidance on how to optimize drone services. With its advanced AI algorithms and vast knowledge base, DroneGPT can answer questions. The easy-to-use interface and intuitive design make it hassle-free to get accurate and helpful responses. DroneGPT is here to take your drone services to the next level.    </chakra.p>
+STAMP Support is a personal assistant for all drone services needs, providing personalized recommendations and guidance on how to optimize drone services. With its advanced AI algorithms and vast knowledge base, STAMP Support can answer questions. The easy-to-use interface and intuitive design make it hassle-free to get accurate and helpful responses. STAMP Support is here to take your drone services to the next level.    </chakra.p>
             <Button
               w={{ base: "full", sm: "auto" }}
               size="lg"
@@ -67,7 +67,7 @@ DroneGPT is a personal assistant for all drone services needs, providing persona
             <Image
           h="fit"
           w="fit"
-          src={DroneGPT}
+          src={StampSupport}
           alt=""
           loading="lazy"
         />

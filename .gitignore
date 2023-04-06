@@ -1,2 +1,8 @@
 Face_Recognition/dataset
+Face_Recognition/__pycache__
 Object_Detection/python/yolov3.weights
+Object_Detection/__pycache__
+STAMP_Support/__pycache__
+PlutoX/plutox/msg/__pycache__
+PlutoX/plutox/server/__pycache__
+PlutoX/plutox/API/__pycache__

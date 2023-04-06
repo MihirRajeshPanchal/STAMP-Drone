@@ -1,0 +1,25 @@
+Frontend Prinkal Tanay
+1. Footer in Homepage
+2. Voice Assistant button in /Settings/Directions
+3. Changing UI and adding toast message in /Settings/Directions
+4. Adding a dronegpt service button in lower right corner of screen throughout all components which calls dronegpt
+5. /Security/Detect adjust the buttons
+6. Rename Navbar content to actual content within
+7. Add favicon and Title to web application STAMP\stamp\public\index.html
+8. Redesign component in /Security/ExistingRecord to have find and retrain buttons side by side 
+9. Homepage all section integration Section3 Section4
+
+Backend Sarid Mihir
+1. Add voice assistant to control drone 
+2. Integration of Security and Surveillance
+3. STAMP Support api to open its port implicitly on button click as _blank
+4. Encrypt Details od details.json in Go
+5. Upload to cloud add encrypted details.json in Amazon DynamoDB
+6. Upload output files of ai ml models in Amazon S3
+
+Documentation Arsh
+1. SPIT Innovation Cup PPT
+2. Create Content for Daily Diary sent as Named "SBMP_Poject_Weekly_Report_Form"
+3. Create UML Diagrams any 6 for Blackbook
+4. Complete Blackbook 
+5. Complete PPT for Presentation at 12th April with Abhijit and Anita Kulkarni
