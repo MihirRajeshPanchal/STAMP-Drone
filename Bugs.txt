@@ -10,12 +10,8 @@ Frontend Prinkal Tanay
 9. Homepage all section integration Section3 Section4
 
 Backend Sarid Mihir
-1. Add voice assistant to control drone 
 2. Integration of Security and Surveillance
 3. STAMP Support api to open its port implicitly on button click as _blank
-4. Encrypt Details od details.json in Go
-5. Upload to cloud add encrypted details.json in Amazon DynamoDB
-6. Upload output files of ai ml models in Amazon S3
 
 Documentation Arsh
 1. SPIT Innovation Cup PPT
