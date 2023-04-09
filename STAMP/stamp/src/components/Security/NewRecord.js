@@ -7,6 +7,7 @@ import {
   FormLabel,
   FormErrorMessage,
   HStack,
+  useToast,
   Box,
   chakra,
   Checkbox,
@@ -23,7 +24,7 @@ import {
   SimpleGrid,
   Button,
 } from '@chakra-ui/react'
-import { BrowserRouter, Route, Routes, useNavigate, } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useNavigate,  } from "react-router-dom";
 import { useState } from 'react'
 function NewRecord() {
   const [firstName, setFirstName] = useState('');
@@ -31,6 +32,54 @@ function NewRecord() {
   const [email, setEmail] = useState('');
   const [image, setImage] = useState('');
   const navigate = useNavigate();
+  const toast = useToast();
+
+    const handleSubmit = () => {
+
+        // if(firstName && lastName && email) {
+            fetch("http://127.0.0.1:5000/newrecord", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                firstName,
+                lastName,
+                email
+              })
+          })
+          .then(response => {
+              if (response.ok) {
+                console.log("details sent");
+                toast({
+                    title: `details sent successfully`,
+                    status: "success",
+                    duration: 3000,
+                    isClosable: true,
+                  });
+                  window.location.assign('http://localhost:3000/Security/Loading');
+                  // navigate('/Security/Loading');
+                  // navigate(-1);
+                  // setShowLoading(true);
+                  // window.location.assign('http://localhost:3000/Security/Detect');
+              } else {
+              console.log("Error while sending details");
+              }
+          })
+          .catch(error => {
+              console.log(error);
+          });
+        // }
+        // else {
+        //   toast({
+        //     title: `Please enter all fields`,
+        //     status: "error",
+        //     duration: 3000,
+        //     isClosable: true,
+        //   });
+        // }
+    }
+
   return (
     <>
       <Flex justifyContent="center" alignItems="center">
@@ -170,13 +219,14 @@ function NewRecord() {
               >
                 <Button
                   type="submit"
-                  onClick={() =>
-                    navigate('/Security/Loading')
+                  onClick={ 
+                    handleSubmit 
+                    // navigate('/Security/Loading') 
                   }>
-                  Save
+                  Save 
                 </Button>
-                <Routes>
-                  <Route path="/Security/Loading" element={<Loading />} /></Routes>
+                {/* <Routes>
+                  <Route path="/Security/Loading" element={<Loading />} /></Routes> */}
               </Box>
             </chakra.form>
           </GridItem>

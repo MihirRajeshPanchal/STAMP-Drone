@@ -24,14 +24,43 @@ import {
     Text,
     SimpleGrid,
     Progress,
+    useToast,
 } from '@chakra-ui/react'
-import React from "react";
+import React, { useEffect } from "react";
 import "./Loading.css";
 import Detect from "./Detect";
-import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useNavigate,  } from "react-router-dom";
 
 const Loading = () => {
     const navigate = useNavigate();
+    const toast = useToast();
+
+    useEffect(() => {
+        fetch("http://127.0.0.1:5000/train", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              }
+          })
+          .then(response => {
+            if (response.ok) {
+              console.log("trained");
+              toast({
+                  title: `Trained successfully`,
+                  status: "success",
+                  duration: 3000,
+                  isClosable: true,
+                });
+                window.location.assign('http://localhost:3000/Security/Detect');
+            } else {
+                console.log("Error while sending details");
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        });
+      }, []);
+
     return (
         <div>
             <Box

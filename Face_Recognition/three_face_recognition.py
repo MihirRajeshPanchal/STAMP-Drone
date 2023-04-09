@@ -1,4 +1,4 @@
-def face_detect(input_file = 0, output_file = "face_output.mp4"):
+def face_detect(input_file, output_file = "faceoutput.mp4"):
     import cv2
     import numpy as np
     import json
@@ -16,16 +16,19 @@ def face_detect(input_file = 0, output_file = "face_output.mp4"):
     with open('Face_Recognition/details.json') as f:
         data = json.load(f)
 
-    print(data)
+    # print(data)
     names = []
     for i in data:
         names.append(i['first_name'] + i['last_name'])
     # names related to ids: example ==> Marcelo: id=1,  etc
     
-    print(names)
+    # print(names)
+    input_file = input_file.filename
 
     # Initialize and start realtime video capture
-    cam = cv2.VideoCapture(input_file)
+    cam = cv2.VideoCapture("input/" + input_file)
+    if not cam.isOpened():
+        print("Error opening Video File.")
     cam.set(3, 640) # set video widht
     cam.set(4, 480) # set video height
 
@@ -40,8 +43,11 @@ def face_detect(input_file = 0, output_file = "face_output.mp4"):
     while True:
 
         ret, img =cam.read()
+        if img is None:
+            break
         img = cv2.flip(img, 1) # Flip vertically
         # img=cv2.imread("./test.jpg",1)
+        # if img is not None:
         gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
         faces = faceCascade.detectMultiScale( 
@@ -72,11 +78,13 @@ def face_detect(input_file = 0, output_file = "face_output.mp4"):
         cv2.imshow('camera',img) 
 
         # Write the frame into the output video file
+        
         out.write(img)
 
         k = cv2.waitKey(10) & 0xff # Press 'ESC' for exiting video
         if k == 27:
             break
+        
 
     # Release everything if job is finished
     cam.release()

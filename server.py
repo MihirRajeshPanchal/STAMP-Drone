@@ -4,7 +4,7 @@ from flask_mail import Mail, Message
 from Face_Recognition.one_face_dataset import face_train, add_to_json
 from Face_Recognition.two_face_training import yml_train
 from Face_Recognition.three_face_recognition import face_detect
-import cv2
+import cv2, os, json
 import numpy as np
 
 app = Flask(__name__)
@@ -154,18 +154,50 @@ def generate_frames():
 def index():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/new-record')
+file = ""
+
+@app.route('/upload', methods=['POST'])
+def upload():
+    global file
+    if 'file' not in request.files:
+        return jsonify({'error': 'No file in request'}), 400
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({'error': 'No file selected'}), 400
+    if file:
+        if not os.path.exists('input'):
+            os.makedirs('input')
+        file.save('input/' + file.filename)
+        return jsonify({'message': f'{file.filename} uploaded successfully'}), 200
+    else:
+        return jsonify({'error': 'Failed to upload file'}), 500
+
+firstName = ""
+lastName = ""
+email = ""
+
+@app.route('/newrecord', methods=['POST'])
 def train_face():
-    # data = request.get_json()
-    # print(data)
-    fname = "Mihir"
-    lname = "Panchal"
-    email = "mihirpanchal5400@gmail.com"
-    # face_train(fname, lname, email)
-    # yml_train()
-    # face_detect()
+    global firstName, lastName, email
+    data = request.get_data()
+    print(data)
+    parsed_data = json.loads(data)
+    firstName = parsed_data['firstName']
+    lastName = parsed_data['lastName']
+    email = parsed_data['email']
+    print(firstName, lastName, email)
+    return jsonify({'message': "details recieved successfully"}), 200
 
+@app.route('/train', methods=['POST'])
+def train():
+    face_train(firstName, lastName, email)
+    yml_train()
+    return jsonify({'message': "trained successfully"}), 200
 
+@app.route('/detect', methods=['POST'])
+def detect():
+    face_detect(file)
+    return jsonify({'message': "detected successfully"}), 200
 
 if __name__ == '__main__':
 	app.run(debug=True)
