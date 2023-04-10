@@ -146,10 +146,9 @@ import {
             <Stack align={'flex-start'}>
               <ListHeader>Support</ListHeader>
               <Link href={'/surveillance'}>Surveillance</Link>
-              <Link href={'#'}>Security</Link>
+              <Link href={'/security'}>Security</Link>
               <Link href={'#'}>Tracking</Link>
-              <Link href={'#'}>Setting</Link>
-              <Link href={'#'}>Camera Viewing</Link>
+              <Link href={'/Settings/Propellers'}>Settings</Link>
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Stay up to date</ListHeader>
