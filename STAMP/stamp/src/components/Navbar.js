@@ -282,19 +282,14 @@ import {
       label: 'Settings',
       children: [
         {
-          label: 'Motor Security',
+          label: 'Motor Callibration',
           subLabel: 'Test your Propellers',
           href: '/Settings/Propellers',
         },
         {
-          label: 'Drone Security',
+          label: 'Drone Callibration',
           subLabel: 'Callibrate your drone',
           href: '/Settings/Directions',
-        },
-        {
-          label: 'Control Security',
-          subLabel: 'Change controls',
-          href: '#',
         },
       ],
     },

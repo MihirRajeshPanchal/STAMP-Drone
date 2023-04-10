@@ -62,6 +62,7 @@ export default function App(){
         px={8}
         py={20}
         mx="auto"
+        rounded = "xl"
       >
         <SimpleGrid
           alignItems="center"

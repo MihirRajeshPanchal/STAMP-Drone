@@ -24,6 +24,7 @@ import {
     Stack,
     Text,
     SimpleGrid,
+    useToast,
 } from '@chakra-ui/react'
 import propellers from '../../assets/propellers.png';
 import propellers_onclick from '../../assets/propellers_onclick.gif';
@@ -35,24 +36,31 @@ import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 
 const Propellers = () => {
     const navigate = useNavigate();
+    const toast = useToast();
+    const toastIdRef = React.useRef();
 
     const [imageSrc, setImageSrc] = useState(propellers);
 
     const spinall = () => {
         setImageSrc(propellers_onclick);
+        toastIdRef.current = toast({description: 'All Propellers running'})
     };
 
     const fourth = () => {
         setImageSrc(M4);
+        toastIdRef.current = toast({description: 'M1 propeller running'})
     };
     const third = () => {
         setImageSrc(M3);
+        toastIdRef.current = toast({description: 'M4 propeller running'})
     };
     const second = () => {
         setImageSrc(M2);
+        toastIdRef.current = toast({description: 'M2 propeller running'})
     };
     const first = () => {
         setImageSrc(M1);
+        toastIdRef.current = toast({description: 'M3 propeller running'})
     };
 
     return (
@@ -90,13 +98,13 @@ const Propellers = () => {
                             >
                                 <div style={{ position: 'relative', height: '50vh' }}>
                                     <button type="submit"
-                                        onClick={fourth} style={{ position: 'absolute', top: '20%', left: '28%', borderRadius: '50%', border: '2px solid black', width: '50px', height: '50px', backgroundColor: '#4299e1' }}>M4</button>
+                                        onClick={fourth} style={{ position: 'absolute', top: '20%', left: '28%', borderRadius: '50%', border: '2px solid black', width: '50px', height: '50px', backgroundColor: '#4299e1' }}>M1</button>
                                     <button type="submit"
                                         onClick={second} style={{ position: 'absolute', top: '20%', right: '28%', borderRadius: '50%', border: '2px solid black', width: '50px', height: '50px', backgroundColor: '#4299e1' }}>M2</button>
                                     <button type="submit"
-                                        onClick={third} style={{ position: 'absolute', bottom: '20%', left: '28%', borderRadius: '50%', border: '2px solid black', width: '50px', height: '50px', backgroundColor: '#4299e1' }}>M3</button>
+                                        onClick={third} style={{ position: 'absolute', bottom: '20%', left: '28%', borderRadius: '50%', border: '2px solid black', width: '50px', height: '50px', backgroundColor: '#4299e1' }}>M4</button>
                                     <button type="submit"
-                                        onClick={first} style={{ position: 'absolute', bottom: '20%', right: '28%', borderRadius: '50%', border: '2px solid black', width: '50px', height: '50px', backgroundColor: '#4299e1' }}>M1</button>
+                                        onClick={first} style={{ position: 'absolute', bottom: '20%', right: '28%', borderRadius: '50%', border: '2px solid black', width: '50px', height: '50px', backgroundColor: '#4299e1' }}>M3</button>
                                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
                                         <img style={{ maxWidth: '30%', maxHeight: '100%' }} src={imageSrc} alt="Propellers" />
                                     </div>
