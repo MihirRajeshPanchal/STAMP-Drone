@@ -409,7 +409,7 @@
 
 
 import React from 'react';
-import { Flex, Spacer, Button, Text, useMediaQuery, Image } from '@chakra-ui/react';
+import { Flex, Spacer, Button, Text, useMediaQuery, Image, Stack } from '@chakra-ui/react';
 import { FaTools, FaHandshake, FaStar } from 'react-icons/fa';
 import mihir from '../../assets/mihir.jpg';
 import prinkal from '../../assets/prinkal.jpg';
@@ -448,7 +448,7 @@ const AboutUs = () => {
     },
     {
       id: 5,
-      text: 'Arsh Sakaria',
+      text: 'Arshkumar Sakaria',
       image: arsh,
       subheading: 'arshsakaria@gmail.com',
     },
@@ -473,7 +473,7 @@ const AboutUs = () => {
             width={isLargerThan48 ? '18%' : 'full'}
             shadow="md"
             p="6"
-            marginTop="20px"
+            marginTop='20px'
             alignItems="center"
             justifyContent="center"
             borderRadius="md"
@@ -483,10 +483,12 @@ const AboutUs = () => {
             border="1px solid #C4DDFF"
           >
             <Image src={arr.image} borderRadius="full" boxSize="60%" objectFit="cover" />
-            <Text fontSize="xl" fontWeight="semibold" mt="4">{arr.text}</Text>
+            <Text fontSize="xl" fontWeight="semibold" >{arr.text}</Text>
             <Text fontSize="sm" color="gray.600">{arr.subheading}</Text>
-            <Button backgroundColor="blue.400" padding="8px" marginTop="10px">Find</Button>    
-            <Button backgroundColor="blue.400" padding="8px" marginTop="10px">Retrain</Button>            
+            <Stack spacing={4} direction={'row'} align={'center'} paddingTop='10px'>
+              <Button colorScheme='blue' size={'sm'} >Find</Button>
+              <Button colorScheme='blue' size={'sm'}>Retrain</Button>
+            </Stack>         
           </Flex>
           <Spacer />
         </>

@@ -1,30 +1,9 @@
 [
     {
-        "id": "2e6d6546-a000-4bf3-9b83-ebbe0673346b",
+        "id": "b8eb6f40-f6fc-496a-8630-af19d6fb63c8",
         "first_name": "Sarid",
         "last_name": "Qureshi",
         "email": "saridqureshi299@gmail.com",
         "image": "User.SaridQureshi.1.jpg"
-    },
-    {
-        "id": "e5a73baf-4179-4075-b0b9-bf2d5370b6ee",
-        "first_name": "Tanay",
-        "last_name": "Desai",
-        "email": "tanaydesai2004@gmail.com",
-        "image": "User.TanayDesai.1.jpg"
-    },
-    {
-        "id": "e0fa2ffd-8dfb-4d17-86b6-44ba7afdc02b",
-        "first_name": "Mihir",
-        "last_name": "Panchal",
-        "email": "mihirpanchal5400@gmail.com",
-        "image": "User.MihirPanchal.1.jpg"
-    },
-    {
-        "id": "2724a500-981f-4d71-91a9-fdea46676e4e",
-        "first_name": "Arshkumar",
-        "last_name": "Sakaria",
-        "email": "arshsakaria@gmail.com",
-        "image": "User.ArshkumarSakaria.1.jpg"
     }
 ]

@@ -4,6 +4,7 @@ from flask_mail import Mail, Message
 from Face_Recognition.one_face_dataset import face_train, add_to_json
 from Face_Recognition.two_face_training import yml_train
 from Face_Recognition.three_face_recognition import face_detect
+from Face_Recognition.savevideo import save_video
 import cv2, os, json
 import numpy as np
 
@@ -218,6 +219,7 @@ def train():
 @app.route('/detect', methods=['POST'])
 def detect():
     face_detect(file)
+    save_video("1.mp4")
     return jsonify({'message': "detected successfully"}), 200
 
 @app.route('/test', methods=['GET'])

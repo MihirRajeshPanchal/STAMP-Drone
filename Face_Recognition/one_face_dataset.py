@@ -53,12 +53,14 @@ def face_train(first_name, last_name, email):
 
     face_detector = cv2.CascadeClassifier('Face_Recognition/haarcascade_frontalface_default.xml')
 
+    font = cv2.FONT_HERSHEY_SIMPLEX
+
     # For each person, enter one numeric face id
     # face_id = input('\n enter user id end press <return> ==>  ')
 
     print("\n [INFO] Initializing face capture. Look the camera and wait ...")
     # Initialize individual sampling face count
-    count = 0
+    count = 1
 
     while(True):
 
@@ -73,8 +75,8 @@ def face_train(first_name, last_name, email):
             count += 1
 
             # Save the captured image into the datasets folder
+            cv2.putText(img, str(count), (x+5,y-5), font, 1, (255,255,255), 2)
             cv2.imwrite("Face_Recognition/dataset/User." + first_name + last_name + '.' + str(count) + ".jpg", gray[y:y+h,x:x+w])
-
         cv2.imshow('image', img)
 
         k = cv2.waitKey(100) & 0xff # Press 'ESC' for exiting video
