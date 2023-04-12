@@ -84,5 +84,3 @@ def yml_train():
     # Print the number of faces trained and end program
         # adding data to json
     print("\n [INFO] {0} faces trained. Exiting Program".format(len(np.unique(labels))))
-
-yml_train()

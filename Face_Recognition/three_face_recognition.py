@@ -1,7 +1,7 @@
 def face_detect(input_file, output_file = "faceoutput.mp4"):
     import cv2
     import numpy as np
-    import json
+    import json,os
 
     recognizer = cv2.face.LBPHFaceRecognizer_create()
     recognizer.read('Face_Recognition/trainer/trainer.yml')
@@ -35,11 +35,12 @@ def face_detect(input_file, output_file = "faceoutput.mp4"):
     # Define min window size to be recognized as a face
     minW = 0.1*cam.get(3)
     minH = 0.1*cam.get(4)
+    
+    output_folder="processing"
+    os.makedirs(output_folder, exist_ok=True)
 
-    # Define the codec and create VideoWriter object
-    fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    out = cv2.VideoWriter(output_file,fourcc, 20.0, (640,480))
-
+    # Initialize a frame counter
+    frame_count = 0
     while True:
 
         ret, img =cam.read()
@@ -72,15 +73,20 @@ def face_detect(input_file, output_file = "faceoutput.mp4"):
                 id = "unknown"
                 confidence = "  {0}%".format(round(100 - confidence))
             
-            cv2.putText(img, str(id), (x+5,y-5), font, 1, (255,255,255), 2)
             cv2.putText(img, str(confidence), (x+5,y+h-5), font, 1, (255,255,0), 1)  
+            cv2.putText(img, str(id), (x+5,y-5), font, 1, (255,255,255), 2)
+        
+        # Write the frame into a JPEG file
+        frame_path = os.path.join(output_folder, f"output_file{frame_count:04d}.jpg")
+        cv2.imwrite(frame_path, img)
+
+        # Increment the frame counter
+        frame_count += 1
         
         cv2.imshow('camera',img) 
 
         # Write the frame into the output video file
         
-        out.write(img)
-
         k = cv2.waitKey(10) & 0xff # Press 'ESC' for exiting video
         if k == 27:
             break
@@ -88,7 +94,6 @@ def face_detect(input_file, output_file = "faceoutput.mp4"):
 
     # Release everything if job is finished
     cam.release()
-    out.release()
     cv2.destroyAllWindows()
 
 
