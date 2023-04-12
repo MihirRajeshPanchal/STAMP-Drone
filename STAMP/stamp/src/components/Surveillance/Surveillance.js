@@ -23,13 +23,90 @@ import {
   Stack,
   Text,
   SimpleGrid,
+  useToast,
 } from '@chakra-ui/react'
 import React from "react";
 
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
-
+import { useState } from 'react'
 const Train = () => {
   const navigate = useNavigate();
+  const toast = useToast();
+
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [filename, setFilename] = useState("");
+  const [outpuFilename, setOutputFilename] = useState("");
+
+  const handleFileInput = (e) => {
+    setSelectedFile(e.target.files[0]);
+    setFilename(e.target.files[0].name);
+};
+
+const uploadFile = () => {
+    if (selectedFile) {
+        const formData = new FormData();
+        formData.append("file", selectedFile);
+        
+        fetch("http://localhost:5000/yoloupload", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+            console.log("File uploaded successfully");
+            toast({
+                title: `File "${filename}" uploaded successfully`,
+                status: "success",
+                duration: 3000,
+                isClosable: true,
+              });
+              setFilename("");
+
+            //   run code for YOLO detection
+            fetch("http://127.0.0.1:5000/yolo", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                  console.log("Detected");
+                  window.location.assign('http://localhost:5000/yolo'); 
+                  toast({
+                      title: `Detected successfully`,
+                      status: "success",
+                      duration: 3000,
+                      isClosable: true,
+                    });
+                } else {
+                    console.log("Error while Detecting");
+                }
+            })
+            .catch(error => {
+                console.log(error);
+            });
+
+
+
+            } else {
+            console.log("Error uploading file");
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        });
+    }
+    else {
+        toast({
+            title: "Please select a video file",
+            status: "error",
+            duration: 3000,
+            isClosable: true,
+        });
+    }
+}
+
   return (
       <div>
           <Box
@@ -85,16 +162,28 @@ const Train = () => {
                                       }}
                                       textAlign="right"
                                   >
-                                      <Input placeholder='Output Filename' width="500px"/>
-                                      <Button
-                                          style={{ margin: '0 10px' }}
-                                          type="submit"
-                                      // onClick={() =>
-                                      //   navigate('/Security/Loading')
-                                      // }
-                                      >
-                                          Upload
-                                      </Button>
+                                      <Input value={outpuFilename} onChange={(e) => setOutputFilename(e.target.value)} placeholder='Output Filename' width="500px"/>
+
+                                                                                
+                                        <input
+                                        type="file"
+                                        onChange={handleFileInput}
+                                        style={{ display: "none" }}
+                                        />
+                                        <Button
+                                        onClick={() =>
+                                            document.querySelector("input[type='file']").click()
+                                        }
+                                        >
+                                        Upload File
+                                        </Button>
+                                        {filename && <Text mt={2}>Selected file: {filename}</Text>}
+
+                                        <Button onClick={uploadFile} disabled={!selectedFile} mt={2}>
+                                        Submit
+                                        </Button>
+
+
                                       <Button
                                           style={{ margin: '0 10px' }}
                                           type="submit"

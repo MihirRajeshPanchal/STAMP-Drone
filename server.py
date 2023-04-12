@@ -109,8 +109,8 @@ def get_box_dimensions(outputs, height, width):
 
 
 def load_yolo():
-    net = cv2.dnn.readNetFromDarknet("Object Detection/python/yolov3_testing.cfg", "Object Detection/python/yolov3.weights")
-    with open("Object Detection/python/coco.names", "r") as f:
+    net = cv2.dnn.readNetFromDarknet("Object_Detection/python/yolov3_testing.cfg", "Object_Detection/python/yolov3.weights")
+    with open("Object_Detection/python/coco.names", "r") as f:
         classes = [line.strip() for line in f.readlines()]
     output_layers = [layer_name for layer_name in net.getUnconnectedOutLayersNames()]
     colors = np.random.uniform(0, 255, size=(len(classes), 3))
@@ -138,8 +138,11 @@ def process_frame(frame, net, output_layers, classes, colors):
     return frame
 
 def generate_frames():
+    global yolo_file
+    # yolo_file = yolo_file.filename
     model, classes, colors, output_layers = load_yolo()
-    cap = cv2.VideoCapture(0)
+    print("input/" + yolo_file.filename)
+    cap = cv2.VideoCapture("input/" + yolo_file.filename)
     while True:
         success, frame = cap.read()
         if not success:
@@ -150,7 +153,25 @@ def generate_frames():
         yield (b'--frame\r\n'
                 b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
-@app.route('/yolo')
+yolo_file = ""
+
+@app.route('/yoloupload', methods=['POST'])
+def yoloupload():
+    global yolo_file
+    if 'file' not in request.files:
+        return jsonify({'error': 'No file in request'}), 400
+    yolo_file = request.files['file']
+    if yolo_file.filename == '':
+        return jsonify({'error': 'No file selected'}), 400
+    if yolo_file:
+        if not os.path.exists('input'):
+            os.makedirs('input')
+        yolo_file.save('input/' + yolo_file.filename)
+        return jsonify({'message': f'{yolo_file.filename} uploaded successfully'}), 200
+    else:
+        return jsonify({'error': 'Failed to upload file'}), 500
+
+@app.route('/yolo', methods=['POST', 'GET'])
 def index():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
@@ -198,6 +219,12 @@ def train():
 def detect():
     face_detect(file)
     return jsonify({'message': "detected successfully"}), 200
+
+@app.route('/test', methods=['GET'])
+def test():
+    # for testing only
+    yml_train()
+    return jsonify({'message': "Success"}), 200
 
 if __name__ == '__main__':
 	app.run(debug=True)
