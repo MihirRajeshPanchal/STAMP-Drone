@@ -56,10 +56,6 @@ dic_apis_react_call={
 }
 
 
-# @app.route('/dic_apis[i]', methods=['POST'])
-# def dicapis():
-#     pass
-
 @app.route('/surveillance', methods=['POST', 'GET'])
 def surveillance():
     return jsonify({'message': 'Hello, World!'})
@@ -187,7 +183,7 @@ def index():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 @app.route('/generateyolo', methods=['POST', 'GET'])
-def generateyolo():
+def generateyolo(): # take videofile from user via user
     import cv2
     import os
     import shutil
@@ -198,7 +194,6 @@ def generateyolo():
     # video_file = filename
     video_file = "yolo.mp4"
     
-
     # Get a list of all the JPEG images in the directory
     image_files = [os.path.join(image_dir, f) for f in os.listdir(image_dir) if f.endswith(".jpg")]
 
@@ -221,7 +216,7 @@ def generateyolo():
     # Release the VideoWriter and close all windows
     out.release()
     cv2.destroyAllWindows()
-    shutil.rmtree("processing")
+    shutil.rmtree("yolo_processing")
 
 file = ""
 
