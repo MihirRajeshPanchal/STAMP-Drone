@@ -43,24 +43,84 @@ const Propellers = () => {
 
     const spinall = () => {
         setImageSrc(propellers_onclick);
-        toastIdRef.current = toast({description: 'All Propellers running'})
+        toastIdRef.current = toast({description: 'All Propellers running'});
+        fetch("http://localhost:5000/spinall", {
+                method: "POST",
+        })
+        .then(() => {
+            setTimeout(() => {
+                setImageSrc(propellers);
+            }, 1000); // wait for 5 seconds
+        })
+        .catch((error) => {
+            console.error(error);
+            toast({ description: "Error spinning propellers", status: "error" });
+        });
     };
 
     const fourth = () => {
         setImageSrc(M4);
         toastIdRef.current = toast({description: 'M1 propeller running'})
+        fetch("http://localhost:5000/m1", {
+            method: "POST",
+        })
+        .then(() => {
+            setTimeout(() => {
+                setImageSrc(propellers);
+            }, 1000); // wait for 5 seconds
+        })
+        .catch((error) => {
+            console.error(error);
+            toast({ description: "Error spinning propellers", status: "error" });
+        });
     };
     const third = () => {
         setImageSrc(M3);
         toastIdRef.current = toast({description: 'M4 propeller running'})
+        fetch("http://localhost:5000/m4", {
+            method: "POST",
+        })
+        .then(() => {
+            setTimeout(() => {
+                setImageSrc(propellers);
+            }, 1000); // wait for 5 seconds
+        })
+        .catch((error) => {
+            console.error(error);
+            toast({ description: "Error spinning propellers", status: "error" });
+        });
     };
     const second = () => {
         setImageSrc(M2);
         toastIdRef.current = toast({description: 'M2 propeller running'})
+        fetch("http://localhost:5000/m2", {
+            method: "POST",
+        })
+        .then(() => {
+            setTimeout(() => {
+                setImageSrc(propellers);
+            }, 1000); // wait for 5 seconds
+        })
+        .catch((error) => {
+            console.error(error);
+            toast({ description: "Error spinning propellers", status: "error" });
+        });
     };
     const first = () => {
         setImageSrc(M1);
         toastIdRef.current = toast({description: 'M3 propeller running'})
+        fetch("http://localhost:5000/m3", {
+            method: "POST",
+        })
+        .then(() => {
+            setTimeout(() => {
+                setImageSrc(propellers);
+            }, 1000); // wait for 5 seconds
+        })
+        .catch((error) => {
+            console.error(error);
+            toast({ description: "Error spinning propellers", status: "error" });
+        });
     };
 
     return (

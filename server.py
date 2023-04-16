@@ -5,7 +5,8 @@ from Face_Recognition.one_face_dataset import face_train, add_to_json
 from Face_Recognition.two_face_training import yml_train
 from Face_Recognition.three_face_recognition import face_detect
 from Face_Recognition.savevideo import save_video
-import cv2, os, json
+from plutox import *
+import cv2, os, json, time
 import numpy as np
 
 app = Flask(__name__)
@@ -219,13 +220,85 @@ def train():
 @app.route('/detect', methods=['POST'])
 def detect():
     face_detect(file)
-    save_video("1.mp4")
+    save_video("2.mp4")
     return jsonify({'message': "detected successfully"}), 200
 
 @app.route('/test', methods=['GET'])
 def test():
     # for testing only
     yml_train()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/spinall', methods=['POST'])
+def spinall():
+    client = Drone()
+    client.arm()
+    time.sleep(5)
+    client.disArm()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/m1', methods=['POST'])
+def m1():
+    client = Drone()
+    client.m1()
+    time.sleep(5)
+    client.m1stop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/m2', methods=['POST'])
+def m2():
+    client = Drone()
+    client.m2()
+    time.sleep(5)
+    client.m2stop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/m3', methods=['POST'])
+def m3():
+    client = Drone()
+    client.m3()
+    time.sleep(5)
+    client.m3stop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/m4', methods=['POST'])
+def m4():
+    client = Drone()
+    client.m4()
+    time.sleep(5)
+    client.m4stop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/left', methods=['POST'])
+def left():
+    client = Drone()
+    client.left()
+    time.sleep(5)
+    client.leftstop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/right', methods=['POST'])
+def right():
+    client = Drone()
+    client.right()
+    time.sleep(5)
+    client.rightstop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/forward', methods=['POST'])
+def forward():
+    client = Drone()
+    client.forward()
+    time.sleep(5)
+    client.forwardstop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/backward', methods=['POST'])
+def backward():
+    client = Drone()
+    client.backward()
+    time.sleep(5)
+    client.backwardstop()
     return jsonify({'message': "Success"}), 200
 
 if __name__ == '__main__':

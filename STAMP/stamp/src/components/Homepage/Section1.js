@@ -96,6 +96,8 @@ export default function App(){
                     px={{ base: 8, md: 10 }}
                     py={{ base: 3, md: 4 }}
                     cursor="pointer"
+                    href="http://127.0.0.1:8550/"
+                    target="_blank"
                   >
                     Get started
                   </chakra.a>
@@ -116,6 +118,8 @@ export default function App(){
                     bg="brand.100"
                     _hover={{ bg: "brand.200" }}
                     cursor="pointer"
+                    href="/Settings/Propellers"
+                    target="_blank"
                   >
                     Live demo
                   </chakra.a>

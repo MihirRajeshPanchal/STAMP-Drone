@@ -23,27 +23,88 @@ import {
   GridItem,
   Stack,
   Text,
+  useToast,
   SimpleGrid,
 } from '@chakra-ui/react';
-import directions from '../../assets/directions.png';
+import propellers from "../../assets/propellers.png"
+import forwardimg from "../../assets/forward.png"
+import backwardimg from "../../assets/backward.png"
+import leftimg from "../../assets/left.png"
+import rightimg from "../../assets/right.png"
 
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 
 const Directions = () => {
   const navigate = useNavigate();
+  const toast = useToast();
+  const toastIdRef = React.useRef();
 
-  // const fourth = () => {
-  //     setImageSrc(M4);
-  // };
-  // const third = () => {
-  //     setImageSrc(M3);
-  // };
-  // const second = () => {
-  //     setImageSrc(M2);
-  // };
-  // const first = () => {
-  //     setImageSrc(M1);
-  // };
+  const [imageSrc, setImageSrc] = useState(propellers);
+
+  const left = () => {
+    setImageSrc(leftimg);
+    toastIdRef.current = toast({description: 'Drone Moving left'})
+    fetch("http://localhost:5000/left", {
+        method: "POST",
+    })
+    .then(() => {
+        setTimeout(() => {
+            setImageSrc(propellers);
+        }, 1000); // wait for 5 seconds
+    })
+    .catch((error) => {
+        console.error(error);
+        toast({ description: "Error spinning propellers", status: "error" });
+    });
+  };
+  const backward = () => {
+    setImageSrc(backwardimg);
+    toastIdRef.current = toast({description: 'Drone Moving Backward'})
+    fetch("http://localhost:5000/backward", {
+        method: "POST",
+    })
+    .then(() => {
+        setTimeout(() => {
+            setImageSrc(propellers);
+        }, 1000); // wait for 5 seconds
+    })
+    .catch((error) => {
+        console.error(error);
+        toast({ description: "Error spinning propellers", status: "error" });
+    });
+  };
+  const right = () => {
+    setImageSrc(rightimg);
+    toastIdRef.current = toast({description: 'Drone Moving Right'})
+    fetch("http://localhost:5000/right", {
+        method: "POST",
+    })
+    .then(() => {
+        setTimeout(() => {
+            setImageSrc(propellers);
+        }, 1000); // wait for 5 seconds
+    })
+    .catch((error) => {
+        console.error(error);
+        toast({ description: "Error spinning propellers", status: "error" });
+    });
+  };
+  const forward = () => {
+    setImageSrc(forwardimg);
+    toastIdRef.current = toast({description: 'Drone Moving Forward'})
+    fetch("http://localhost:5000/forward", {
+        method: "POST",
+    })
+    .then(() => {
+        setTimeout(() => {
+            setImageSrc(propellers);
+        }, 1000); // wait for 5 seconds
+    })
+    .catch((error) => {
+        console.error(error);
+        toast({ description: "Error spinning propellers", status: "error" });
+    });
+  };
 
   return (
     <div>
@@ -84,11 +145,11 @@ const Directions = () => {
                 <div style={{ position: 'relative', height: '80vh' }}>
                   <button
                     type="submit"
-                    //onClick={fourth}
+                    onClick={left}
                     style={{
                       position: 'absolute',
                       top: '50%',
-                      left: '35%',
+                      left: '25%',
                       transform: 'translateY(-50%)',
                       borderRadius: '50%',
                       border: '2px solid black',
@@ -101,11 +162,11 @@ const Directions = () => {
                   </button>
                   <button
                     type="submit"
-                    //onClick={second}
+                    onClick={right}
                     style={{
                       position: 'absolute',
                       top: '50%',
-                      right: '35%',
+                      right: '25%',
                       transform: 'translateY(-50%)',
                       borderRadius: '50%',
                       border: '2px solid black',
@@ -118,10 +179,10 @@ const Directions = () => {
                   </button>
                   <button
                     type="submit"
-                    //onClick={third}
+                    onClick={backward}
                     style={{
                       position: 'absolute',
-                      bottom: '20%',
+                      bottom: '0%',
                       left: '50%',
                       transform: 'translateX(-50%)',
                       borderRadius: '50%',
@@ -135,10 +196,10 @@ const Directions = () => {
                   </button>
                   <button
                     type="submit"
-                    //onClick={first}
+                    onClick={forward}
                     style={{
                       position: 'absolute',
-                      top: '20%',
+                      top: '0%',
                       left: '50%',
                       transform: 'translateX(-50%)',
                       borderRadius: '50%',
@@ -160,7 +221,7 @@ const Directions = () => {
                   >
                     <img
                       style={{ maxWidth: '50%', maxHeight: '80%' }}
-                      src={directions}
+                      src={imageSrc}
                       alt="Propellers"
                     />
                   </div>
@@ -197,12 +258,6 @@ const Directions = () => {
                   }}
                   textAlign="right"
                 >
-                  <Button
-                    type="submit"
-                    // onClick={spinall}
-                  >
-                    SPIN ALL
-                  </Button>
                 </Box>
               </GridItem>
             </SimpleGrid>

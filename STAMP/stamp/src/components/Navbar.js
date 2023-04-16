@@ -279,6 +279,10 @@ import {
       href: '/Surveillance',
     },
     {
+      label: 'Camera Viewing',
+      href: '/Cameraviewing',
+    },
+    {
       label: 'Settings',
       children: [
         {
