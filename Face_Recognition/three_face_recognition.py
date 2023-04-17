@@ -13,7 +13,7 @@ def face_detect(input_file, output_file = "faceoutput.mp4"):
     #iniciate id counter
     id = 0
 
-    with open('Face_Recognition/details.json') as f:
+    with open('STAMP/stamp/src/components/Security/details.json') as f:
         data = json.load(f)
 
     # print(data)
@@ -83,7 +83,7 @@ def face_detect(input_file, output_file = "faceoutput.mp4"):
         # Increment the frame counter
         frame_count += 1
         
-        cv2.imshow('camera',img) 
+        # cv2.imshow('camera',img) 
 
         # Write the frame into the output video file
         

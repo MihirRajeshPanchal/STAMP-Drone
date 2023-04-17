@@ -416,43 +416,24 @@ import prinkal from '../../assets/prinkal.jpg';
 import arsh from '../../assets/arsh.jpg';
 import tanay from '../../assets/tanay.jpg';
 import sarid from '../../assets/sarid.jpg';
+import data from './details.json';
+import defaultProfile from './default.png';
+import { useNavigate } from 'react-router-dom';
 
 const AboutUs = () => {
-  
+  const navigate = useNavigate();
   const [isLargerThan48] = useMediaQuery('(min-width: 48em)');
 
-  const array = [
-    {
-      id: 1,
-      text: 'Prinkal Doshi',
-      image: prinkal,
-      subheading: 'prinkaldoshi@gmail.com',
-    },
-    {
-      id: 2,
-      text: 'Mihir Panchal',
-      image: mihir,
-      subheading: 'mihirpanchal@gmail.com',
-    },
-    {
-      id: 3,
-      text: 'Tanay Desai',
-      image: tanay,
-      subheading: 'tanaydesai@gmail.com',
-    },
-    {
-      id: 4,
-      text: 'Sarid Qureshi',
-      image: sarid,
-      subheading: 'saridqureshi@gmail.com',
-    },
-    {
-      id: 5,
-      text: 'Arshkumar Sakaria',
-      image: arsh,
-      subheading: 'arshsakaria@gmail.com',
-    },
-  ];
+  const array = data.map(item => ({
+    id: item.id,
+    text: `${item.first_name} ${item.last_name}`,
+    image: item.image,
+    subheading: item.email,
+  }));
+
+  const find = () => {
+    navigate("/Security/Detect");
+  }
 
   return (
     <Flex
@@ -482,11 +463,11 @@ const AboutUs = () => {
             mb={isLargerThan48 ? '0' : '4'}
             border="1px solid #C4DDFF"
           >
-            <Image src={arr.image} borderRadius="full" boxSize="60%" objectFit="cover" />
+            <Image src={defaultProfile} borderRadius="full" boxSize="60%" objectFit="cover" />
             <Text fontSize="xl" fontWeight="semibold" >{arr.text}</Text>
             <Text fontSize="sm" color="gray.600">{arr.subheading}</Text>
             <Stack spacing={4} direction={'row'} align={'center'} paddingTop='10px'>
-              <Button colorScheme='blue' size={'sm'} >Find</Button>
+              <Button colorScheme='blue' size={'sm'} onClick={find}>Find</Button>
               <Button colorScheme='blue' size={'sm'}>Retrain</Button>
             </Stack>         
           </Flex>

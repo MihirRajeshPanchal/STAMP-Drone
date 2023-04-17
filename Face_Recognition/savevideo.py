@@ -19,8 +19,8 @@ def save_video(filename):
     height, width, channels = frame.shape
 
     # Define the codec and create a VideoWriter object
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v') # MPEG-4 codec
-    out = cv2.VideoWriter(video_file, fourcc, 25.0, (width, height))
+    fourcc = cv2.VideoWriter.fourcc('m','p','4','2') # MPEG-4 codec
+    out = cv2.VideoWriter(video_file, fourcc, 30.0, (width, height))
 
     # Loop through all the image files and add them to the video
     for image_file in image_files:

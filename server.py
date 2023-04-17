@@ -7,6 +7,7 @@ from Face_Recognition.three_face_recognition import face_detect
 from Face_Recognition.savevideo import save_video
 import cv2, os, json
 import numpy as np
+import shutil
 
 app = Flask(__name__)
 CORS(app)
@@ -220,6 +221,20 @@ def train():
 def detect():
     face_detect(file)
     save_video("1.mp4")
+    source = "1.mp4"
+    dest = "STAMP/stamp/src/components/Security/"
+
+    print("before copy")
+    if not os.path.exists(source):
+        print("path doesnt exist")
+        return f"Source file '{source}' does not exist", 404
+    
+    try:
+        shutil.copy2(source, dest)
+        print("copied")
+    except Exception as e:
+        return f"Error copying file: {e}", 500
+
     return jsonify({'message': "detected successfully"}), 200
 
 @app.route('/test', methods=['GET'])

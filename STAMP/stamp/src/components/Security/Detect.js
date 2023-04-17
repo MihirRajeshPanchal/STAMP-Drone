@@ -28,6 +28,9 @@ import {
 import React, { useState, } from "react";
 import Loading from "./Loading.js";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+// import video from '../../../../../1.mp4';
+import video from './1.mp4';
+
 
 const Train = () => {
     const navigate = useNavigate();
@@ -78,6 +81,7 @@ const Train = () => {
                           duration: 3000,
                           isClosable: true,
                         });
+                        window.location.assign('http://localhost:3000/Security/Detect');
                     } else {
                         console.log("Error while Detecting");
                     }
@@ -146,9 +150,8 @@ const Train = () => {
                                 >
                                     <div>
                                         <video controls style={{width: '100%'}}>
-                                            <source src="https://www.youtube.com/watch?v=H5v3kku4y6Q" type="video"/>
+                                            <source src={video} type="video/mp4"/>
                                         </video>
-                                        {/* <Webcam /> */}
                                     </div>
                                     <Box
                                         px={{
