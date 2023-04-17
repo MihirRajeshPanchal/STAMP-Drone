@@ -8,6 +8,7 @@ from Face_Recognition.savevideo import save_video
 from plutox import *
 import cv2, os, json, time
 import numpy as np
+import shutil
 
 app = Flask(__name__)
 CORS(app)
@@ -205,8 +206,8 @@ def generateyolo(): # take videofile from user via user
     height, width, channels = frame.shape
 
     # Define the codec and create a VideoWriter object
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v') # MPEG-4 codec
-    out = cv2.VideoWriter(video_file, fourcc, 25.0, (width, height))
+    fourcc = cv2.VideoWriter.fourcc('m','p','4','2') # MPEG-4 codec
+    out = cv2.VideoWriter(video_file, fourcc, 30.0, (width, height))
 
     # Loop through all the image files and add them to the video
     for image_file in image_files:
@@ -261,7 +262,21 @@ def train():
 @app.route('/detect', methods=['POST'])
 def detect():
     face_detect(file)
-    save_video("2.mp4")
+    save_video("1.mp4")
+    source = "1.mp4"
+    dest = "STAMP/stamp/src/components/Security/"
+
+    print("before copy")
+    if not os.path.exists(source):
+        print("path doesnt exist")
+        return f"Source file '{source}' does not exist", 404
+    
+    try:
+        shutil.copy2(source, dest)
+        print("copied")
+    except Exception as e:
+        return f"Error copying file: {e}", 500
+
     return jsonify({'message': "detected successfully"}), 200
 
 @app.route('/test', methods=['GET'])

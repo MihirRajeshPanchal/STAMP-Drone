@@ -16,9 +16,9 @@ def add_to_json(first_name, last_name, email, image):
     }
 
     # Check if the JSON file exists
-    if os.path.isfile('Face_Recognition/details.json'):
+    if os.path.isfile('STAMP/stamp/src/components/Security/details.json'):
         # If the file exists, load the existing data
-        with open('Face_Recognition/details.json', 'r') as f:
+        with open('STAMP/stamp/src/components/Security/details.json', 'r') as f:
             data = json.load(f)
         
         # Check if the name already exists in the JSON file
@@ -32,14 +32,14 @@ def add_to_json(first_name, last_name, email, image):
             data.append(new_entry)
         
         # Write the updated data to the JSON file
-        with open('Face_Recognition/details.json', 'w') as f:
+        with open('STAMP/stamp/src/components/Security/details.json', 'w') as f:
             json.dump(data, f, indent=4)
     else:
         # If the file does not exist, create a new list with the new entry
         data = [new_entry]
 
         # Write the data to the JSON file
-        with open('Face_Recognition/details.json', 'w') as f:
+        with open('STAMP/stamp/src/components/Security/details.json', 'w') as f:
             json.dump(data, f, indent=4)
 
 

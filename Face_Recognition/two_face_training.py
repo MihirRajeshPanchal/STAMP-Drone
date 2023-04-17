@@ -4,7 +4,7 @@ def add_to_json(image_label_set):
     # Define the original set of tuples
 
     # Read the JSON object from a file
-    with open("Face_Recognition/details.json", "r") as f:
+    with open("STAMP/stamp/src/components/Security/details.json", "r") as f:
         users_list = json.load(f)
 
     # Loop through the list of users to find those whose names are in the original set
@@ -15,21 +15,21 @@ def add_to_json(image_label_set):
                 user["image_id"] = image_id
 
     # Write the updated JSON object back to the file
-    with open("Face_Recognition/details.json", "w") as f:
+    with open("STAMP/stamp/src/components/Security/details.json", "w") as f:
         json.dump(users_list, f)
         
 def rearrange_json():
     import json
 
     # load the JSON file
-    with open('Face_Recognition/details.json') as f:
+    with open('STAMP/stamp/src/components/Security/details.json') as f:
         data = json.load(f)
 
     # sort the data by image_id
     data_sorted = sorted(data, key=lambda x: x['image_id'])
 
     # save the sorted data to a new file
-    with open('Face_Recognition/details.json', 'w') as f:
+    with open('STAMP/stamp/src/components/Security/details.json', 'w') as f:
         json.dump(data_sorted, f, indent=4)  
               
 def yml_train():

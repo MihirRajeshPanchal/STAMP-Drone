@@ -1,0 +1,18 @@
+[
+    {
+        "id": "a8eb80b8-1c8f-404f-ab09-59ed2c9dd8f2",
+        "first_name": "Hero",
+        "last_name": "Che",
+        "email": "heroche@gmail.com",
+        "image": "User.HeroChe.1.jpg",
+        "image_id": 0
+    },
+    {
+        "id": "02dd8691-2265-44ae-9aa5-8dfdb70ae937",
+        "first_name": "Mihir",
+        "last_name": "Panchal",
+        "email": "mihirpanchal5400@gmail.com",
+        "image": "User.MihirPanchal.1.jpg",
+        "image_id": 1
+    }
+]
