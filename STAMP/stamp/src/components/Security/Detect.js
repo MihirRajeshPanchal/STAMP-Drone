@@ -165,7 +165,7 @@ const Train = () => {
                                         }}
                                         textAlign="right"
                                     >
-                                        <Input value={outpuFilename} onChange={(e) => setOutputFilename(e.target.value)} placeholder='Output Filename' width="500px"/>
+                                        <Input value={outpuFilename}  style={{ margin: '0 10px' }} onChange={(e) => setOutputFilename(e.target.value)} placeholder='Output Filename' width="430px"/>
 
                                         
                                             <input
@@ -174,18 +174,26 @@ const Train = () => {
                                             style={{ display: "none" }}
                                             />
                                             <Button
+                                                 style={{ margin: '0 10px' }}
+                                           
                                             onClick={() =>
                                                 document.querySelector("input[type='file']").click()
                                             }
                                             >
                                             Upload File
                                             </Button>
-                                            {filename && <Text mt={2}>Selected file: {filename}</Text>}
+                                       
                                         
-                                        <Button onClick={uploadFile} disabled={!selectedFile} mt={2}>
+                                        <Button
+                                        onClick={uploadFile} disabled={!selectedFile} mt={2}
+                                            style={{ margin: '0 10px' }}
+                                          
+                                        // onClick={() =>
+                                        //   navigate('/Security/Loading')
+                                        // }
+                                        >
                                             Submit
                                         </Button>
-
 
                                         <Button
                                             style={{ margin: '0 10px' }}
@@ -205,7 +213,7 @@ const Train = () => {
                                         >
                                             Save to Cloud
                                         </Button>
-
+                                        {filename && <Text mt={2}>Selected file: {filename}</Text>}
                                     </Box>
                                 </chakra.form>
                             </GridItem>

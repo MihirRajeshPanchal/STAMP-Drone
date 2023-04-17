@@ -15,16 +15,16 @@ const AboutUs = () => {
   const array = [
     {
       id: 1,
+      text: 'Mihir Panchal',
+      image: mihir,
+      subheading: 'Full Stack Developer',
+    },
+    {
+      id: 2,
       text: 'Prinkal Doshi',
       image: prinkal,
       subheading: 'Web Developer',
 
-    },
-    {
-      id: 2,
-      text: 'Mihir Panchal',
-      image: mihir,
-      subheading: 'Full Stack Developer',
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ const AboutUs = () => {
       id: 5,
       text: 'Arsh Sakaria',
       image: arsh,
-      subheading: 'Drone Programmer',
+      subheading: 'Drone Pilot',
     },
   ];
 

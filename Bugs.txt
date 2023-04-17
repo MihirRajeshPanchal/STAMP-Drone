@@ -1,21 +1,26 @@
 Frontend Prinkal Tanay
-1. Footer in Homepage
-2. Voice Assistant button in /Settings/Directions
-3. Changing UI and adding toast message in /Settings/Directions
-4. Adding a dronegpt service button in lower right corner of screen throughout all components which calls dronegpt
-5. /Security/Detect adjust the buttons
-6. Rename Navbar content to actual content within
-7. Add favicon and Title to web application STAMP\stamp\public\index.html
-8. Redesign component in /Security/ExistingRecord to have find and retrain buttons side by side 
-9. Homepage all section integration Section3 Section4
+1. Add links to footer
+2. In /Settings/Directions make the drone propellers spinning when direction button is clicked forwardimg,backwardimg,leftimg,rightimg
+3. /Security/Detect adjust the buttons
+4. /Surveillance adjust the buttons
+5. Change photos of drone in settings according to background color by hook 
+    for dark mode drone color should be white
+    const { colorMode, toggleColorMode } = useColorMode();
 
 Backend Sarid Mihir
-2. Integration of Security and Surveillance
-3. STAMP Support api to open its port implicitly on button click as _blank
+1. Integration of Security and Surveillance
+2. Cloud Sync buttons Backend
 
 Documentation Arsh
-1. SPIT Innovation Cup PPT
-2. Create Content for Daily Diary sent as Named "SBMP_Poject_Weekly_Report_Form"
-3. Create UML Diagrams any 6 for Blackbook
-4. Complete Blackbook 
-5. Complete PPT for Presentation at 12th April with Abhijit and Anita Kulkarni
+1. Create Content for Daily Diary sent as Named "SBMP_Poject_Weekly_Report_Form"
+2. Create UML Diagrams any 6 for Blackbook
+3. Complete Blackbook 
+4. Complete PPT for Presentation at 12th April with Abhijit and Anita Kulkarni
+
+
+After these bugs are solved project is Complete
+After project completion task
+1. Configuration of project on all team members
+2. Removing unwanted imports in react app so that react app is clean and compiles successfully without any warnings
+3. Create a docker container of the project 
+4. Documentation 

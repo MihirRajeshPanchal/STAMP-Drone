@@ -5,7 +5,8 @@ from Face_Recognition.one_face_dataset import face_train, add_to_json
 from Face_Recognition.two_face_training import yml_train
 from Face_Recognition.three_face_recognition import face_detect
 from Face_Recognition.savevideo import save_video
-import cv2, os, json
+from plutox import *
+import cv2, os, json, time
 import numpy as np
 import shutil
 
@@ -55,10 +56,6 @@ dic_apis_react_call={
     "/blockchainconnect":"navbar me :- STAMP\stamp\src\blockchain\Wallet.js  http://localhost:3000/blockchainconnect",
 }
 
-
-# @app.route('/dic_apis[i]', methods=['POST'])
-# def dicapis():
-#     pass
 
 @app.route('/surveillance', methods=['POST', 'GET'])
 def surveillance():
@@ -145,13 +142,22 @@ def generate_frames():
     model, classes, colors, output_layers = load_yolo()
     print("input/" + yolo_file.filename)
     cap = cv2.VideoCapture("input/" + yolo_file.filename)
+    frame_count = 0
+    output_folder = "yolo_processing"
+    os.makedirs(output_folder, exist_ok=True)
     while True:
         success, frame = cap.read()
         if not success:
             break
         frame = process_frame(frame, model, output_layers, classes, colors)
         ret, buffer = cv2.imencode('.jpg', frame)
+        
+        frame_path = os.path.join(output_folder, f"output_file{frame_count:04d}.jpg")
+        cv2.imwrite(frame_path, frame)
+        
         frame = buffer.tobytes()
+        frame_count+=1
+        
         yield (b'--frame\r\n'
                 b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
@@ -176,6 +182,42 @@ def yoloupload():
 @app.route('/yolo', methods=['POST', 'GET'])
 def index():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+@app.route('/generateyolo', methods=['POST', 'GET'])
+def generateyolo(): # take videofile from user via user
+    import cv2
+    import os
+    import shutil
+    # Path to the directory containing the JPEG images
+    image_dir = "yolo_processing/"
+
+    # Output video file name
+    # video_file = filename
+    video_file = "yolo.mp4"
+    
+    # Get a list of all the JPEG images in the directory
+    image_files = [os.path.join(image_dir, f) for f in os.listdir(image_dir) if f.endswith(".jpg")]
+
+    # Sort the image files in ascending order
+    image_files.sort()
+
+    # Read the first image to get the image size
+    frame = cv2.imread(image_files[0])
+    height, width, channels = frame.shape
+
+    # Define the codec and create a VideoWriter object
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v') # MPEG-4 codec
+    out = cv2.VideoWriter(video_file, fourcc, 25.0, (width, height))
+
+    # Loop through all the image files and add them to the video
+    for image_file in image_files:
+        frame = cv2.imread(image_file)
+        out.write(frame)
+
+    # Release the VideoWriter and close all windows
+    out.release()
+    cv2.destroyAllWindows()
+    shutil.rmtree("yolo_processing")
 
 file = ""
 
@@ -241,6 +283,78 @@ def detect():
 def test():
     # for testing only
     yml_train()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/spinall', methods=['POST'])
+def spinall():
+    client = Drone()
+    client.arm()
+    time.sleep(5)
+    client.disArm()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/m1', methods=['POST'])
+def m1():
+    client = Drone()
+    client.m1()
+    time.sleep(5)
+    client.m1stop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/m2', methods=['POST'])
+def m2():
+    client = Drone()
+    client.m2()
+    time.sleep(5)
+    client.m2stop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/m3', methods=['POST'])
+def m3():
+    client = Drone()
+    client.m3()
+    time.sleep(5)
+    client.m3stop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/m4', methods=['POST'])
+def m4():
+    client = Drone()
+    client.m4()
+    time.sleep(5)
+    client.m4stop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/left', methods=['POST'])
+def left():
+    client = Drone()
+    client.left()
+    time.sleep(5)
+    client.leftstop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/right', methods=['POST'])
+def right():
+    client = Drone()
+    client.right()
+    time.sleep(5)
+    client.rightstop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/forward', methods=['POST'])
+def forward():
+    client = Drone()
+    client.forward()
+    time.sleep(5)
+    client.forwardstop()
+    return jsonify({'message': "Success"}), 200
+
+@app.route('/backward', methods=['POST'])
+def backward():
+    client = Drone()
+    client.backward()
+    time.sleep(5)
+    client.backwardstop()
     return jsonify({'message': "Success"}), 200
 
 if __name__ == '__main__':
