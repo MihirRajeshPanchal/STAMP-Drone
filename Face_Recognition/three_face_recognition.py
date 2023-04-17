@@ -36,7 +36,7 @@ def face_detect(input_file, output_file = "faceoutput.mp4"):
     minW = 0.1*cam.get(3)
     minH = 0.1*cam.get(4)
     
-    output_folder="processing"
+    output_folder="face_processing"
     os.makedirs(output_folder, exist_ok=True)
 
     # Initialize a frame counter

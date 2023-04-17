@@ -3,7 +3,7 @@ def save_video(filename):
     import os
     import shutil
     # Path to the directory containing the JPEG images
-    image_dir = "processing/"
+    image_dir = "face_processing/"
 
     # Output video file name
     video_file = filename
@@ -30,4 +30,4 @@ def save_video(filename):
     # Release the VideoWriter and close all windows
     out.release()
     cv2.destroyAllWindows()
-    shutil.rmtree("processing")
+    shutil.rmtree("face_processing")
