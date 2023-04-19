@@ -157,9 +157,25 @@ def generate_frames():
         
         frame = buffer.tobytes()
         frame_count+=1
-        
-        yield (b'--frame\r\n'
-                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+    generateyolo()
+    print("Video Generated")
+    
+    source = "yolo.mp4"
+    dest = "STAMP/stamp/src/components/Surveillance/"
+
+    print("before copy")
+    if not os.path.exists(source):
+        print("path doesnt exist")
+        return f"Source file '{source}' does not exist", 404
+    
+    try:
+        shutil.copy2(source, dest)
+        print("copied")
+    except Exception as e:
+        return f"Error copying file: {e}", 500
+
+        # yield (b'--frame\r\n'
+        #         b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
 yolo_file = ""
 
@@ -275,8 +291,8 @@ def single_face_train():
 @app.route('/detect', methods=['POST'])
 def detect():
     face_detect(file)
-    save_video("1.mp4")
-    source = "1.mp4"
+    save_video("face.mp4")
+    source = "face.mp4"
     dest = "STAMP/stamp/src/components/Security/"
 
     print("before copy")
