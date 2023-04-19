@@ -29,6 +29,9 @@ import React from "react";
 
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import { useState } from 'react'
+import video from './yolo.mp4';
+
+
 const Train = () => {
   const navigate = useNavigate();
   const toast = useToast();
@@ -72,13 +75,13 @@ const uploadFile = () => {
             .then(response => {
                 if (response.ok) {
                   console.log("Detected");
-                  window.location.assign('http://localhost:5000/yolo'); 
                   toast({
                       title: `Detected successfully`,
                       status: "success",
                       duration: 3000,
                       isClosable: true,
                     });
+                    window.location.assign('http://localhost:3000/Surveillance');
                 } else {
                     console.log("Error while Detecting");
                 }
@@ -146,7 +149,7 @@ const uploadFile = () => {
                               >
                                   <div>
                                       <video controls style={{width: '100%'}}>
-                                          <source src="https://www.youtube.com/watch?v=H5v3kku4y6Q" type="video"/>
+                                          <source src={video} type="video/mp4"/>
                                       </video>
                                       {/* <Webcam /> */}
                                   </div>
