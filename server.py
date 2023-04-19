@@ -245,12 +245,12 @@ email = ""
 def train_face():
     global firstName, lastName, email
     data = request.get_data()
-    print(data)
+    # print(data)
     parsed_data = json.loads(data)
     firstName = parsed_data['firstName']
     lastName = parsed_data['lastName']
     email = parsed_data['email']
-    print(firstName, lastName, email)
+    # print(firstName, lastName, email)
     return jsonify({'message': "details recieved successfully"}), 200
 
 @app.route('/train', methods=['POST'])
@@ -258,6 +258,19 @@ def train():
     face_train(firstName, lastName, email)
     yml_train()
     return jsonify({'message': "trained successfully"}), 200
+
+@app.route('/single_face_train', methods=['POST'])
+def single_face_train():
+    data = request.get_data()
+    parsed_data = json.loads(data)
+    fullname = parsed_data['fullName'].split()
+    fName = fullname[0]
+    lName = fullname[1]
+    email = parsed_data['email']
+    print(fName, lName, email)
+    face_train(fName, lName, email)
+    yml_train()
+    return jsonify({'message': "Single Face trained successfully"}), 200
 
 @app.route('/detect', methods=['POST'])
 def detect():
