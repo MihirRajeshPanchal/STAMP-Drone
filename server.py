@@ -6,21 +6,14 @@ from Face_Recognition.two_face_training import yml_train
 from Face_Recognition.three_face_recognition import face_detect
 from Face_Recognition.savevideo import save_video
 from plutox import *
+from Cloud_Backend.sns_subscribe import sns_subscribe
+from Cloud_Backend.s3 import upload_s3
 import cv2, os, json, time
 import numpy as np
 import shutil
 
 app = Flask(__name__)
 CORS(app)
-
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-app.config['MAIL_PORT'] = 465
-app.config['MAIL_USE_SSL'] = True
-app.config['MAIL_USERNAME'] = 'mihirtestprogrammer@gmail.com'
-app.config['MAIL_PASSWORD'] = 'yflrrgfqxxfpyvve'
-app.config['MAIL_DEFAULT_SENDER'] = ('STAMP', 'mihirtestprogrammer@gmail.com')
-
-mail = Mail(app)
 
 dic_apis={
     "/surveillance":"takes video input and runs - Object Detection\yoloVideo.py",
@@ -61,23 +54,19 @@ dic_apis_react_call={
 def surveillance():
     return jsonify({'message': 'Hello, World!'})
 
-@app.route('/send-email', methods=['POST'])
+@app.route('/subscribe-email', methods=['POST'])
 def send_email():
     data = request.json
-    subject = data['subject']
     recipient = data['recipient']
-    body = data['body']
-    
-    message = Message(subject=subject, recipients=[recipient], body=body)
-    mail.send(message)
-    
-    return {'message': 'Email sent'}
+    sns_subscribe(recipient)
+    return {'message': 'Email Subscribed'}
 
 @app.route('/write-file-email', methods=['POST'])
 def write_file():
     data = request.json['data']
     with open('STAMP/stamp/src/files/emails.txt', 'a') as f:
         f.write(data + '\n')
+    upload_s3("STAMP/stamp/src/files/emails.txt")
     return {'success': True}
 
 def get_box_dimensions(outputs, height, width):
@@ -313,10 +302,22 @@ def save_to_disc():
     file_path = 'face.mp4'
     return send_file(file_path, as_attachment=True)
 
+@app.route('/save_to_cloud', methods=['GET'])
+def save_to_cloud():
+    file_path = 'face.mp4'
+    upload_s3(file_path)
+    return jsonify({'message': "Saved to Cloud"}), 200
+
 @app.route('/save_yolo_to_disc', methods=['GET'])
 def save_yolo_to_disc():
     file_path = 'yolo.mp4'
     return send_file(file_path, as_attachment=True)
+
+@app.route('/save_yolo_to_cloud', methods=['GET'])
+def save_yolo_to_cloud():
+    file_path = 'yolo.mp4'
+    upload_s3(file_path)
+    return jsonify({'message': "Saved to Cloud"}), 200
 
 @app.route('/test', methods=['GET'])
 def test():

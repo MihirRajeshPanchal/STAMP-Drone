@@ -1,5 +1,7 @@
 Face_Recognition/dataset
+Face_Recognition/trainer/trainer.yml
 Face_Recognition/__pycache__
+Cloud_Backend/__pycache__
 Object_Detection/python/yolov3.weights
 input/
 output/

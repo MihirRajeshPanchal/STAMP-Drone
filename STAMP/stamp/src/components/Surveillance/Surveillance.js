@@ -142,6 +142,36 @@ const saveToDisc = () => {
     }
 }
 
+const saveToCloud= () =>{
+    if(outpuFilename === '') {
+        toast({
+            title: "Please enter an output file Name",
+            status: "warning",
+            duration: 2000,
+            isClosable: true,
+        });
+    }
+    else {
+        fetch('http://localhost:5000/save_yolo_to_cloud')
+        .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.blob();
+          })
+          .then(response => {
+            toast({
+                title: `File "${filename}" uploaded successfully to cloud`,
+                status: "success",
+                duration: 3000,
+                isClosable: true,
+              });
+          })
+          .catch(error => {
+            console.error('Error downloading file:', error);
+          });
+    }
+}
   return (
       <div>
           <Box
@@ -227,6 +257,7 @@ const saveToDisc = () => {
                                       </Button>
                                       <Button
                                           style={{ margin: '0 10px' }}
+                                          onClick={saveToCloud}
                                       >
                                           Save to Cloud
                                       </Button>

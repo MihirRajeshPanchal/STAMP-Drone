@@ -1,26 +1,10 @@
 [
     {
-        "id": "fe10b9ef-778a-49e7-8961-4618de99322f",
-        "first_name": "Arshkumar",
-        "last_name": "Sakaria",
-        "email": "arshsakaria@gmail.com",
-        "image": "User.ArshkumarSakaria.1.jpg",
-        "image_id": 0
-    },
-    {
-        "id": "0963ef54-fdcd-414d-ab9f-09e433589948",
-        "first_name": "Hero",
-        "last_name": "Che",
-        "email": "heroche@gmail.com",
-        "image": "User.HeroChe.1.jpg",
-        "image_id": 1
-    },
-    {
-        "id": "f8bf3890-83f1-4af2-8bf3-fdd728506ac1",
+        "id": "0d483685-327c-4f72-b7f6-031dabe220a2",
         "first_name": "Mihir",
         "last_name": "Panchal",
         "email": "mihirpanchal5400@gmail.com",
         "image": "User.MihirPanchal.1.jpg",
-        "image_id": 2
+        "image_id": 0
     }
 ]
