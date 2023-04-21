@@ -139,8 +139,8 @@ import {
               <ListHeader>Company</ListHeader>
               <Link href={'/about'}>About us</Link>
               <Link href={'#'}>Gallery</Link>
-              <Link href={'#'}>Contact us</Link>
-              <Link href={'#'}>Our Team</Link>
+              <Link href={'/about'}>Contact us</Link>
+              <Link href={'/about'}>Our Team</Link>
               <Link href={'#'}>Our Projects</Link>
             </Stack>
             <Stack align={'flex-start'}>

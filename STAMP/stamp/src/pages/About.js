@@ -20,9 +20,12 @@ import '../components/AboutUs/about.css';
 import ContactUs from '../components/AboutUs/ContactUs';
 import TeamMembers from '../components/AboutUs/TeamMembers';
 import Section1 from '../components/AboutUs/Section1';
+// import ContactUs from '../components/AboutUs/ContactUs';
+
 const About = () => {
   return (
     <div>
+    
       <Section1></Section1>
     
 
@@ -82,6 +85,7 @@ const About = () => {
       </div>
        */}
 <TeamMembers></TeamMembers>
+<ContactUs></ContactUs>
       {/* <div
       className='users'
         style={{
