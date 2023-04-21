@@ -323,9 +323,37 @@ def save_to_cloud():
     upload_s3(file_path)
     return jsonify({'message': "Saved to Cloud"}), 200
 
-@app.route('/send_face_report', methods=['GET'])
+@app.route('/send_face_report', methods=['GET', 'POST'])
 def send_face_report():
-    pass
+    data = request.json
+    subject = "Face Detection report"
+    recipient = data['reportMail']
+    outputFilename = data['outputFilename'] + ".mp4"
+    body = "Please find the attached report for your Face Detection"
+
+    message = Message(subject=subject, recipients=[recipient], body=body)
+    print(outputFilename)
+    with app.open_resource(outputFilename) as fp:  
+        message.attach(outputFilename, "video/mp4",fp.read())  
+        mail.send(message)  
+
+    return jsonify({'message': "Report sent to mail successfully"}), 200
+
+@app.route('/send_yolo_face_report', methods=['GET', 'POST'])
+def send_yolo_face_report():
+    data = request.json
+    subject = "Yolo Detection report"
+    recipient = data['reportMail']
+    outputFilename = data['outputFilename'] + ".mp4"
+    body = "Please find the attached report for your Yolo Detection"
+
+    message = Message(subject=subject, recipients=[recipient], body=body)
+    print(outputFilename)
+    with app.open_resource(outputFilename) as fp:  
+        message.attach(outputFilename, "video/mp4",fp.read())  
+        mail.send(message)  
+
+    return jsonify({'message': "Report sent to mail successfully"}), 200
 
 @app.route('/save_yolo_to_disc', methods=['GET'])
 def save_yolo_to_disc():

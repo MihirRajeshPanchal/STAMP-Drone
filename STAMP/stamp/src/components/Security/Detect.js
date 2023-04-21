@@ -39,6 +39,7 @@ const Train = () => {
     const [selectedFile, setSelectedFile] = useState(null);
     const [filename, setFilename] = useState("");
     const [outputFilename, setOutputFilename] = useState("");
+    const [reportMail, setReportMail] = useState("");
 
     const handleFileInput = (e) => {
         setSelectedFile(e.target.files[0]);
@@ -91,6 +92,41 @@ const Train = () => {
                           duration: 3000,
                           isClosable: true,
                         });
+                        // send mail report here
+
+                        if (reportMail === '') {
+                            toast({
+                                title: "Please enter an email to recieve report",
+                                status: "warning",
+                                duration: 2000,
+                                isClosable: true,
+                            });
+                            return;
+                        }
+                        fetch('http://localhost:5000/send_face_report', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ reportMail, outputFilename })
+                        })
+                        .then(response => {
+                            if (response.ok) {
+                              console.log("Report Sent successfully");
+                              toast({
+                                  title: `Report Sent successfully`,
+                                  status: "success",
+                                  duration: 2000,
+                                  isClosable: true,
+                                });
+                            } else {
+                                console.log("Error while Sending report");
+                            }
+                        })
+                        .catch(error => {
+                            console.log(error);
+                        });
+
                         window.location.assign('http://localhost:3000/Security/Detect');
                     } else {
                         console.log("Error while Detecting");
@@ -274,6 +310,9 @@ const Train = () => {
                                         >
                                             Save to Disc
                                         </Button>
+
+                                        <Input value={reportMail} type='email' style={{ margin: '0 10px' }} onChange={(e) => setReportMail(e.target.value)} placeholder='Mail to send Report' width="430px"/>
+
                                         <Button
                                             style={{ margin: '0 10px' }}
                                             onClick={saveToCloud}
