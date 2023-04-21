@@ -110,6 +110,38 @@ const Train = () => {
         }
     }
 
+    const saveToDisc = () => {
+        if(outpuFilename === '') {
+            toast({
+                title: "Please enter an output file Name",
+                status: "warning",
+                duration: 2000,
+                isClosable: true,
+            });
+        }
+        else {
+            fetch('http://localhost:5000/save_to_disc')
+            .then(response => {
+                if (!response.ok) {
+                  throw new Error('Network response was not ok');
+                }
+                return response.blob();
+              })
+              .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', `${outpuFilename}.mp4`);
+                document.body.appendChild(link);
+                link.click();
+                link.parentNode.removeChild(link);
+              })
+              .catch(error => {
+                console.error('Error downloading file:', error);
+              });
+        }
+    }
+
 
     return (
         <div>
@@ -187,29 +219,18 @@ const Train = () => {
                                         <Button
                                         onClick={uploadFile} disabled={!selectedFile} mt={2}
                                             style={{ margin: '0 10px' }}
-                                          
-                                        // onClick={() =>
-                                        //   navigate('/Security/Loading')
-                                        // }
                                         >
                                             Submit
                                         </Button>
 
                                         <Button
                                             style={{ margin: '0 10px' }}
-                                            type="submit"
-                                        // onClick={() =>
-                                        //   navigate('/Security/Loading')
-                                        // }
+                                            onClick={saveToDisc}
                                         >
                                             Save to Disc
                                         </Button>
                                         <Button
                                             style={{ margin: '0 10px' }}
-                                            type="submit"
-                                        // onClick={() =>
-                                        //   navigate('/Security/Loading')
-                                        // }
                                         >
                                             Save to Cloud
                                         </Button>

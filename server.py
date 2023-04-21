@@ -1,4 +1,4 @@
-from flask import Flask,jsonify,request,Response,make_response
+from flask import Flask,jsonify,request,Response,make_response, send_file
 from flask_cors import CORS
 from flask_mail import Mail, Message
 from Face_Recognition.one_face_dataset import face_train, add_to_json
@@ -307,6 +307,16 @@ def detect():
         return f"Error copying file: {e}", 500
 
     return jsonify({'message': "detected successfully"}), 200
+
+@app.route('/save_to_disc', methods=['GET'])
+def save_to_disc():
+    file_path = 'face.mp4'
+    return send_file(file_path, as_attachment=True)
+
+@app.route('/save_yolo_to_disc', methods=['GET'])
+def save_yolo_to_disc():
+    file_path = 'yolo.mp4'
+    return send_file(file_path, as_attachment=True)
 
 @app.route('/test', methods=['GET'])
 def test():
