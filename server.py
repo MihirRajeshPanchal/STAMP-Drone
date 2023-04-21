@@ -15,6 +15,15 @@ import shutil
 app = Flask(__name__)
 CORS(app)
 
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USE_SSL'] = True
+app.config['MAIL_USERNAME'] = 'mihirtestprogrammer@gmail.com'
+app.config['MAIL_PASSWORD'] = 'yflrrgfqxxfpyvve'
+app.config['MAIL_DEFAULT_SENDER'] = ('STAMP', 'mihirtestprogrammer@gmail.com')
+
+mail = Mail(app)
+
 dic_apis={
     "/surveillance":"takes video input and runs - Object Detection\yoloVideo.py",
     "/dataset":"display opencv stream in a react component and run - Face Recognition\01_face_dataset.py",
@@ -308,6 +317,10 @@ def save_to_cloud():
     upload_s3(file_path)
     return jsonify({'message': "Saved to Cloud"}), 200
 
+@app.route('/send_face_report', methods=['GET'])
+def send_face_report():
+    pass
+
 @app.route('/save_yolo_to_disc', methods=['GET'])
 def save_yolo_to_disc():
     file_path = 'yolo.mp4'
@@ -318,6 +331,10 @@ def save_yolo_to_cloud():
     file_path = 'yolo.mp4'
     upload_s3(file_path)
     return jsonify({'message': "Saved to Cloud"}), 200
+
+@app.route('/send_yolo_report', methods=['GET'])
+def send_yolo_report():
+    pass
 
 @app.route('/test', methods=['GET'])
 def test():
