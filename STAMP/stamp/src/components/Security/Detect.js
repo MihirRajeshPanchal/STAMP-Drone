@@ -29,7 +29,7 @@ import React, { useState, } from "react";
 import Loading from "./Loading.js";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 // import video from '../../../../../1.mp4';
-import video from './1.mp4';
+import video from './face.mp4';
 
 
 const Train = () => {

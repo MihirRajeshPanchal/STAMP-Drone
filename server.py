@@ -157,9 +157,25 @@ def generate_frames():
         
         frame = buffer.tobytes()
         frame_count+=1
-        
-        yield (b'--frame\r\n'
-                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+    generateyolo()
+    print("Video Generated")
+    
+    source = "yolo.mp4"
+    dest = "STAMP/stamp/src/components/Surveillance/"
+
+    print("before copy")
+    if not os.path.exists(source):
+        print("path doesnt exist")
+        return f"Source file '{source}' does not exist", 404
+    
+    try:
+        shutil.copy2(source, dest)
+        print("copied")
+    except Exception as e:
+        return f"Error copying file: {e}", 500
+
+        # yield (b'--frame\r\n'
+        #         b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
 yolo_file = ""
 
@@ -245,12 +261,12 @@ email = ""
 def train_face():
     global firstName, lastName, email
     data = request.get_data()
-    print(data)
+    # print(data)
     parsed_data = json.loads(data)
     firstName = parsed_data['firstName']
     lastName = parsed_data['lastName']
     email = parsed_data['email']
-    print(firstName, lastName, email)
+    # print(firstName, lastName, email)
     return jsonify({'message': "details recieved successfully"}), 200
 
 @app.route('/train', methods=['POST'])
@@ -259,11 +275,24 @@ def train():
     yml_train()
     return jsonify({'message': "trained successfully"}), 200
 
+@app.route('/single_face_train', methods=['POST'])
+def single_face_train():
+    data = request.get_data()
+    parsed_data = json.loads(data)
+    fullname = parsed_data['fullName'].split()
+    fName = fullname[0]
+    lName = fullname[1]
+    email = parsed_data['email']
+    print(fName, lName, email)
+    face_train(fName, lName, email)
+    yml_train()
+    return jsonify({'message': "Single Face trained successfully"}), 200
+
 @app.route('/detect', methods=['POST'])
 def detect():
     face_detect(file)
-    save_video("1.mp4")
-    source = "1.mp4"
+    save_video("face.mp4")
+    source = "face.mp4"
     dest = "STAMP/stamp/src/components/Security/"
 
     print("before copy")
