@@ -138,8 +138,7 @@ def generate_frames():
     global yolo_file
     # yolo_file = yolo_file.filename
     model, classes, colors, output_layers = load_yolo()
-    print("input/" + yolo_file.filename)
-    cap = cv2.VideoCapture("input/" + yolo_file.filename)
+    cap = cv2.VideoCapture("input/" + yolo_file)
     frame_count = 0
     output_folder = "yolo_processing"
     os.makedirs(output_folder, exist_ok=True)
@@ -158,7 +157,7 @@ def generate_frames():
     generateyolo()
     print("Video Generated")
     
-    source = "yolo.mp4"
+    source = yolo_file
     dest = "STAMP/stamp/src/components/Surveillance/"
 
     print("before copy")
@@ -167,7 +166,7 @@ def generate_frames():
         return f"Source file '{source}' does not exist", 404
     
     try:
-        shutil.copy2(source, dest)
+        shutil.copy2(source, os.path.join(dest, "yolo.mp4"))
         print("copied")
     except Exception as e:
         return f"Error copying file: {e}", 500
@@ -180,6 +179,7 @@ yolo_file = ""
 @app.route('/yoloupload', methods=['POST'])
 def yoloupload():
     global yolo_file
+    output_filename = request.form['outputFilename'] + ".mp4"
     if 'file' not in request.files:
         return jsonify({'error': 'No file in request'}), 400
     yolo_file = request.files['file']
@@ -188,8 +188,9 @@ def yoloupload():
     if yolo_file:
         if not os.path.exists('input'):
             os.makedirs('input')
-        yolo_file.save('input/' + yolo_file.filename)
-        return jsonify({'message': f'{yolo_file.filename} uploaded successfully'}), 200
+        yolo_file.save('input/' + output_filename)
+        yolo_file = output_filename
+        return jsonify({'message': f'{yolo_file} uploaded successfully'}), 200
     else:
         return jsonify({'error': 'Failed to upload file'}), 500
 
@@ -199,6 +200,7 @@ def index():
 
 @app.route('/generateyolo', methods=['POST', 'GET'])
 def generateyolo(): # take videofile from user via user
+    global yolo_file
     import cv2
     import os
     import shutil
@@ -207,7 +209,7 @@ def generateyolo(): # take videofile from user via user
 
     # Output video file name
     # video_file = filename
-    video_file = "yolo.mp4"
+    video_file = yolo_file
     
     # Get a list of all the JPEG images in the directory
     image_files = [os.path.join(image_dir, f) for f in os.listdir(image_dir) if f.endswith(".jpg")]
@@ -238,6 +240,7 @@ file = ""
 @app.route('/upload', methods=['POST'])
 def upload():
     global file
+    output_filename = request.form['outputFilename'] + ".mp4"
     if 'file' not in request.files:
         return jsonify({'error': 'No file in request'}), 400
     file = request.files['file']
@@ -246,8 +249,9 @@ def upload():
     if file:
         if not os.path.exists('input'):
             os.makedirs('input')
-        file.save('input/' + file.filename)
-        return jsonify({'message': f'{file.filename} uploaded successfully'}), 200
+        file.save('input/' + output_filename)
+        file = output_filename
+        return jsonify({'message': f'{file} uploaded successfully'}), 200
     else:
         return jsonify({'error': 'Failed to upload file'}), 500
 
@@ -288,9 +292,10 @@ def single_face_train():
 
 @app.route('/detect', methods=['POST'])
 def detect():
+    global file
     face_detect(file)
-    save_video("face.mp4")
-    source = "face.mp4"
+    save_video(file)
+    source = file
     dest = "STAMP/stamp/src/components/Security/"
 
     print("before copy")
@@ -299,7 +304,7 @@ def detect():
         return f"Source file '{source}' does not exist", 404
     
     try:
-        shutil.copy2(source, dest)
+        shutil.copy2(source, os.path.join(dest, "face.mp4"))
         print("copied")
     except Exception as e:
         return f"Error copying file: {e}", 500
@@ -311,9 +316,10 @@ def save_to_disc():
     file_path = 'face.mp4'
     return send_file(file_path, as_attachment=True)
 
-@app.route('/save_to_cloud', methods=['GET'])
+@app.route('/save_to_cloud', methods=['GET', 'POST'])
 def save_to_cloud():
-    file_path = 'face.mp4'
+    data = request.get_json()
+    file_path = data['outputFilename'] + ".mp4"
     upload_s3(file_path)
     return jsonify({'message': "Saved to Cloud"}), 200
 
@@ -326,9 +332,10 @@ def save_yolo_to_disc():
     file_path = 'yolo.mp4'
     return send_file(file_path, as_attachment=True)
 
-@app.route('/save_yolo_to_cloud', methods=['GET'])
+@app.route('/save_yolo_to_cloud', methods=['GET', 'POST'])
 def save_yolo_to_cloud():
-    file_path = 'yolo.mp4'
+    data = request.get_json()
+    file_path = data['outputFilename'] + ".mp4"
     upload_s3(file_path)
     return jsonify({'message': "Saved to Cloud"}), 200
 

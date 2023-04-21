@@ -38,7 +38,7 @@ const Train = () => {
 
     const [selectedFile, setSelectedFile] = useState(null);
     const [filename, setFilename] = useState("");
-    const [outpuFilename, setOutputFilename] = useState("");
+    const [outputFilename, setOutputFilename] = useState("");
 
     const handleFileInput = (e) => {
         setSelectedFile(e.target.files[0]);
@@ -46,9 +46,19 @@ const Train = () => {
     };
 
   const uploadFile = () => {
+        if (outputFilename === '') {
+            toast({
+                title: `Please Enter an output file name`,
+                status: "warning",
+                duration: 2000,
+                isClosable: true,
+              });
+              return;
+        }
         if (selectedFile) {
             const formData = new FormData();
             formData.append("file", selectedFile);
+            formData.append("outputFilename", outputFilename);
             
             fetch("http://localhost:5000/upload", {
                 method: "POST",
@@ -111,7 +121,7 @@ const Train = () => {
     }
 
     const saveToDisc = () => {
-        if(outpuFilename === '') {
+        if(outputFilename === '') {
             toast({
                 title: "Please enter an output file Name",
                 status: "warning",
@@ -131,7 +141,7 @@ const Train = () => {
                 const url = window.URL.createObjectURL(blob);
                 const link = document.createElement('a');
                 link.href = url;
-                link.setAttribute('download', `${outpuFilename}.mp4`);
+                link.setAttribute('download', `${outputFilename}.mp4`);
                 document.body.appendChild(link);
                 link.click();
                 link.parentNode.removeChild(link);
@@ -142,7 +152,7 @@ const Train = () => {
         }
     }
     const saveToCloud= () =>{
-        if(outpuFilename === '') {
+        if(outputFilename === '') {
             toast({
                 title: "Please enter an output file Name",
                 status: "warning",
@@ -151,7 +161,13 @@ const Train = () => {
             });
         }
         else {
-            fetch('http://localhost:5000/save_to_cloud')
+            fetch('http://localhost:5000/save_to_cloud', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({outputFilename: outputFilename})
+            })
             .then(response => {
                 if (!response.ok) {
                   throw new Error('Network response was not ok');
@@ -226,7 +242,7 @@ const Train = () => {
                                         }}
                                         textAlign="right"
                                     >
-                                        <Input value={outpuFilename}  style={{ margin: '0 10px' }} onChange={(e) => setOutputFilename(e.target.value)} placeholder='Output Filename' width="430px"/>
+                                        <Input value={outputFilename}  style={{ margin: '0 10px' }} onChange={(e) => setOutputFilename(e.target.value)} placeholder='Output Filename' width="430px"/>
 
                                         
                                             <input
