@@ -1,6 +1,6 @@
 import time
 import flet as ft
-from stt import stt
+from tts import tts
 from plutox import *
 
 class Message():
@@ -80,116 +80,63 @@ def main(page: ft.Page):
             page.pubsub.send_all(Message(page.session.get("user_name"), new_message.value, message_type="chat_message"))
             temp=new_message.value
             new_message.value = ""
-            new_message.focus()
-            if temp == "/?voice":
-                temp=stt()
-                if not temp:
-                    page.pubsub.send_all(Message("STAMP Support", "Couldn't Recognize your voice", message_type="chat_message"))
-                else:
-                    output_res = "You Said : "+ temp 
-                    page.pubsub.send_all(Message("STAMP Support", output_res, message_type="chat_message"))      
-            if temp.startswith("/?") or temp.startswith("chat"):
+            new_message.focus()    
+            if temp.startswith("/?"):
                 res=chatgpt(temp)
                 if len(res) > 220: # adjust the maximum length as needed
                     res = '\n'.join([res[i:i+220] for i in range(0, len(res), 220)])
                 page.pubsub.send_all(Message("STAMP Support", res, message_type="chat_message"))
+                tts(res)
             elif page.session.get("user_name")=="Admin":
                 if temp=="?spinall" or temp=="take off":
                     res="PlutoX Takeoff Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    tts(res)
                     spinall()
                 elif temp=="?backward" or temp=="backward":
                     res="PlutoX Backward Motion Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    tts(res)
                     backward()
                 elif temp=="?forward" or temp=="forward":
                     res="PlutoX Forward Motion Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    tts(res)
                     forward()
                 elif temp=="?left" or temp=="left":
                     res="PlutoX Left Motion Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    tts(res)
                     left()
                 elif temp=="?right" or temp=="right":
                     res="PlutoX Right Motion Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    tts(res)
                     right()
                 elif temp=="?m1" or temp=="M1":
                     res="PlutoX M1 Propeller Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    tts(res)
                     m1()
                 elif temp=="?m2" or temp=="M2":
                     res="PlutoX M2 Propeller Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    tts(res)
                     m2()
                 elif temp=="?m3" or temp=="M3":
                     res="PlutoX M3 Propeller Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    tts(res)
                     m3()
                 elif temp=="?m4" or temp=="M4":
                     res="PlutoX M4 Propeller Instantiated"
                     page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
+                    tts(res)
                     m4()
                 temp=""
             else:
                 pass
             page.update()
-            
-            
-    def send_voice_message_click(e):
-        stt_temp=stt()
-        if not stt_temp:
-            stt_temp = "Couldn't Recognize your voice"
-            page.pubsub.send_all(Message("STAMP Support", stt_temp, message_type="chat_message"))
-        else:
-            output_res = "You Said : "+ stt_temp 
-            page.pubsub.send_all(Message("STAMP Support", output_res, message_type="chat_message"))      
-        if temp.startswith("/?") or stt_temp.startswith("chat"):
-            res=chatgpt(temp)
-            if len(res) > 220: # adjust the maximum length as needed
-                res = '\n'.join([res[i:i+220] for i in range(0, len(res), 220)])
-            page.pubsub.send_all(Message("STAMP Support", res, message_type="chat_message"))
-        elif page.session.get("user_name")=="Admin":
-            if temp=="?spinall" or stt_temp=="spinall":
-                res="PlutoX Takeoff Instantiated"
-                page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                spinall()
-            elif temp=="?backward" or stt_temp=="backward":
-                res="PlutoX Backward Motion Instantiated"
-                page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                backward()
-            elif temp=="?forward" or stt_temp=="forward":
-                res="PlutoX Forward Motion Instantiated"
-                page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                forward()
-            elif temp=="?left" or stt_temp=="left":
-                res="PlutoX Left Motion Instantiated"
-                page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                left()
-            elif temp=="?right" or stt_temp=="right":
-                res="PlutoX Right Motion Instantiated"
-                page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                right()
-            elif temp=="?m1" or stt_temp=="M1":
-                res="PlutoX M1 Propeller Instantiated"
-                page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                m1()
-            elif temp=="?m2" or stt_temp=="M2":
-                res="PlutoX M2 Propeller Instantiated"
-                page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                m2()
-            elif temp=="?m3" or stt_temp=="M3":
-                res="PlutoX M3 Propeller Instantiated"
-                page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                m3()
-            elif temp=="?m4" or stt_temp=="M4":
-                res="PlutoX M4 Propeller Instantiated"
-                page.pubsub.send_all(Message("Pluto X", res, message_type="chat_message"))
-                m4()
-            temp=""
-        else:
-            pass
-        page.update()
            
     def spinall():
         client = Drone()
@@ -270,9 +217,6 @@ def main(page: ft.Page):
         response = completion.choices[0].text.strip()
         if response.startswith('\n'):
             response = response[1:]
-        # n = 60
-        # if len(response) > n:
-        #     response = response[:n] + '\n' + response[n:]
         return response
 
         
@@ -332,11 +276,6 @@ def main(page: ft.Page):
         ft.Row(
             [
                 new_message,
-                ft.IconButton(
-                    icon=ft.icons.MIC,
-                    tooltip="Send Voice Commands",
-                    on_click=send_voice_message_click,
-                ),
                 ft.IconButton(
                     icon=ft.icons.SEND_ROUNDED,
                     tooltip="Send message",
