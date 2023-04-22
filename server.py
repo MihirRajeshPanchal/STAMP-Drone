@@ -8,6 +8,7 @@ from Face_Recognition.savevideo import save_video
 from plutox import *
 from Cloud_Backend.sns_subscribe import sns_subscribe
 from Cloud_Backend.s3 import upload_s3
+from Cloud_Backend.dynamodb_contact_us import add_to_dynamodb_contact_us
 import cv2, os, json, time
 import numpy as np
 import shutil
@@ -367,9 +368,15 @@ def save_yolo_to_cloud():
     upload_s3(file_path)
     return jsonify({'message': "Saved to Cloud"}), 200
 
-@app.route('/send_yolo_report', methods=['GET'])
-def send_yolo_report():
-    pass
+@app.route('/contact_us', methods=['POST'])
+def contact_us():
+    data = request.get_data()
+    parsed_data = json.loads(data)
+    name = parsed_data['name']
+    email = parsed_data['email']
+    message = parsed_data['message']
+    add_to_dynamodb_contact_us(name,email,message)
+    return jsonify({'message': "details recieved successfully"}), 200
 
 @app.route('/test', methods=['GET'])
 def test():

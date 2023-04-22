@@ -15,9 +15,11 @@ import {
   Tooltip,
   useClipboard,
   useColorModeValue,
+  useToast,
   VStack,
 } from '@chakra-ui/react';
 import React from 'react';
+import { useState } from 'react'
 // import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from 'react-icons/bs';
 // import { MdEmail, MdOutlineEmail } from 'react-icons/md';
 
@@ -38,8 +40,42 @@ const CONFETTI_DARK = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2
 
 
 export default function ContactUs() {
-  const { hasCopied, onCopy } = useClipboard('example@example.com');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const toast = useToast();
 
+  const handleContactUsSubmit = () =>{
+    if(name && message && email) {
+      fetch("http://127.0.0.1:5000/contact_us", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message
+        })
+    })
+    .then(response => {
+        if (response.ok) {
+          console.log("details sent");
+          toast({
+              title: `details sent successfully`,
+              status: "success",
+              duration: 3000,
+              isClosable: true,
+            });
+        } else {
+        console.log("Error while sending details");
+        }
+    })
+    .catch(error => {
+        console.log(error);
+    });
+  }
+  }
   return (
     <Flex
       bg={useColorModeValue('gray.100', 'gray.900')}
@@ -73,53 +109,7 @@ export default function ContactUs() {
                 align="center"
                 justify="space-around"
                 direction={{ base: 'row', md: 'column' }}>
-                <Tooltip
-                  label={hasCopied ? 'Email Copied!' : 'Copy Email'}
-                  closeOnClick={false}
-                  hasArrow>
-                  <IconButton
-                    aria-label="email"
-                    variant="ghost"
-                    size="lg"
-                    fontSize="3xl"
-                    // icon={<MdEmail />}
-                    _hover={{
-                      bg: 'blue.500',
-                      color: useColorModeValue('white', 'gray.700'),
-                    }}
-                    onClick={onCopy}
-                    isRound
-                  />
-                </Tooltip>
 
-                <Link href="#">
-                  <IconButton
-                    aria-label="github"
-                    variant="ghost"
-                    size="lg"
-                    fontSize="3xl"
-                    // icon={<BsGithub />}
-                    _hover={{
-                      bg: 'blue.500',
-                      color: useColorModeValue('white', 'gray.700'),
-                    }}
-                    isRound
-                  />
-                </Link>
-
-                <Link href="#">
-                  <IconButton
-                    aria-label="twitter"
-                    variant="ghost"
-                    size="lg"
-                    // icon={<BsTwitter size="28px" />}
-                    _hover={{
-                      bg: 'blue.500',
-                      color: useColorModeValue('white', 'gray.700'),
-                    }}
-                    isRound
-                  />
-                </Link>
 
                 </Stack>
 
@@ -134,23 +124,25 @@ export default function ContactUs() {
                   <FormControl isRequired>
                     <FormLabel>Name</FormLabel>
 
-                    <InputGroup>
-                      {/* <InputLeftElement children={<BsPerson />} /> */}
-                      <Input type="text" name="name" placeholder="Your Name" />
-                    </InputGroup>
+                      <Input 
+                          type="text" 
+                          name="name" 
+                          placeholder="Your Name" 
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
+                      />
                   </FormControl>
 
                   <FormControl isRequired>
                     <FormLabel>Email</FormLabel>
 
-                    <InputGroup>
-                      {/* <InputLeftElement children={<MdOutlineEmail />} /> */}
                       <Input
                         type="email"
                         name="email"
                         placeholder="Your Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
-                    </InputGroup>
                   </FormControl>
 
                   <FormControl isRequired>
@@ -161,6 +153,8 @@ export default function ContactUs() {
                       placeholder="Your Message"
                       rows={6}
                       resize="none"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                     />
                   </FormControl>
 
@@ -171,7 +165,12 @@ export default function ContactUs() {
                     _hover={{
                       bg: 'blue.500',
                     }}
-                    isFullWidth>
+                    isFullWidth
+                    onClick={ 
+                    handleContactUsSubmit 
+                    // navigate('/Security/Loading') 
+                    }>
+                    >
                     Send Message
                   </Button>
                 </VStack>
