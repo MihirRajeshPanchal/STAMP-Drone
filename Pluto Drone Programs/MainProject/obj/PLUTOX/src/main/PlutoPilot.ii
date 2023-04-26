@@ -1458,6 +1458,7 @@ void plutoLoop ()
  {
   Command.arm();
   LED. set (RED, ON);
+
   LED. set (GREEN, ON);
  }
  if (XRanging.getRange(LEFT)< 500 && XRanging.getRange(LEFT)> 0 )

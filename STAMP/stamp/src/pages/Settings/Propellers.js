@@ -236,12 +236,15 @@ const Propellers = () => {
                                     }}
                                     textAlign="right"
                                 >
-                                    <Button
+                                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '10px'}}>
+                                <Button
                                         type="submit"
                                         onClick={spinall}
                                     >
                                         SPIN ALL
                                     </Button>
+                                </div>
+                                    
 
                                 </Box>
                             </GridItem>
