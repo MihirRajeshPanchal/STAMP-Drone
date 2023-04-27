@@ -25,37 +25,24 @@ import {
     Text,
     SimpleGrid,
     useToast,
-    useColorMode
 } from '@chakra-ui/react'
 import propellers from '../../assets/propellers.png';
-import propellers_white from '../../assets/propellers_white.png';
 import propellers_onclick from '../../assets/propellers_onclick.gif';
-import propellers_onclick_white from '../../assets/propellers_onclick_white.gif';
 import M4 from '../../assets/M4.gif';
 import M3 from '../../assets/M3.gif';
 import M2 from '../../assets/M2.gif';
-import M2_white from '../../assets/M2_white.gif';
-import M1_white from '../../assets/M1_white.gif';
-import M3_white from '../../assets/M3_white.gif';
-import M4_white from '../../assets/M4_white.gif';
 import M1 from '../../assets/M1.gif';
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 
 const Propellers = () => {
     const navigate = useNavigate();
-    const { colorMode, toggleColorMode } = useColorMode();
     const toast = useToast();
     const toastIdRef = React.useRef();
 
     const [imageSrc, setImageSrc] = useState(propellers);
 
     const spinall = () => {
-        if(colorMode==='light'){
-            setImageSrc(propellers_onclick);
-        }
-        else{
-            setImageSrc(propellers_onclick_white);
-        }
+        setImageSrc(propellers_onclick);
         toastIdRef.current = toast({description: 'All Propellers running'});
         fetch("http://localhost:5000/spinall", {
                 method: "POST",
@@ -72,24 +59,14 @@ const Propellers = () => {
     };
 
     const fourth = () => {
-        if(colorMode==='light'){
-            setImageSrc(M4);
-        }
-        else{
-            setImageSrc(M4_white)
-        }
+        setImageSrc(M4);
         toastIdRef.current = toast({description: 'M1 propeller running'})
         fetch("http://localhost:5000/m1", {
             method: "POST",
         })
         .then(() => {
             setTimeout(() => {
-                if(colorMode==='light'){
-                    setImageSrc(propellers);
-                }
-                else{
-                    setImageSrc(propellers_white)
-                }
+                setImageSrc(propellers);
             }, 1000); // wait for 5 seconds
         })
         .catch((error) => {
@@ -98,24 +75,14 @@ const Propellers = () => {
         });
     };
     const third = () => {
-        if(colorMode==='light'){
-            setImageSrc(M3);
-        }
-        else{
-            setImageSrc(M3_white)
-        }
+        setImageSrc(M3);
         toastIdRef.current = toast({description: 'M4 propeller running'})
         fetch("http://localhost:5000/m4", {
             method: "POST",
         })
         .then(() => {
             setTimeout(() => {
-                if(colorMode==='light'){
-                    setImageSrc(propellers);
-                }
-                else{
-                    setImageSrc(propellers_white)
-                }
+                setImageSrc(propellers);
             }, 1000); // wait for 5 seconds
         })
         .catch((error) => {
@@ -124,24 +91,14 @@ const Propellers = () => {
         });
     };
     const second = () => {
-        if(colorMode==='light'){
-            setImageSrc(M2);
-        }
-        else{
-            setImageSrc(M2_white)
-        }
+        setImageSrc(M2);
         toastIdRef.current = toast({description: 'M2 propeller running'})
         fetch("http://localhost:5000/m2", {
             method: "POST",
         })
         .then(() => {
             setTimeout(() => {
-                if(colorMode==='light'){
-                    setImageSrc(propellers);
-                }
-                else{
-                    setImageSrc(propellers_white)
-                }
+                setImageSrc(propellers);
             }, 1000); // wait for 5 seconds
         })
         .catch((error) => {
@@ -150,24 +107,14 @@ const Propellers = () => {
         });
     };
     const first = () => {
-        if(colorMode==='light'){
-            setImageSrc(M1);
-        }
-        else{
-            setImageSrc(M1_white)
-        }
+        setImageSrc(M1);
         toastIdRef.current = toast({description: 'M3 propeller running'})
         fetch("http://localhost:5000/m3", {
             method: "POST",
         })
         .then(() => {
             setTimeout(() => {
-                if(colorMode==='light'){
-                    setImageSrc(propellers);
-                }
-                else{
-                    setImageSrc(propellers_white)
-                }
+                setImageSrc(propellers);
             }, 1000); // wait for 5 seconds
         })
         .catch((error) => {
