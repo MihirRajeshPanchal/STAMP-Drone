@@ -1,4 +1,4 @@
-from flask import Flask,jsonify,request,Response,make_response
+from flask import Flask,jsonify,request,Response,make_response, send_file
 from flask_cors import CORS
 from flask_mail import Mail, Message
 from Face_Recognition.one_face_dataset import face_train, add_to_json
@@ -6,6 +6,9 @@ from Face_Recognition.two_face_training import yml_train
 from Face_Recognition.three_face_recognition import face_detect
 from Face_Recognition.savevideo import save_video
 from plutox import *
+from Cloud_Backend.sns_subscribe import sns_subscribe
+from Cloud_Backend.s3 import upload_s3
+from Cloud_Backend.dynamodb_contact_us import add_to_dynamodb_contact_us
 import cv2, os, json, time
 import numpy as np
 import shutil
@@ -61,23 +64,19 @@ dic_apis_react_call={
 def surveillance():
     return jsonify({'message': 'Hello, World!'})
 
-@app.route('/send-email', methods=['POST'])
+@app.route('/subscribe-email', methods=['POST'])
 def send_email():
     data = request.json
-    subject = data['subject']
     recipient = data['recipient']
-    body = data['body']
-    
-    message = Message(subject=subject, recipients=[recipient], body=body)
-    mail.send(message)
-    
-    return {'message': 'Email sent'}
+    sns_subscribe(recipient)
+    return {'message': 'Email Subscribed'}
 
 @app.route('/write-file-email', methods=['POST'])
 def write_file():
     data = request.json['data']
     with open('STAMP/stamp/src/files/emails.txt', 'a') as f:
         f.write(data + '\n')
+    upload_s3("STAMP/stamp/src/files/emails.txt")
     return {'success': True}
 
 def get_box_dimensions(outputs, height, width):
@@ -140,8 +139,7 @@ def generate_frames():
     global yolo_file
     # yolo_file = yolo_file.filename
     model, classes, colors, output_layers = load_yolo()
-    print("input/" + yolo_file.filename)
-    cap = cv2.VideoCapture("input/" + yolo_file.filename)
+    cap = cv2.VideoCapture("input/" + yolo_file)
     frame_count = 0
     output_folder = "yolo_processing"
     os.makedirs(output_folder, exist_ok=True)
@@ -160,7 +158,7 @@ def generate_frames():
     generateyolo()
     print("Video Generated")
     
-    source = "yolo.mp4"
+    source = yolo_file
     dest = "STAMP/stamp/src/components/Surveillance/"
 
     print("before copy")
@@ -169,7 +167,7 @@ def generate_frames():
         return f"Source file '{source}' does not exist", 404
     
     try:
-        shutil.copy2(source, dest)
+        shutil.copy2(source, os.path.join(dest, "yolo.mp4"))
         print("copied")
     except Exception as e:
         return f"Error copying file: {e}", 500
@@ -182,6 +180,7 @@ yolo_file = ""
 @app.route('/yoloupload', methods=['POST'])
 def yoloupload():
     global yolo_file
+    output_filename = request.form['outputFilename'] + ".mp4"
     if 'file' not in request.files:
         return jsonify({'error': 'No file in request'}), 400
     yolo_file = request.files['file']
@@ -190,8 +189,9 @@ def yoloupload():
     if yolo_file:
         if not os.path.exists('input'):
             os.makedirs('input')
-        yolo_file.save('input/' + yolo_file.filename)
-        return jsonify({'message': f'{yolo_file.filename} uploaded successfully'}), 200
+        yolo_file.save('input/' + output_filename)
+        yolo_file = output_filename
+        return jsonify({'message': f'{yolo_file} uploaded successfully'}), 200
     else:
         return jsonify({'error': 'Failed to upload file'}), 500
 
@@ -201,6 +201,7 @@ def index():
 
 @app.route('/generateyolo', methods=['POST', 'GET'])
 def generateyolo(): # take videofile from user via user
+    global yolo_file
     import cv2
     import os
     import shutil
@@ -209,7 +210,7 @@ def generateyolo(): # take videofile from user via user
 
     # Output video file name
     # video_file = filename
-    video_file = "yolo.mp4"
+    video_file = yolo_file
     
     # Get a list of all the JPEG images in the directory
     image_files = [os.path.join(image_dir, f) for f in os.listdir(image_dir) if f.endswith(".jpg")]
@@ -240,6 +241,7 @@ file = ""
 @app.route('/upload', methods=['POST'])
 def upload():
     global file
+    output_filename = request.form['outputFilename'] + ".mp4"
     if 'file' not in request.files:
         return jsonify({'error': 'No file in request'}), 400
     file = request.files['file']
@@ -248,8 +250,9 @@ def upload():
     if file:
         if not os.path.exists('input'):
             os.makedirs('input')
-        file.save('input/' + file.filename)
-        return jsonify({'message': f'{file.filename} uploaded successfully'}), 200
+        file.save('input/' + output_filename)
+        file = output_filename
+        return jsonify({'message': f'{file} uploaded successfully'}), 200
     else:
         return jsonify({'error': 'Failed to upload file'}), 500
 
@@ -290,9 +293,10 @@ def single_face_train():
 
 @app.route('/detect', methods=['POST'])
 def detect():
+    global file
     face_detect(file)
-    save_video("face.mp4")
-    source = "face.mp4"
+    save_video(file)
+    source = file
     dest = "STAMP/stamp/src/components/Security/"
 
     print("before copy")
@@ -301,12 +305,78 @@ def detect():
         return f"Source file '{source}' does not exist", 404
     
     try:
-        shutil.copy2(source, dest)
+        shutil.copy2(source, os.path.join(dest, "face.mp4"))
         print("copied")
     except Exception as e:
         return f"Error copying file: {e}", 500
 
     return jsonify({'message': "detected successfully"}), 200
+
+@app.route('/save_to_disc', methods=['GET'])
+def save_to_disc():
+    file_path = 'face.mp4'
+    return send_file(file_path, as_attachment=True)
+
+@app.route('/save_to_cloud', methods=['GET', 'POST'])
+def save_to_cloud():
+    data = request.get_json()
+    file_path = data['outputFilename'] + ".mp4"
+    upload_s3(file_path)
+    return jsonify({'message': "Saved to Cloud"}), 200
+
+@app.route('/send_face_report', methods=['GET', 'POST'])
+def send_face_report():
+    data = request.json
+    subject = "Face Detection report"
+    recipient = data['reportMail']
+    outputFilename = data['outputFilename'] + ".mp4"
+    body = "Please find the attached report for your Face Detection"
+
+    message = Message(subject=subject, recipients=[recipient], body=body)
+    print(outputFilename)
+    with app.open_resource(outputFilename) as fp:  
+        message.attach(outputFilename, "video/mp4",fp.read())  
+        mail.send(message)  
+
+    return jsonify({'message': "Report sent to mail successfully"}), 200
+
+@app.route('/send_yolo_face_report', methods=['GET', 'POST'])
+def send_yolo_face_report():
+    data = request.json
+    subject = "Yolo Detection report"
+    recipient = data['reportMail']
+    outputFilename = data['outputFilename'] + ".mp4"
+    body = "Please find the attached report for your Yolo Detection"
+
+    message = Message(subject=subject, recipients=[recipient], body=body)
+    print(outputFilename)
+    with app.open_resource(outputFilename) as fp:  
+        message.attach(outputFilename, "video/mp4",fp.read())  
+        mail.send(message)  
+
+    return jsonify({'message': "Report sent to mail successfully"}), 200
+
+@app.route('/save_yolo_to_disc', methods=['GET'])
+def save_yolo_to_disc():
+    file_path = 'yolo.mp4'
+    return send_file(file_path, as_attachment=True)
+
+@app.route('/save_yolo_to_cloud', methods=['GET', 'POST'])
+def save_yolo_to_cloud():
+    data = request.get_json()
+    file_path = data['outputFilename'] + ".mp4"
+    upload_s3(file_path)
+    return jsonify({'message': "Saved to Cloud"}), 200
+
+@app.route('/contact_us', methods=['POST'])
+def contact_us():
+    data = request.get_data()
+    parsed_data = json.loads(data)
+    name = parsed_data['name']
+    email = parsed_data['email']
+    message = parsed_data['message']
+    add_to_dynamodb_contact_us(name,email,message)
+    return jsonify({'message': "details recieved successfully"}), 200
 
 @app.route('/test', methods=['GET'])
 def test():

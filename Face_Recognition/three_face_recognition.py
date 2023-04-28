@@ -23,7 +23,7 @@ def face_detect(input_file, output_file = "faceoutput.mp4"):
     # names related to ids: example ==> Marcelo: id=1,  etc
     
     # print(names)
-    input_file = input_file.filename
+    input_file = input_file
 
     # Initialize and start realtime video capture
     cam = cv2.VideoCapture("input/" + input_file)

@@ -68,7 +68,7 @@ import {
   };
 
   const sendEmail = async (subject, recipient, body) => {
-    const response = await fetch('http://localhost:5000/send-email', {
+    const response = await fetch('http://localhost:5000/subscribe-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

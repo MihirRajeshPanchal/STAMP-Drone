@@ -1,4 +1,4 @@
-16:46:30 **** Build of configuration Release for project MainProject ****
+15:11:31 **** Build of configuration Release for project MainProject ****
 make -f Makefile all 
 ./obj/PLUTOX/src/main/PlutoPilot.o
 %% PlutoPilot.cpp
@@ -8,5 +8,5 @@ arm-none-eabi-size ./obj/Experience_PLUTOX.elf
   78704	   1924	   9592	  90220	  1606c	./obj/Experience_PLUTOX.elf
 arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
 
-16:46:36 Build Finished (took 6s.52ms)
+15:11:46 Build Finished (took 14s.617ms)
 

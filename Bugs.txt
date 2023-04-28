@@ -24,3 +24,22 @@ After project completion task
 2. Removing unwanted imports in react app so that react app is clean and compiles successfully without any warnings
 3. Create a docker container of the project 
 4. Documentation 
+
+
+
+Tanay Prinkal
+1. Finish up Gallery Component
+2. Change Gifs of Propellers to a color which suites both dark and light mode 
+3. Fix Dark and light mode ui fixes like stamp logo etc
+4. Correct the links in the Footer
+5. Create a summary of our project as a poster on Canva 
+
+Sarid
+1. Configure aws bucket and test functionality 
+2. Create all necessary cloud components of s3 dynamodb and sns 
+
+Arsh 
+1. Complete PPT for Presentation at 29th April with Abhijit and Anita Kulkarni
+2. Create UML Diagrams any 6 for Blackbook
+3. Write content for daily and weekly report 
+4. Take a print of Daily diary and spiral bind it 

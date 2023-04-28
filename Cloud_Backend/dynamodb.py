@@ -6,7 +6,7 @@ def upload_dynamodb_details():
     dynamodb = boto3.client('dynamodb')
 
     # Open the JSON file and load its contents as a Python object
-    with open('../Face_Recognition/details.json') as f:
+    with open('STAMP\stamp\src\components\Security\details.json') as f:
         data = json.load(f)
 
     # Iterate over the objects in the JSON file and add them to DynamoDB
