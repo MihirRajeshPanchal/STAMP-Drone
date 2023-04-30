@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-const CameraButton = ({ enabled, onClick }) => {
+const GestureButton = ({ enabled, onClick }) => {
     return (
       <button onClick={onClick}>
         {enabled ? '' : ''}
@@ -8,4 +8,4 @@ const CameraButton = ({ enabled, onClick }) => {
     );
 };  
 
-export default CameraButton;
+export default GestureButton;
