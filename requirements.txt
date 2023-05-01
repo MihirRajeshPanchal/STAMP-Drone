@@ -1,0 +1,14 @@
+Flask==2.1.1
+Flask-Cors==3.0.10
+Flask-Mail==0.9.1
+boto3==1.24.35
+flet==0.4.2
+gTTS==2.2.4
+keras==2.8.0
+mediapipe==0.8.9.1
+openai==0.26.1
+opencv-contrib-python==4.7.0.72
+numpy==1.22.3
+Pillow==9.1.0
+pyttsx3==2.90
+tensorflow==2.8.0

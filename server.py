@@ -9,6 +9,7 @@ from plutox import *
 from Cloud_Backend.sns_subscribe import sns_subscribe
 from Cloud_Backend.s3 import upload_s3
 from Cloud_Backend.dynamodb_contact_us import add_to_dynamodb_contact_us
+from Hand_Gesture_Recognition.HandDetection import handDetect
 import cv2, os, json, time
 import numpy as np
 import shutil
@@ -367,6 +368,11 @@ def save_yolo_to_cloud():
     file_path = data['outputFilename'] + ".mp4"
     upload_s3(file_path)
     return jsonify({'message': "Saved to Cloud"}), 200
+
+@app.route('/hand_gesture', methods=['GET'])
+def hand_gesture():
+    handDetect()
+    return jsonify({'message': "Hand Gesture"}), 200
 
 @app.route('/contact_us', methods=['POST'])
 def contact_us():
