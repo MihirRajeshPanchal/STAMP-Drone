@@ -1,0 +1,9 @@
+Web Application                                 Prinkal Tanay                       
+Face Recognition                                Mihir Sarid
+Object Detection                                Mihir Sarid
+Stamp Support                                   Mihir
+Pluto X API                                     Mihir
+Cloud Integration                               Mihir Sarid
+Metamask (Blockchain)                           Mihir
+Pluto Blocks Cygnus IDE (Drone Programming)     Mihir
+Hand Detection                                  Mihir 
