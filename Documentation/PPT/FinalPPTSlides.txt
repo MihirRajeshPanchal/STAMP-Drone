@@ -13,13 +13,14 @@
 13. Hand Gesture Recognition (Working)                                                      Mihir
 14. Hand Gesture Recognition (Output)                                                       Tanay
 15. Hand Gesture Recognition (Performance)                                                  Prinkal
-16. Overall Performance of 3 ML Models    (Performance)                                     Mihir
-17. Pluto X API (MSP Protocol)                                                              Mihir
-18. STAMP Support (Output)                                                                  Tanay
-19. Overall Cloud Integration (Cloud Architecture Diagram)                                  Sarid
-20. Gallery                                                                                 Prinkal
-21. Future Scope                                                                            Arsh
-22. Conclusion                                                                              Prinkal
+16. Overall Performance of 3 ML Models    (Performance)                                     Arsh
+17. Drone Programming                                                                       Mihir   
+18. Pluto X API (MSP Protocol)                                                              Mihir
+19. STAMP Support (Output)                                                                  Tanay
+20. Overall Cloud Integration (Cloud Architecture Diagram)                                  Sarid
+21. Gallery                                                                                 Prinkal
+22. Future Scope                                                                            Arsh
+23. Conclusion                                                                              Prinkal
 
 Note : Every Slide will have diagrams and Content wont be more than 2 sentences
        Performance Slides will expplained with help of graphs
