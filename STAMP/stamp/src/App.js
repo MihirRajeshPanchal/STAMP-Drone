@@ -23,6 +23,7 @@ import Directions from './pages/Settings/Directions';
 import Surveillance from './components/Surveillance/Surveillance'
 import CameraViewing from './components/CameraViewing/CameraViewing';
 import Detect from './components/Security/Detect'
+import Gallery from './pages/Gallery'
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         <Route path='/Settings/Directions' element={<Directions />} />
         <Route path='/Surveillance' element={<Surveillance />} />
         <Route path='/Cameraviewing' element={< CameraViewing/>} />
+        <Route path='/Gallery' element={<Gallery/>}/>
       </Routes>
       </BrowserRouter>
       <Footer/>

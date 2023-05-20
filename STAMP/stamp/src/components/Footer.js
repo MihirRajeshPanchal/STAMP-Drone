@@ -137,18 +137,19 @@ import {
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Company</ListHeader>
-              <Link href={'/about'}>About us</Link>
-              <Link href={'#'}>Gallery</Link>
-              <Link href={'/about'}>Contact us</Link>
-              <Link href={'/about'}>Our Team</Link>
-              <Link href={'#'}>Our Projects</Link>
+              <Link href={'/About'}>About us</Link>
+              <Link href={'/Gallery'}>Gallery</Link>
+              <Link href={'/About'}>Contact us</Link>
+              <Link href={'/Abou  t'}>Our Team</Link>
+              {/* <Link href={'#'}>Our Projects</Link> */}
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Support</ListHeader>
               <Link href={'/surveillance'}>Surveillance</Link>
-              <Link href={'/security'}>Security</Link>
-              <Link href={'#'}>Tracking</Link>
-              <Link href={'/Settings/Propellers'}>Settings</Link>
+              <Link href={'/Settings/Propellers'}>Propellers Settings</Link>
+              <Link href={'/Settings/Directions'}>Directions Settings</Link>
+              {/* <Link href={'#'}>Tracking</Link> */}
+              <Link href={'/Security/ExistingRecord'}>Existing Record</Link>
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Stay up to date</ListHeader>
