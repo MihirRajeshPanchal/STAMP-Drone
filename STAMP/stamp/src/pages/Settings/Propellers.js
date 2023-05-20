@@ -46,16 +46,7 @@ const Propellers = () => {
         toastIdRef.current = toast({description: 'All Propellers running'});
         fetch("http://localhost:5000/spinall", {
                 method: "POST",
-        })
-        .then(() => {
-            setTimeout(() => {
-                setImageSrc(propellers);
-            }, 1000); // wait for 5 seconds
-        })
-        .catch((error) => {
-            console.error(error);
-            toast({ description: "Error spinning propellers", status: "error" });
-        });
+const Propellers = () => {
     };
 
     const fourth = () => {
