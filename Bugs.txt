@@ -1,45 +1,55 @@
-Frontend Prinkal Tanay
-1. Add links to footer
-2. In /Settings/Directions make the drone propellers spinning when direction button is clicked forwardimg,backwardimg,leftimg,rightimg
-3. /Security/Detect adjust the buttons
-4. /Surveillance adjust the buttons
-5. Change photos of drone in settings according to background color by hook 
-    for dark mode drone color should be white
-    const { colorMode, toggleColorMode } = useColorMode();
+Tasks Pending
+Coding
+1. Create Gallery Page
+2. Correct Links in footer
 
-Backend Sarid Mihir
-1. Integration of Security and Surveillance
-2. Cloud Sync buttons Backend
+Documentation
+1. Create UML Diagrams 6 (Gantt Chart, Class Diagram, Flowchart, Sequence Diagram, Use case diagram, Architecture diagram(with cloud)) for Blackbook
+2. Write content for daily and weekly report 
+3. Take a print of Daily diary and spiral bind it  
+4. Complete Blackbook by copy pasting code and outputs  
+5. Create Poster on Canva or physical
+6. Take Color Printout of Readme file from github (User Manual done)
 
-Documentation Arsh
-1. Create Content for Daily Diary sent as Named "SBMP_Poject_Weekly_Report_Form"
-2. Create UML Diagrams any 6 for Blackbook
-3. Complete Blackbook 
-4. Complete PPT for Presentation at 12th April with Abhijit and Anita Kulkarni
+@Arsh Sakaria Mention the points you have assigned from this list to other group members over here
+And everyone give me some updates on work done
+We need to complete the project before this Wednesday
 
 
-After these bugs are solved project is Complete
-After project completion task
-1. Configuration of project on all team members
-2. Removing unwanted imports in react app so that react app is clean and compiles successfully without any warnings
-3. Create a docker container of the project 
-4. Documentation 
+Task remaining
+1. Create Gallery Page - Prinkal
+2. Correct Links in footer - Tanay 
+3. Draw UML Diagrams from sketch made by Mihir - Prinkal and Tanay
+4. Beautify PPT - Prinkal
+5. Copy paste code complete Blackbook - Sarid
+6. Create Poster for Final Presentation - Tanay (Canva)
+7. Complete 
+    weekly diary (content) - Arsh
+    daily diary (content) - Arsh
+    Create a user Manual booklet (similar to ignite it handouts) from readme file and take print - Arsh
+8. Take final outputs of project with all 5 face which are going to be presented 
 
 
+Things to take with during Presentation
 
-Tanay Prinkal
-1. Finish up Gallery Component
-2. Change Gifs of Propellers to a color which suites both dark and light mode 
-3. Fix Dark and light mode ui fixes like stamp logo etc
-4. Correct the links in the Footer
-5. Create a summary of our project as a poster on Canva 
+1. Mihir's laptop (Full demonstration)
+2. Sarid's laptop (PPT)
+3. Prinkal'S laptop (BACKUP for mihir's or sarid's as it mostly configured just without cloud)
+4. Final PPT XEROX
+5. Blackbook
+6. Github color XEROX
+7. Daily diary
+8. Weekly diary
+9. synopsis
+10. Drone
+11. Charged Battery
+12. Micro usb cable
+13. Poster
+14. User Manual booklet
 
-Sarid
-1. Configure aws bucket and test functionality 
-2. Create all necessary cloud components of s3 dynamodb and sns 
+Overwhelme Opponents with everything is the motto
 
-Arsh 
-1. Complete PPT for Presentation at 29th April with Abhijit and Anita Kulkarni
-2. Create UML Diagrams any 6 for Blackbook
-3. Write content for daily and weekly report 
-4. Take a print of Daily diary and spiral bind it 
+Deadline : 
+We will be meeting on 22nd May as batch 1 has mis and batch 2 has awt with abhijit sir present as awt pracs
+This meeting offline is a mock preparation to our final showdown at 24
+Also on 22 we will print Blackbook as XEROX wala will be available with less crowd

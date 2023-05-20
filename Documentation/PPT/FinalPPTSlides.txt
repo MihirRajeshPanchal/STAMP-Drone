@@ -1,0 +1,28 @@
+1. Project Title with Names Roll No and Guide                                               Mihir
+2. Introduction                                                                             Arsh
+3. Problem Statement                                                                        Arsh
+4. Silde with bubbles each bubble representing subject which we applied in the Project      Mihir
+5. Explain SDLC Phase used with software development tools used                             Sarid
+6. Web Application pages hierarchy flow diagram                                             Prinkal
+7. Face Recognition (Working)                                                               Mihir
+8. Face Recognition (Output)                                                                Tanay
+9. Face Recognition (Performance)                                                           Sarid
+10. Object Detection (Working)                                                              Mihir
+11. Object Detection (Output)                                                               Prinkal
+12. Object Detection (Performance)                                                          Sarid
+13. Hand Gesture Recognition (Working)                                                      Mihir
+14. Hand Gesture Recognition (Output)                                                       Tanay
+15. Hand Gesture Recognition (Performance)                                                  Prinkal
+16. Overall Performance of 3 ML Models    (Performance)                                     Arsh
+17. Drone Programming                                                                       Mihir   
+18. Pluto X API (MSP Protocol)                                                              Mihir
+19. STAMP Support (Output)                                                                  Tanay
+20. Overall Cloud Integration (Cloud Architecture Diagram)                                  Sarid
+21. Gallery                                                                                 Prinkal
+22. Future Scope                                                                            Arsh
+23. Conclusion                                                                              Prinkal
+
+Note : Every Slide will have diagrams and Content wont be more than 2 sentences
+       Performance Slides will expplained with help of graphs
+       
+External : https://www.linkedin.com/in/profbhaveshpatel/

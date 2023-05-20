@@ -279,8 +279,8 @@ import {
       href: '/Surveillance',
     },
     {
-      label: 'Camera Viewing',
-      href: '/Cameraviewing',
+      label: 'Gesture Control',
+      href: '/GestureControl',
     },
     {
       label: 'Settings',

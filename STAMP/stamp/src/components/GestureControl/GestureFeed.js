@@ -9,7 +9,7 @@ const getCameraStream = async () => {
     }
 };
   
-const CameraFeed = ({ enabled }) => {
+const GestureFeed = ({ enabled }) => {
     const videoRef = useRef();
   
     useEffect(() => {
@@ -31,5 +31,5 @@ const CameraFeed = ({ enabled }) => {
     );
 };
   
-  export default CameraFeed;
+  export default GestureFeed;
   

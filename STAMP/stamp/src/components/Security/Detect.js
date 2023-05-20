@@ -24,6 +24,7 @@ import {
   Stack,
   Text,
   SimpleGrid,
+  Progress,
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import Loading from './Loading.js';
@@ -39,6 +40,10 @@ const Train = () => {
   const [filename, setFilename] = useState('');
   const [outputFilename, setOutputFilename] = useState('');
   const [reportMail, setReportMail] = useState('');
+
+  const [isLoading, setIsLoading] = useState(false);
+  const startLoading = () => setIsLoading(true);
+  const stopLoading = () => setIsLoading(false);
 
   const handleFileInput = e => {
     setSelectedFile(e.target.files[0]);
@@ -59,7 +64,7 @@ const Train = () => {
       const formData = new FormData();
       formData.append('file', selectedFile);
       formData.append('outputFilename', outputFilename);
-
+      startLoading();
       fetch('http://localhost:5000/upload', {
         method: 'POST',
         body: formData,
@@ -111,6 +116,7 @@ const Train = () => {
                   })
                     .then(response => {
                       if (response.ok) {
+                        stopLoading();
                         console.log('Report Sent successfully');
                         toast({
                           title: `Report Sent successfully`,
@@ -123,6 +129,7 @@ const Train = () => {
                       }
                     })
                     .catch(error => {
+                      stopLoading();
                       console.log(error);
                     });
 
@@ -130,17 +137,21 @@ const Train = () => {
                     'http://localhost:3000/Security/Detect'
                   );
                 } else {
+                  stopLoading();
                   console.log('Error while Detecting');
                 }
               })
               .catch(error => {
+                stopLoading();
                 console.log(error);
               });
           } else {
+            stopLoading();
             console.log('Error uploading file');
           }
         })
         .catch(error => {
+          stopLoading();
           console.log(error);
         });
     } else {
@@ -162,6 +173,7 @@ const Train = () => {
         isClosable: true,
       });
     } else {
+      startLoading();
       fetch('http://localhost:5000/save_to_disc')
         .then(response => {
           if (!response.ok) {
@@ -177,8 +189,10 @@ const Train = () => {
           document.body.appendChild(link);
           link.click();
           link.parentNode.removeChild(link);
+          stopLoading();
         })
         .catch(error => {
+          stopLoading();
           console.error('Error downloading file:', error);
         });
     }
@@ -192,6 +206,7 @@ const Train = () => {
         isClosable: true,
       });
     } else {
+      startLoading();
       fetch('http://localhost:5000/save_to_cloud', {
         method: 'POST',
         headers: {
@@ -206,6 +221,7 @@ const Train = () => {
           return response.blob();
         })
         .then(response => {
+          stopLoading();
           toast({
             title: `File "${filename}" uploaded successfully to cloud`,
             status: 'success',
@@ -214,6 +230,7 @@ const Train = () => {
           });
         })
         .catch(error => {
+          stopLoading();
           console.error('Error downloading file:', error);
         });
     }
@@ -221,6 +238,7 @@ const Train = () => {
 
   return (
     <div>
+      {isLoading && <Progress size="xs" isIndeterminate />}
       <Box
         bg="#edf3f8"
         _dark={{

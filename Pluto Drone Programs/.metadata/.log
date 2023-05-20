@@ -789,3 +789,36 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.ui 4 4 2023-04-26 16:38:59.517
 !MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@6b25ef1c} vs {coreplugin.handlers.DfuFlasher}
+!SESSION 2023-05-18 16:31:46.069 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2023-05-18 16:31:51.926
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://coreapplication.intro/coreapplication.intro.LifeCycleManager
+
+!ENTRY org.eclipse.ui 4 4 2023-05-18 16:31:54.547
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-05-18 16:31:54.561
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.ui 4 4 2023-05-18 16:31:57.500
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-05-18 16:31:57.503
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.ui 4 4 2023-05-18 16:32:03.983
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-05-18 16:32:03.983
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher} vs {coreplugin.handlers.DfuFlasher}
+
+!ENTRY org.eclipse.ui 4 4 2023-05-18 16:33:13.245
+!MESSAGE Conflicting handlers for CorePlugin.Command.PXNormalFlash: {coreplugin.handlers.FlashHandler@eb09112} vs {coreplugin.handlers.FlashHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-05-18 16:33:13.246
+!MESSAGE Conflicting handlers for CorePlugin.Command.DfuNormalFlash: {coreplugin.handlers.DfuFlasher@28521ed5} vs {coreplugin.handlers.DfuFlasher}
