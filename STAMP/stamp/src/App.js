@@ -22,8 +22,8 @@ import Propellers from './pages/Settings/Propellers';
 import Directions from './pages/Settings/Directions';
 import Surveillance from './components/Surveillance/Surveillance'
 import CameraViewing from './components/GestureControl/GestureViewing';
-import Detect from './components/Security/Detect'
-import Gallery from './pages/Gallery'
+import Detect from './components/Security/Detect';
+import Gallery from './pages/Gallery';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -43,12 +43,9 @@ function App() {
         <Route path='/Settings/Propellers' element={<Propellers />} />
         <Route path='/Settings/Directions' element={<Directions />} />
         <Route path='/Surveillance' element={<Surveillance />} />
-<<<<<<< HEAD
         <Route path='/Cameraviewing' element={< CameraViewing/>} />
         <Route path='/Gallery' element={<Gallery/>}/>
-=======
         <Route path='/GestureControl' element={< CameraViewing/>} />
->>>>>>> 7ea5237cb2635b8420d03b980819705afc31d337
       </Routes>
       </BrowserRouter>
       <Footer/>
