@@ -298,6 +298,10 @@ import {
       ],
     },
     {
+      label: 'Gallery',
+      href: '/Gallery'
+    },
+    {
       label: 'About Us',
       href: '/About'
     },

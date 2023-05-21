@@ -83,8 +83,8 @@ def yml_train():
 
     add_to_json(image_label_set)
     rearrange_json()
-    # upload_dynamodb_details()
-    # upload_s3("STAMP\stamp\src\components\Security\details.json")
+    upload_dynamodb_details()
+    upload_s3("STAMP\stamp\src\components\Security\details.json")
     # Print the number of faces trained and end program
         # adding data to json
     print("\n [INFO] {0} faces trained. Exiting Program".format(len(np.unique(labels))))

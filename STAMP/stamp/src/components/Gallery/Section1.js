@@ -184,7 +184,7 @@ STAMP utilizes cutting-edge drone technology to provide comprehensive surveillan
             </div>
             <Divider />
             <Heading size="xl" textAlign="center" mt="20px">
-         DRONA DEVELOPMENT WORKSHOP
+         DRONA AVIATION DEVELOPMENT WORKSHOP
             </Heading>
             <div style={{ display: 'flex', alignItems: 'center' }}>
                 <div style={{ flex: 1 }}>

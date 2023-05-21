@@ -123,33 +123,22 @@ import {
               <Text fontSize={'sm'}>
               Empowering Your Security, One Flight at a Time.
               </Text>
-              <Stack direction={'row'} spacing={6}>
-                <SocialButton label={'Twitter'} href={'#'}>
-                  <FaTwitter />
-                </SocialButton>
-                <SocialButton label={'YouTube'} href={'#'}>
-                  <FaYoutube />
-                </SocialButton>
-                <SocialButton label={'Instagram'} href={'#'}>
-                  <FaInstagram />
-                </SocialButton>
-              </Stack>
             </Stack>
             <Stack align={'flex-start'}>
-              <ListHeader>Company</ListHeader>
-              <Link href={'/About'}>About us</Link>
-              <Link href={'/Gallery'}>Gallery</Link>
-              <Link href={'/About'}>Contact us</Link>
-              <Link href={'/Abou  t'}>Our Team</Link>
-              {/* <Link href={'#'}>Our Projects</Link> */}
-            </Stack>
-            <Stack align={'flex-start'}>
-              <ListHeader>Support</ListHeader>
+              <ListHeader>STAMP</ListHeader>
+              <Link href={'/Security/NewRecord'}>Security</Link>
               <Link href={'/surveillance'}>Surveillance</Link>
               <Link href={'/Settings/Propellers'}>Propellers Settings</Link>
               <Link href={'/Settings/Directions'}>Directions Settings</Link>
               {/* <Link href={'#'}>Tracking</Link> */}
-              <Link href={'/Security/ExistingRecord'}>Existing Record</Link>
+            </Stack>
+            <Stack align={'flex-start'}>
+              <ListHeader>Support</ListHeader>
+              <Link href={'/About'}>About us</Link>
+              <Link href={'/Gallery'}>Gallery</Link>
+              <Link href={'/About'}>Contact us</Link>
+              <Link href={'/About'}>Our Team</Link>
+              {/* <Link href={'#'}>Our Projects</Link> */}
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Stay up to date</ListHeader>

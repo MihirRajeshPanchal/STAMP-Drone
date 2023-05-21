@@ -69,7 +69,7 @@ def surveillance():
 def send_email():
     data = request.json
     recipient = data['recipient']
-    # sns_subscribe(recipient)
+    sns_subscribe(recipient)
     return {'message': 'Email Subscribed'}
 
 @app.route('/write-file-email', methods=['POST'])
@@ -77,7 +77,7 @@ def write_file():
     data = request.json['data']
     with open('STAMP/stamp/src/files/emails.txt', 'a') as f:
         f.write(data + '\n')
-    # upload_s3("STAMP/stamp/src/files/emails.txt")
+    upload_s3("STAMP/stamp/src/files/emails.txt")
     return {'success': True}
 
 def get_box_dimensions(outputs, height, width):
@@ -322,7 +322,7 @@ def save_to_disc():
 def save_to_cloud():
     data = request.get_json()
     file_path = data['outputFilename'] + ".mp4"
-    # upload_s3(file_path)
+    upload_s3(file_path)
     return jsonify({'message': "Saved to Cloud"}), 200
 
 @app.route('/send_face_report', methods=['GET', 'POST'])
@@ -366,7 +366,7 @@ def save_yolo_to_disc():
 def save_yolo_to_cloud():
     data = request.get_json()
     file_path = data['outputFilename'] + ".mp4"
-    # upload_s3(file_path)
+    upload_s3(file_path)
     return jsonify({'message': "Saved to Cloud"}), 200
 
 @app.route('/hand_gesture', methods=['GET'])
@@ -381,7 +381,7 @@ def contact_us():
     name = parsed_data['name']
     email = parsed_data['email']
     message = parsed_data['message']
-    # add_to_dynamodb_contact_us(name,email,message)
+    add_to_dynamodb_contact_us(name,email,message)
     return jsonify({'message': "details recieved successfully"}), 200
 
 @app.route('/test', methods=['GET'])
