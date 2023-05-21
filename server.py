@@ -338,7 +338,7 @@ def send_face_report():
     with app.open_resource(outputFilename) as fp:  
         message.attach(outputFilename, "video/mp4",fp.read())  
         mail.send(message)  
-
+    save_to_cloud()
     return jsonify({'message': "Report sent to mail successfully"}), 200
 
 @app.route('/send_yolo_face_report', methods=['GET', 'POST'])
@@ -354,7 +354,7 @@ def send_yolo_face_report():
     with app.open_resource(outputFilename) as fp:  
         message.attach(outputFilename, "video/mp4",fp.read())  
         mail.send(message)  
-
+    save_yolo_to_cloud()
     return jsonify({'message': "Report sent to mail successfully"}), 200
 
 @app.route('/save_yolo_to_disc', methods=['GET'])
