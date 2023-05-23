@@ -111,7 +111,7 @@ export default function App(){
                 STAMP's user interface (UI) is designed to be easy to use and navigate, even for those with little or no drone experience. The UI allows users to access a range of features, including arming and disarming their drone, setting up custom flight paths, and adjusting camera settings.
               </Feature>
               <Feature
-                title=" Real-time tracking:"
+                title=" AI Deep Learning Models"
                 icon={
                   <path
                     strokeLinecap="round"
@@ -121,7 +121,7 @@ export default function App(){
                   />
                 }
               >
-                 STAMP's advanced AI algorithms allow for real-time tracking of people and objects, making it an ideal solution for law enforcement agencies and private investigators.
+                 STAMP's advanced AI algorithms allow for tracking of people and objects, making it an ideal solution for law enforcement agencies and private investigators.
               </Feature>
 
             
