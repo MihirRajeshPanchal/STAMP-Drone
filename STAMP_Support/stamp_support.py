@@ -197,7 +197,7 @@ def main(page: ft.Page):
         import openai
 
         # Set up the OpenAI API client
-        openai.api_key = "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"
+        openai.api_key = ""
 
         # Set up the model and prompt
         model_engine = "text-davinci-003"

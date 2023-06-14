@@ -178,21 +178,21 @@ Archive member included to satisfy reference by file (symbol)
 ./libs\libpluto_0.3.a(vl53l0x_i2c_platform.o)
                               vl53l0x_platform.o (symbol from plugin) (VL53L0X_write_multi)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_cos.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o (cosf)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o (cosf)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_lrint.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o (lrintf)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o (lrintf)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_sin.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o (sinf)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o (sinf)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o (acosf)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o (acosf)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_asin.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o (asinf)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o (asinf)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_atan2.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o (atan2f)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o (atan2f)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_log.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o (logf)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o (logf)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_sqrt.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o (sqrtf)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o (sqrtf)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_acos.o)
                               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o) (__ieee754_acosf)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-ef_asin.o)
@@ -232,15 +232,15 @@ d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
                               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o) (_impure_ptr)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcpy.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o (memcpy)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o (memcpy)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o (memset)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o (memset)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strchr.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o (strchr)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o (strchr)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strlen.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o (strlen)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o (strlen)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_ashrdi3.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o (__aeabi_lasr)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o (__aeabi_lasr)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
                               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o) (__aeabi_f2d)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
@@ -248,15 +248,15 @@ d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_truncdfsf2.o)
                               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-wf_acos.o) (__aeabi_d2f)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_ldivmod.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o (__aeabi_ldivmod)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o (__aeabi_ldivmod)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixsfdi.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o (__aeabi_f2lz)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o (__aeabi_f2lz)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixunssfdi.o)
                               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_fixsfdi.o) (__aeabi_f2ulz)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
                               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_ldivmod.o) (__udivmoddi4)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
-                              C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o (__aeabi_unwind_cpp_pr0)
+                              C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o (__aeabi_unwind_cpp_pr0)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(libunwind.o)
                               d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o) (restore_core_regs)
 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
@@ -318,44 +318,44 @@ __lock___sfp_recursive_mutex
 Discarded input sections
 
  .text          0x00000000        0x0 obj/PLUTOX/src/main/PlutoPilot.o (symbol from plugin)
- .text          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
- .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
- .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
- .bss           0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
- .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
- .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
- .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
+ .text          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
+ .bss           0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
  .text.unlikely
-                0x00000000       0x3c C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
+                0x00000000       0x3c C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
  .ARM.extab.text.unlikely
-                0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
+                0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
  .ARM.exidx.text.unlikely
-                0x00000000        0x8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
- .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
- .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
- .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
+                0x00000000        0x8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
  .ARM.extab.text.startup
-                0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
- .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
- .rodata        0x00000000        0x1 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
- .rodata        0x00000000        0x1 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
- .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
- .bss           0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
- .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
- .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
- .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
- .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
- .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
- .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
- .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
- .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
- .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
- .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
- .data          0x00000000       0x10 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans20.ltrans.o
- .bss           0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans20.ltrans.o
- .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
- .bss           0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
- .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
+                0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
+ .rodata        0x00000000        0x1 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
+ .rodata        0x00000000        0x1 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
+ .bss           0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
+ .data          0x00000000       0x10 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans20.ltrans.o
+ .bss           0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans20.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
+ .bss           0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
+ .ARM.extab     0x00000000        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
  .text          0x00000000       0x14 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
  .data          0x00000000        0x0 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
  .bss           0x00000000        0x0 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
@@ -737,28 +737,28 @@ MEMORY_B1        0x60000000         0x00000000         xr
 Linker script and memory map
 
 LOAD obj/PLUTOX/src/main/PlutoPilot.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans20.ltrans.o
-LOAD C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans20.ltrans.o
+LOAD C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
 LOAD d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a
 LOAD ./libs\libpluto_0.3.a
 LOAD d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libstdc++.a
@@ -789,13 +789,13 @@ END GROUP
 .text           0x080001c0    0x12f68
                 0x080001c0                . = ALIGN (0x4)
  *(.text)
- .text          0x080001c0     0x1908 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
+ .text          0x080001c0     0x1908 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
                 0x080001c0                init()
- .text          0x08001ac8      0x924 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
+ .text          0x08001ac8      0x924 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
                 0x08001ac8                LaserSensor::init()
- .text          0x080023ec     0x1098 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
+ .text          0x080023ec     0x1098 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
                 0x080023ec                processRx()
- .text          0x08003484      0x874 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
+ .text          0x08003484      0x874 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
                 0x080034d4                RcCommand_P::set(rc_channel_e, short) [clone .constprop.168]
                 0x08003500                VL53L0X_calc_timeout_mclks.constprop.164
                 0x08003528                NVIC_Init.part.0.constprop.150
@@ -820,18 +820,18 @@ END GROUP
                 0x08003bea                VL53L0X_WrByte
                 0x08003c00                VL53L0X_ref_calibration_io.constprop.144
                 0x08003c9e                VL53L0X_ClearInterruptMask.constprop.143
- .text          0x08003cf8      0xbd0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
+ .text          0x08003cf8      0xbd0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
                 0x08003cf8                headSerialResponse(unsigned char, unsigned char) [clone .lto_priv.176]
                 0x08003d38                headSerialReply(unsigned char) [clone .lto_priv.199]
                 0x08003d3e                read32() [clone .lto_priv.202]
                 0x08003d50                processOutCommand(unsigned char) [clone .lto_priv.283]
- .text          0x080048c8      0x9c4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
+ .text          0x080048c8      0x9c4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
                 0x08004fca                perform_ref_signal_measurement
                 0x08005042                set_ref_spad_map
                 0x0800505e                VL53L0X_GetSequenceStepEnables
                 0x08005096                VL53L0X_GetDeviceParameters
                 0x0800524a                LaserSensor::startRanging()
- .text          0x0800528c      0xca4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
+ .text          0x0800528c      0xca4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
                 0x080052a4                read8() [clone .lto_priv.200]
                 0x080052b8                read16() [clone .lto_priv.201]
                 0x080052cc                serialize8(unsigned char) [clone .lto_priv.209]
@@ -857,7 +857,7 @@ END GROUP
                 0x08005704                writeMotors
                 0x080057b0                drift_correction(float)
                 0x08005e6c                normalize()
- .text          0x08005f30      0x81c C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
+ .text          0x08005f30      0x81c C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
                 0x08005f30                ppmEdgeCallback(timerCCHandlerRec_s*, unsigned short) [clone .lto_priv.288]
                 0x08006008                ppmOverflowCallback(timerOvrHandlerRec_s*, unsigned short) [clone .lto_priv.289]
                 0x08006018                pwmWriteStandard(unsigned char, unsigned short) [clone .lto_priv.286]
@@ -869,7 +869,7 @@ END GROUP
                 0x08006394                gpioInit
                 0x080063e8                pwmOutConfig
                 0x08006614                initSpi2
- .text          0x0800674c      0xdf8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
+ .text          0x0800674c      0xdf8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
                 0x0800674c                pidMultiWii23(pidProfile_s*, controlRateConfig_s*, unsigned short, rollAndPitchTrims_t*, rxConfig_s*) [clone .lto_priv.220]
                 0x08006a10                pidMultiWii(pidProfile_s*, controlRateConfig_s*, unsigned short, rollAndPitchTrims_t*, rxConfig_s*) [clone .lto_priv.218]
                 0x08006c9c                pidLuxFloat(pidProfile_s*, controlRateConfig_s*, unsigned short, rollAndPitchTrims_t*, rxConfig_s*) [clone .lto_priv.219]
@@ -878,18 +878,18 @@ END GROUP
                 0x08007028                failsafeOnLowBattery
                 0x0800703c                updateGains
                 0x0800708c                apmCalculateEstimatedAltitude
- .text          0x08007544      0xfd4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
+ .text          0x08007544      0xfd4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
                 0x080080ac                renorm(float const*, float*)
                 0x08008160                dcmFromEuler(float, float, float)
                 0x08008224                imuCalculateAcceleration(unsigned long)
                 0x080084d0                pidSetController
- .text          0x08008518      0xb14 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
+ .text          0x08008518      0xb14 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
                 0x08008518                PosXYEstimate
                 0x080087e4                flip.part.0
                 0x08008be4                RCC_ADCCLKConfig
                 0x08008c04                RCC_GetClocksFreq
                 0x08008ef4                alignSensors
- .text          0x0800902c      0x824 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
+ .text          0x0800902c      0x824 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
                 0x0800904a                VL53L0X_load_tuning_settings
                 0x080090fc                VL53L0X_get_vcsel_pulse_period
                 0x0800912e                set_sequence_step_timeout
@@ -901,7 +901,7 @@ END GROUP
                 0x08009510                VL53L0X_perform_single_ref_calibration
                 0x08009540                VL53L0X_perform_ref_calibration
                 0x080095d0                VL53L0X_perform_ref_spad_management
- .text          0x08009850      0x6b4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
+ .text          0x08009850      0x6b4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
                 0x080099c8                timCCxHandler(TIM_TypeDef*, timerConfig_s*) [clone .lto_priv.190]
                 0x08009a4e                TIM1_CC_IRQHandler
                 0x08009a5c                configTimeBase
@@ -910,7 +910,7 @@ END GROUP
                 0x08009b58                USART1_IRQHandler
                 0x08009b60                DMA1_Channel4_IRQHandler
                 0x08009b9c                uartOpen
- .text          0x08009f04      0x6e0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
+ .text          0x08009f04      0x6e0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
                 0x08009f2c                mpuGyroRead
                 0x08009f70                mpuAccRead
                 0x08009ff8                mpu6500GyroInit
@@ -921,7 +921,7 @@ END GROUP
                 0x0800a2ac                i2cWrite
                 0x0800a2c0                mpuWriteRegisterI2C(unsigned char, unsigned char) [clone .lto_priv.324]
                 0x0800a2c8                mode_0_init()
- .text          0x0800a5e4      0xb80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
+ .text          0x0800a5e4      0xb80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
                 0x0800a5e4                ms5611_calculate(long*, long*, unsigned long, unsigned long) [clone .lto_priv.321]
                 0x0800a784                ms5611_start_up() [clone .lto_priv.319]
                 0x0800a78e                ms5611_start_ut() [clone .lto_priv.317]
@@ -941,7 +941,7 @@ END GROUP
                 0x0800b140                TIM3_IRQHandler
                 0x0800b150                TIM2_IRQHandler
                 0x0800b160                TIM1_UP_TIM16_IRQHandler
- .text          0x0800b164      0x798 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
+ .text          0x0800b164      0x798 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
                 0x0800b164                xBusReadRawRC(rxRuntimeConfig_s*, unsigned char) [clone .lto_priv.306]
                 0x0800b20c                spektrumReadRawRC.lto_priv.173
                 0x0800b238                sumhReadRawRC.lto_priv.299
@@ -962,7 +962,7 @@ END GROUP
                 0x0800b84c                getRxfailValue(unsigned char) [clone .lto_priv.238]
                 0x0800b89c                resumeRxSignal
                 0x0800b8cc                suspendRxSignal
- .text          0x0800b8fc      0x630 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
+ .text          0x0800b8fc      0x630 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
                 0x0800b8fc                DMA_StructInit
                 0x0800b916                DMA_Init
                 0x0800b952                DMA_DeInit
@@ -983,15 +983,15 @@ END GROUP
                 0x0800bdd8                featureSet
                 0x0800bde8                writeEEPROM
                 0x0800bf18                saveConfigAndNotify
- .text          0x0800bf2c      0x6e8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
+ .text          0x0800bf2c      0x6e8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
                 0x0800bf2c                processInCommand() [clone .lto_priv.282]
- .text          0x0800c614      0x158 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
+ .text          0x0800c614      0x158 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
                 0x0800c614                mwArm
                 0x0800c6ac                mwDisarm
                 0x0800c728                isCalibrating()
- .text          0x0800c76c       0x68 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans20.ltrans.o
+ .text          0x0800c76c       0x68 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans20.ltrans.o
                 0x0800c76c                SystemInit
- .text          0x0800c7d4       0x18 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
+ .text          0x0800c7d4       0x18 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
                 0x0800c7d4                LaserSensor::setAddress(unsigned char)
  .text          0x0800c7ec      0x134 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcpy.o)
                 0x0800c7ec                memcpy
@@ -1087,9 +1087,9 @@ END GROUP
                 0x0800e554                __aeabi_d2uiz
                 0x0800e554                __fixunsdfsi
  *(.text*)
- .text.startup  0x0800e594     0x2408 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
+ .text.startup  0x0800e594     0x2408 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
                 0x0800e594                main
- .text.startup  0x0801099c       0x10 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
+ .text.startup  0x0801099c       0x10 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
  .text.Reset_Handler
                 0x080109ac       0x68 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
                 0x080109ac                Reset_Handler
@@ -1240,31 +1240,31 @@ END GROUP
  .text._exit    0x08012724        0x4 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
                 0x08012724                _exit
  *(.rodata)
- .rodata        0x08012728      0x10e C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
- .rodata        0x08012836       0x3c C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
+ .rodata        0x08012728      0x10e C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
+ .rodata        0x08012836       0x3c C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
  *fill*         0x08012872        0x2 
- .rodata        0x08012874       0x14 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
+ .rodata        0x08012874       0x14 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
                 0x08012874                refArrayQuadrants
                 0x08012884                serialPortIdentifiers
- .rodata        0x08012888       0x30 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
- .rodata        0x080128b8      0x120 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
+ .rodata        0x08012888       0x30 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
+ .rodata        0x080128b8      0x120 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
                 0x080129d4                magneticDeclination
- .rodata        0x080129d8       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
+ .rodata        0x080129d8       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
                 0x080129f4                SystemCoreClock
- .rodata        0x080129f8       0x15 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
+ .rodata        0x080129f8       0x15 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
  *fill*         0x08012a0d        0x3 
- .rodata        0x08012a10      0x150 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
+ .rodata        0x08012a10      0x150 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
                 0x08012a10                _ZL5boxes.lto_priv.204
  *(.rodata*)
  .rodata.str1.1
-                0x08012b60       0x23 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
+                0x08012b60       0x23 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
  .rodata.str1.1
-                0x08012b83       0xa1 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
+                0x08012b83       0xa1 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
                                  0xa8 (size before relaxing)
  .rodata.str1.1
-                0x08012c24        0x9 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
+                0x08012c24        0x9 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
  .rodata.str1.1
-                0x08012c2d       0xe2 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
+                0x08012c2d       0xe2 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
  *fill*         0x08012d0f        0x1 
  .rodata.TWO23  0x08012d10        0x8 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_lrint.o)
  .rodata.acosf.str1.4
@@ -1315,55 +1315,55 @@ END GROUP
 .ARM.extab      0x08013128       0x90
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  .ARM.extab.text.startup
-                0x08013128        0xc C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
- .ARM.extab     0x08013134        0xc C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
- .ARM.extab     0x08013140        0xc C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
- .ARM.extab     0x0801314c       0x18 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
- .ARM.extab     0x08013164       0x24 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
- .ARM.extab     0x08013188        0xc C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
- .ARM.extab     0x08013194        0xc C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
+                0x08013128        0xc C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
+ .ARM.extab     0x08013134        0xc C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
+ .ARM.extab     0x08013140        0xc C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
+ .ARM.extab     0x0801314c       0x18 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
+ .ARM.extab     0x08013164       0x24 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
+ .ARM.extab     0x08013188        0xc C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
+ .ARM.extab     0x08013194        0xc C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
  .ARM.extab     0x080131a0       0x18 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
 
 .ARM            0x080131b8      0x1f0
                 0x080131b8                __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text.startup
-                0x08013398        0x8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
- .ARM.exidx     0x080131b8        0x8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
- .ARM.exidx     0x080131c0        0x8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
- .ARM.exidx     0x080131c8       0x10 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
+                0x08013398        0x8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
+ .ARM.exidx     0x080131b8        0x8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
+ .ARM.exidx     0x080131c0        0x8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
+ .ARM.exidx     0x080131c8       0x10 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
                                   0x8 (size before relaxing)
- .ARM.exidx     0x080131d8        0x8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
+ .ARM.exidx     0x080131d8        0x8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
                                  0x48 (size before relaxing)
- .ARM.exidx     0x080131e0       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
- .ARM.exidx     0x08013200        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
+ .ARM.exidx     0x080131e0       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
+ .ARM.exidx     0x08013200        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
                                   0x8 (size before relaxing)
- .ARM.exidx     0x08013200       0x28 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
+ .ARM.exidx     0x08013200       0x28 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
                                  0x90 (size before relaxing)
  .ARM.exidx.text.startup
-                0x080133a0        0x8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
- .ARM.exidx     0x08013228        0x8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
+                0x080133a0        0x8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
+ .ARM.exidx     0x08013228        0x8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
                                  0x38 (size before relaxing)
- .ARM.exidx     0x08013230       0x18 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
+ .ARM.exidx     0x08013230       0x18 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
                                  0x40 (size before relaxing)
- .ARM.exidx     0x08013248       0x30 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
+ .ARM.exidx     0x08013248       0x30 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
                                  0x38 (size before relaxing)
- .ARM.exidx     0x08013278       0x10 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
+ .ARM.exidx     0x08013278       0x10 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
                                  0x18 (size before relaxing)
- .ARM.exidx     0x08013288       0x10 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
+ .ARM.exidx     0x08013288       0x10 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
                                  0x20 (size before relaxing)
- .ARM.exidx     0x08013298       0x28 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
+ .ARM.exidx     0x08013298       0x28 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
                                  0x40 (size before relaxing)
- .ARM.exidx     0x080132c0       0x18 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
+ .ARM.exidx     0x080132c0       0x18 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
                                  0xa0 (size before relaxing)
- .ARM.exidx     0x080132d8        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
+ .ARM.exidx     0x080132d8        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
                                  0x50 (size before relaxing)
- .ARM.exidx     0x080132d8        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
+ .ARM.exidx     0x080132d8        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
                                  0x70 (size before relaxing)
- .ARM.exidx     0x080132d8        0x8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
- .ARM.exidx     0x080132e0        0x8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
+ .ARM.exidx     0x080132d8        0x8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
+ .ARM.exidx     0x080132e0        0x8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
                                  0x18 (size before relaxing)
- .ARM.exidx     0x080132e8        0x0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
+ .ARM.exidx     0x080132e8        0x0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
                                   0x8 (size before relaxing)
  .ARM.exidx     0x080132e8        0x0 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
@@ -1385,7 +1385,7 @@ END GROUP
                 [!provide]                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x080133a8        0x4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
+ .init_array    0x080133a8        0x4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
                 [!provide]                PROVIDE (__init_array_end, .)
 
 .fini_array     0x080133ac        0x0
@@ -1399,35 +1399,35 @@ END GROUP
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
- .data          0x20000000       0x11 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
+ .data          0x20000000       0x11 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
                 0x2000000c                userLoopFrequency
- .data          0x20000011       0xf3 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
- .data          0x20000104        0x2 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
+ .data          0x20000011       0xf3 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
+ .data          0x20000104        0x2 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
                 0x20000104                _ZL18rxIsInFailsafeMode.lto_priv.259
                 0x20000105                _ZL31rxIsInFailsafeModeNotDataDriven.lto_priv.261
  *fill*         0x20000106        0x2 
- .data          0x20000108      0x1bb C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
+ .data          0x20000108      0x1bb C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
                 0x20000108                _ZL13rcReadRawFunc.lto_priv.237
                 0x2000010c                _ZL18isUsingSticksToArm.lto_priv.233
  *fill*         0x200002c3        0x1 
- .data          0x200002c4       0x2c C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
+ .data          0x200002c4       0x2c C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
                 0x200002c4                dcm_matrix
- .data          0x200002f0        0xc C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
- .data          0x200002fc        0x9 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
+ .data          0x200002f0        0xc C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
+ .data          0x200002fc        0x9 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
                 0x20000304                velocityControl
  *fill*         0x20000305        0x3 
- .data          0x20000308        0x8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
+ .data          0x20000308        0x8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
                 0x20000308                headFreeModeHold
                 0x2000030c                pid_controller
- .data          0x20000310       0x33 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
+ .data          0x20000310       0x33 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
                 0x20000342                _ZL22standardBoardAlignment.lto_priv.325
  *fill*         0x20000343        0x1 
- .data          0x20000344        0x2 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
+ .data          0x20000344        0x2 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
                 0x20000344                acc_1G
- .data          0x20000346        0x4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
+ .data          0x20000346        0x4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
                 0x20000346                command_status
                 0x20000348                max_altitude
- .data          0x2000034a        0x6 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
+ .data          0x2000034a        0x6 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
                 0x2000034a                setLandTimer
                 0x2000034c                takeOffHeight
                 0x2000034e                landThrottle
@@ -1452,7 +1452,7 @@ END GROUP
                 0x20000780                _sbss = .
                 0x20000780                __bss_start__ = _sbss
  *(.bss)
- .bss           0x20000780      0x9b1 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
+ .bss           0x20000780      0x9b1 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
                 0x200007a0                gyroAlign
                 0x200007f4                acc
                 0x20000800                accAlign
@@ -1475,8 +1475,8 @@ END GROUP
                 0x20000fc8                laserFRONT
                 0x20001130                XRanging
  *fill*         0x20001131        0x3 
- .bss           0x20001134      0x140 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
- .bss           0x20001274      0x10c C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
+ .bss           0x20001134      0x140 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
+ .bss           0x20001274      0x10c C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
                 0x20001274                _ZL10rxUpdateAt.lto_priv.258
                 0x2000129c                _ZL16rxSignalReceived.lto_priv.243
                 0x2000129d                _ZL29rxSignalReceivedNotDataDriven.lto_priv.260
@@ -1491,7 +1491,7 @@ END GROUP
                 0x2000137c                calibratingB
                 0x2000137e                isChukedArmed
                 0x2000137f                isTookOff
- .bss           0x20001380      0x633 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
+ .bss           0x20001380      0x633 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
                 0x20001382                rcCommand
                 0x2000138c                RC_ARRAY
                 0x2000139c                userRCflag
@@ -1524,7 +1524,7 @@ END GROUP
                 0x200019ad                spi
                 0x200019b2                RcCommand
  *fill*         0x200019b3        0x1 
- .bss           0x200019b4       0x98 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
+ .bss           0x200019b4       0x98 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
                 0x200019b4                _ZL14enabledSensors.lto_priv.229
                 0x200019b8                _ZL16activeBoxIdCount.lto_priv.313
                 0x200019b9                _ZL12activeBoxIds.lto_priv.312
@@ -1540,9 +1540,9 @@ END GROUP
                 0x20001a14                amperage
                 0x20001a18                _ZL15serialPortCount.lto_priv.327
                 0x20001a1c                _ZL19serialPortUsageList.lto_priv.212
- .bss           0x20001a4c       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
+ .bss           0x20001a4c       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
                 0x20001a4c                Global_Status
- .bss           0x20001a6c       0xb5 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
+ .bss           0x20001a6c       0xb5 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
                 0x20001a6c                extiHandlerConfigs.lto_priv.328
                 0x20001a74                _ZL13mspSerialPort.lto_priv.245
                 0x20001a7a                lookupThrottleRC
@@ -1558,12 +1558,12 @@ END GROUP
                 0x20001b14                ra_sum
                 0x20001b20                _ZL15warningLedState.lto_priv.247
  *fill*         0x20001b21        0x3 
- .bss           0x20001b24      0x158 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
+ .bss           0x20001b24      0x158 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
                 0x20001b24                ppmDev
                 0x20001b6c                _ZL8captures.lto_priv.195
                 0x20001b84                _ZL13ppmFrameCount.lto_priv.262
                 0x20001b88                _ZL6motors.lto_priv.214
- .bss           0x20001c7c      0x104 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
+ .bss           0x20001c7c      0x104 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
                 0x20001cd4                gyro
                 0x20001cf8                _ZL19initialThrottleHold.lto_priv.242
                 0x20001cfc                errorVelocityI
@@ -1572,7 +1572,7 @@ END GROUP
                 0x20001d0c                baroGroundPressure
                 0x20001d74                AltHold
                 0x20001d78                setVelocity
- .bss           0x20001d80       0xb8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
+ .bss           0x20001d80       0xb8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
                 0x20001da0                PIDweight
                 0x20001da4                _ZL10PTermState.lto_priv.223
                 0x20001db0                _ZL10errorGyroI.lto_priv.221
@@ -1584,7 +1584,7 @@ END GROUP
                 0x20001e08                _ZL11errorGyroIf.lto_priv.225
                 0x20001e14                _ZL12errorAngleIf.lto_priv.226
                 0x20001e24                accZoffsetCalCycle
- .bss           0x20001e38      0x110 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
+ .bss           0x20001e38      0x110 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
                 0x20001e3c                new_position
                 0x20001e60                accSum
                 0x20001e6c                accSumXYZ
@@ -1606,14 +1606,14 @@ END GROUP
                 0x20001f3e                posY
                 0x20001f40                posX
                 0x20001f44                accSumCount
- .bss           0x20001f48      0x4a8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
- .bss           0x200023f0       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
+ .bss           0x20001f48      0x4a8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
+ .bss           0x200023f0       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
                 0x200023f0                i2c1ErrorCount.lto_priv.206
                 0x200023f2                i2c2ErrorCount.lto_priv.207
                 0x200023f4                mpuConfiguration
                 0x20002404                _ZL16mpuIntExtiConfig.lto_priv.322
                 0x2000240c                I2Cx.lto_priv.205
- .bss           0x20002410      0x230 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
+ .bss           0x20002410      0x230 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
                 0x20002410                _ZL8ms5611_c.lto_priv.316
                 0x20002420                currentControlRateProfile
                 0x20002424                lookupYawRC
@@ -1647,7 +1647,7 @@ END GROUP
                 0x20002518                sysTickUptime.lto_priv.192
                 0x2000251c                _ZL12_last_update.lto_priv.228
                 0x20002528                timerConfig
- .bss           0x20002640      0x27d C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
+ .bss           0x20002640      0x27d C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
                 0x20002679                _ZL16xBusChannelCount.lto_priv.304
                 0x2000267a                _ZL17xBusFrameReceived.lto_priv.264
                 0x2000267c                spekChannelData.lto_priv.281
@@ -1682,11 +1682,11 @@ END GROUP
                 0x200028b8                _ZL20suspendRxSignalUntil.lto_priv.236
                 0x200028bc                _ZL13skipRxSamples.lto_priv.235
  *fill*         0x200028bd        0x1 
- .bss           0x200028be        0x4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
+ .bss           0x200028be        0x4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
                 0x200028be                flightIndicatorFlag
                 0x200028c0                flightModeFlags
  *fill*         0x200028c2        0x2 
- .bss           0x200028c4       0x2d C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
+ .bss           0x200028c4       0x2d C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
                 0x200028c4                _ZL11currentPort.lto_priv.208
                 0x200028c8                armingFlags
                 0x200028ca                magHold
@@ -1697,7 +1697,7 @@ END GROUP
                 0x200028e8                calibratingA
                 0x200028ec                _ZL12serialConfig.lto_priv.213
                 0x200028f0                _ZL17isRebootScheduled.lto_priv.246
- .bss           0x200028f1        0x3 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
+ .bss           0x200028f1        0x3 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
                 0x200028f1                isCalibrated
                 0x200028f2                _ZL12isBatteryLow.lto_priv.244
                 0x200028f3                isTakeOffHeightSet
@@ -1734,49 +1734,49 @@ END GROUP
                 0x00000000       0x37
  *(.ARM.attributes)
  .ARM.attributes
-                0x00000000       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
+                0x00000000       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
  .ARM.attributes
-                0x00000037       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
+                0x00000037       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
  .ARM.attributes
-                0x0000006e       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
+                0x0000006e       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
  .ARM.attributes
-                0x000000a5       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
+                0x000000a5       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
  .ARM.attributes
-                0x000000dc       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
+                0x000000dc       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
  .ARM.attributes
-                0x00000113       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
+                0x00000113       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
  .ARM.attributes
-                0x0000014a       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
+                0x0000014a       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
  .ARM.attributes
-                0x00000181       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
+                0x00000181       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
  .ARM.attributes
-                0x000001b8       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
+                0x000001b8       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
  .ARM.attributes
-                0x000001ef       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
+                0x000001ef       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
  .ARM.attributes
-                0x00000226       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
+                0x00000226       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
  .ARM.attributes
-                0x0000025d       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
+                0x0000025d       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
  .ARM.attributes
-                0x00000294       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
+                0x00000294       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
  .ARM.attributes
-                0x000002cb       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
+                0x000002cb       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
  .ARM.attributes
-                0x00000302       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
+                0x00000302       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
  .ARM.attributes
-                0x00000339       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
+                0x00000339       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
  .ARM.attributes
-                0x00000370       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
+                0x00000370       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
  .ARM.attributes
-                0x000003a7       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
+                0x000003a7       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
  .ARM.attributes
-                0x000003de       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
+                0x000003de       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
  .ARM.attributes
-                0x00000415       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
+                0x00000415       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
  .ARM.attributes
-                0x0000044c       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans20.ltrans.o
+                0x0000044c       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans20.ltrans.o
  .ARM.attributes
-                0x00000483       0x37 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
+                0x00000483       0x37 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
  .ARM.attributes
                 0x000004ba       0x21 ./libs\libpluto_0.3.a(startup_stm32f30x_md_gcc.o)
  .ARM.attributes
@@ -1864,260 +1864,260 @@ END GROUP
 OUTPUT(obj/Experience_PLUTOX.elf elf32-littlearm)
 
 .debug_info     0x00000000    0x2eeba
- .debug_info    0x00000000     0x4ea1 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
- .debug_info    0x00004ea1     0x7e99 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
- .debug_info    0x0000cd3a     0x2c0f C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
- .debug_info    0x0000f949     0x1eb5 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
- .debug_info    0x000117fe     0x45fd C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
- .debug_info    0x00015dfb     0x141b C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
- .debug_info    0x00017216     0x2e96 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
- .debug_info    0x0001a0ac     0x20a3 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
- .debug_info    0x0001c14f     0x29ea C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
- .debug_info    0x0001eb39     0x1499 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
- .debug_info    0x0001ffd2     0x1435 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
- .debug_info    0x00021407      0xbba C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
- .debug_info    0x00021fc1     0x2185 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
- .debug_info    0x00024146     0x206e C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
- .debug_info    0x000261b4     0x1c0c C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
- .debug_info    0x00027dc0     0x293d C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
- .debug_info    0x0002a6fd     0x1522 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
- .debug_info    0x0002bc1f     0x137c C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
- .debug_info    0x0002cf9b      0xef4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
- .debug_info    0x0002de8f      0x2aa C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
- .debug_info    0x0002e139       0x97 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans20.ltrans.o
- .debug_info    0x0002e1d0      0xcea C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
+ .debug_info    0x00000000     0x4ea1 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
+ .debug_info    0x00004ea1     0x7e99 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
+ .debug_info    0x0000cd3a     0x2c0f C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
+ .debug_info    0x0000f949     0x1eb5 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
+ .debug_info    0x000117fe     0x45fd C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
+ .debug_info    0x00015dfb     0x141b C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
+ .debug_info    0x00017216     0x2e96 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
+ .debug_info    0x0001a0ac     0x20a3 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
+ .debug_info    0x0001c14f     0x29ea C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
+ .debug_info    0x0001eb39     0x1499 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
+ .debug_info    0x0001ffd2     0x1435 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
+ .debug_info    0x00021407      0xbba C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
+ .debug_info    0x00021fc1     0x2185 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
+ .debug_info    0x00024146     0x206e C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
+ .debug_info    0x000261b4     0x1c0c C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
+ .debug_info    0x00027dc0     0x293d C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
+ .debug_info    0x0002a6fd     0x1522 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
+ .debug_info    0x0002bc1f     0x137c C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
+ .debug_info    0x0002cf9b      0xef4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
+ .debug_info    0x0002de8f      0x2aa C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
+ .debug_info    0x0002e139       0x97 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans20.ltrans.o
+ .debug_info    0x0002e1d0      0xcea C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
 
 .debug_abbrev   0x00000000     0x55d6
- .debug_abbrev  0x00000000      0x689 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
- .debug_abbrev  0x00000689      0x554 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
- .debug_abbrev  0x00000bdd      0x30b C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
- .debug_abbrev  0x00000ee8      0x34e C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
- .debug_abbrev  0x00001236      0x55e C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
- .debug_abbrev  0x00001794      0x388 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
- .debug_abbrev  0x00001b1c      0x436 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
- .debug_abbrev  0x00001f52      0x5b3 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
- .debug_abbrev  0x00002505      0x482 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
- .debug_abbrev  0x00002987      0x3f8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
- .debug_abbrev  0x00002d7f      0x351 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
- .debug_abbrev  0x000030d0      0x343 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
- .debug_abbrev  0x00003413      0x3e9 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
- .debug_abbrev  0x000037fc      0x4b8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
- .debug_abbrev  0x00003cb4      0x3cf C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
- .debug_abbrev  0x00004083      0x558 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
- .debug_abbrev  0x000045db      0x4aa C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
- .debug_abbrev  0x00004a85      0x47b C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
- .debug_abbrev  0x00004f00      0x2f8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
- .debug_abbrev  0x000051f8      0x15c C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
- .debug_abbrev  0x00005354       0x73 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans20.ltrans.o
- .debug_abbrev  0x000053c7      0x20f C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
+ .debug_abbrev  0x00000000      0x689 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
+ .debug_abbrev  0x00000689      0x554 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
+ .debug_abbrev  0x00000bdd      0x30b C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
+ .debug_abbrev  0x00000ee8      0x34e C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
+ .debug_abbrev  0x00001236      0x55e C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
+ .debug_abbrev  0x00001794      0x388 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
+ .debug_abbrev  0x00001b1c      0x436 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
+ .debug_abbrev  0x00001f52      0x5b3 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
+ .debug_abbrev  0x00002505      0x482 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
+ .debug_abbrev  0x00002987      0x3f8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
+ .debug_abbrev  0x00002d7f      0x351 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
+ .debug_abbrev  0x000030d0      0x343 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
+ .debug_abbrev  0x00003413      0x3e9 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
+ .debug_abbrev  0x000037fc      0x4b8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
+ .debug_abbrev  0x00003cb4      0x3cf C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
+ .debug_abbrev  0x00004083      0x558 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
+ .debug_abbrev  0x000045db      0x4aa C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
+ .debug_abbrev  0x00004a85      0x47b C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
+ .debug_abbrev  0x00004f00      0x2f8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
+ .debug_abbrev  0x000051f8      0x15c C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
+ .debug_abbrev  0x00005354       0x73 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans20.ltrans.o
+ .debug_abbrev  0x000053c7      0x20f C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
 
 .debug_loc      0x00000000    0x16843
- .debug_loc     0x00000000     0x235e C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
- .debug_loc     0x0000235e     0x2934 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
- .debug_loc     0x00004c92     0x18a9 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
- .debug_loc     0x0000653b     0x11c2 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
- .debug_loc     0x000076fd     0x17b5 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
- .debug_loc     0x00008eb2      0xcb1 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
- .debug_loc     0x00009b63     0x2adc C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
- .debug_loc     0x0000c63f      0xe86 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
- .debug_loc     0x0000d4c5     0x13f1 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
- .debug_loc     0x0000e8b6      0xfc9 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
- .debug_loc     0x0000f87f     0x13b4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
- .debug_loc     0x00010c33      0x54c C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
- .debug_loc     0x0001117f     0x1c47 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
- .debug_loc     0x00012dc6      0xfc4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
- .debug_loc     0x00013d8a      0xd65 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
- .debug_loc     0x00014aef      0x68f C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
- .debug_loc     0x0001517e      0x936 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
- .debug_loc     0x00015ab4      0x974 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
- .debug_loc     0x00016428      0x374 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
- .debug_loc     0x0001679c       0xa7 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
+ .debug_loc     0x00000000     0x235e C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
+ .debug_loc     0x0000235e     0x2934 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
+ .debug_loc     0x00004c92     0x18a9 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
+ .debug_loc     0x0000653b     0x11c2 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
+ .debug_loc     0x000076fd     0x17b5 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
+ .debug_loc     0x00008eb2      0xcb1 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
+ .debug_loc     0x00009b63     0x2adc C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
+ .debug_loc     0x0000c63f      0xe86 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
+ .debug_loc     0x0000d4c5     0x13f1 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
+ .debug_loc     0x0000e8b6      0xfc9 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
+ .debug_loc     0x0000f87f     0x13b4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
+ .debug_loc     0x00010c33      0x54c C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
+ .debug_loc     0x0001117f     0x1c47 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
+ .debug_loc     0x00012dc6      0xfc4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
+ .debug_loc     0x00013d8a      0xd65 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
+ .debug_loc     0x00014aef      0x68f C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
+ .debug_loc     0x0001517e      0x936 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
+ .debug_loc     0x00015ab4      0x974 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
+ .debug_loc     0x00016428      0x374 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
+ .debug_loc     0x0001679c       0xa7 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
 
 .debug_aranges  0x00000000      0x2d0
  .debug_aranges
-                0x00000000       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
+                0x00000000       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
  .debug_aranges
-                0x00000020       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
+                0x00000020       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
  .debug_aranges
-                0x00000040       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
+                0x00000040       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
  .debug_aranges
-                0x00000060       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
+                0x00000060       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
  .debug_aranges
-                0x00000080       0x28 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
+                0x00000080       0x28 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
  .debug_aranges
-                0x000000a8       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
+                0x000000a8       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
  .debug_aranges
-                0x000000c8       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
+                0x000000c8       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
  .debug_aranges
-                0x000000e8       0x28 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
+                0x000000e8       0x28 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
  .debug_aranges
-                0x00000110       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
+                0x00000110       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
  .debug_aranges
-                0x00000130       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
+                0x00000130       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
  .debug_aranges
-                0x00000150       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
+                0x00000150       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
  .debug_aranges
-                0x00000170       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
+                0x00000170       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
  .debug_aranges
-                0x00000190       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
+                0x00000190       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
  .debug_aranges
-                0x000001b0       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
+                0x000001b0       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
  .debug_aranges
-                0x000001d0       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
+                0x000001d0       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
  .debug_aranges
-                0x000001f0       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
+                0x000001f0       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
  .debug_aranges
-                0x00000210       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
+                0x00000210       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
  .debug_aranges
-                0x00000230       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
+                0x00000230       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
  .debug_aranges
-                0x00000250       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
+                0x00000250       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
  .debug_aranges
-                0x00000270       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
+                0x00000270       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
  .debug_aranges
-                0x00000290       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans20.ltrans.o
+                0x00000290       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans20.ltrans.o
  .debug_aranges
-                0x000002b0       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
+                0x000002b0       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
 
 .debug_ranges   0x00000000     0x38d0
- .debug_ranges  0x00000000      0xaa8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
- .debug_ranges  0x00000aa8      0xc88 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
- .debug_ranges  0x00001730      0x138 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
- .debug_ranges  0x00001868      0x740 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
- .debug_ranges  0x00001fa8      0x220 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
- .debug_ranges  0x000021c8      0x150 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
- .debug_ranges  0x00002318      0x1d0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
- .debug_ranges  0x000024e8      0x378 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
- .debug_ranges  0x00002860      0x210 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
- .debug_ranges  0x00002a70      0x1d0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
- .debug_ranges  0x00002c40      0x170 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
- .debug_ranges  0x00002db0      0x130 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
- .debug_ranges  0x00002ee0      0x1e0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
- .debug_ranges  0x000030c0      0x168 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
- .debug_ranges  0x00003228       0x28 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
- .debug_ranges  0x00003250      0x3b8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
- .debug_ranges  0x00003608       0x68 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
- .debug_ranges  0x00003670      0x120 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
- .debug_ranges  0x00003790      0x140 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
+ .debug_ranges  0x00000000      0xaa8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
+ .debug_ranges  0x00000aa8      0xc88 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
+ .debug_ranges  0x00001730      0x138 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
+ .debug_ranges  0x00001868      0x740 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
+ .debug_ranges  0x00001fa8      0x220 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
+ .debug_ranges  0x000021c8      0x150 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
+ .debug_ranges  0x00002318      0x1d0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
+ .debug_ranges  0x000024e8      0x378 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
+ .debug_ranges  0x00002860      0x210 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
+ .debug_ranges  0x00002a70      0x1d0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
+ .debug_ranges  0x00002c40      0x170 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
+ .debug_ranges  0x00002db0      0x130 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
+ .debug_ranges  0x00002ee0      0x1e0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
+ .debug_ranges  0x000030c0      0x168 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
+ .debug_ranges  0x00003228       0x28 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
+ .debug_ranges  0x00003250      0x3b8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
+ .debug_ranges  0x00003608       0x68 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
+ .debug_ranges  0x00003670      0x120 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
+ .debug_ranges  0x00003790      0x140 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
 
 .debug_line     0x00000000     0xaad3
- .debug_line    0x00000000     0x12ec C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
- .debug_line    0x000012ec     0x15fb C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
- .debug_line    0x000028e7      0x6ce C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
- .debug_line    0x00002fb5      0x992 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
- .debug_line    0x00003947      0xb03 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
- .debug_line    0x0000444a      0x6a5 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
- .debug_line    0x00004aef      0x776 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
- .debug_line    0x00005265      0xa15 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
- .debug_line    0x00005c7a      0x72e C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
- .debug_line    0x000063a8      0x780 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
- .debug_line    0x00006b28      0x67a C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
- .debug_line    0x000071a2      0x69f C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
- .debug_line    0x00007841      0x692 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
- .debug_line    0x00007ed3      0x621 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
- .debug_line    0x000084f4      0x550 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
- .debug_line    0x00008a44      0x963 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
- .debug_line    0x000093a7      0x564 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
- .debug_line    0x0000990b      0x5eb C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
- .debug_line    0x00009ef6      0x54a C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
- .debug_line    0x0000a440      0x25c C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
- .debug_line    0x0000a69c      0x144 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans20.ltrans.o
- .debug_line    0x0000a7e0      0x2f3 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
+ .debug_line    0x00000000     0x12ec C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
+ .debug_line    0x000012ec     0x15fb C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
+ .debug_line    0x000028e7      0x6ce C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
+ .debug_line    0x00002fb5      0x992 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
+ .debug_line    0x00003947      0xb03 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
+ .debug_line    0x0000444a      0x6a5 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
+ .debug_line    0x00004aef      0x776 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
+ .debug_line    0x00005265      0xa15 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
+ .debug_line    0x00005c7a      0x72e C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
+ .debug_line    0x000063a8      0x780 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
+ .debug_line    0x00006b28      0x67a C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
+ .debug_line    0x000071a2      0x69f C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
+ .debug_line    0x00007841      0x692 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
+ .debug_line    0x00007ed3      0x621 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
+ .debug_line    0x000084f4      0x550 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
+ .debug_line    0x00008a44      0x963 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
+ .debug_line    0x000093a7      0x564 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
+ .debug_line    0x0000990b      0x5eb C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
+ .debug_line    0x00009ef6      0x54a C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
+ .debug_line    0x0000a440      0x25c C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
+ .debug_line    0x0000a69c      0x144 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans20.ltrans.o
+ .debug_line    0x0000a7e0      0x2f3 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
 
 .debug_str      0x00000000     0xd0c7
- .debug_str     0x00000000     0x2328 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
+ .debug_str     0x00000000     0x2328 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
                                0x2778 (size before relaxing)
- .debug_str     0x00002328     0x2b2b C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
+ .debug_str     0x00002328     0x2b2b C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
                                0x3d6d (size before relaxing)
- .debug_str     0x00004e53      0x57a C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
+ .debug_str     0x00004e53      0x57a C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
                                0x1093 (size before relaxing)
- .debug_str     0x000053cd      0xcc0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
+ .debug_str     0x000053cd      0xcc0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
                                0x14da (size before relaxing)
- .debug_str     0x0000608d     0x12e9 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
+ .debug_str     0x0000608d     0x12e9 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
                                0x2dbb (size before relaxing)
- .debug_str     0x00007376      0x4ab C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
+ .debug_str     0x00007376      0x4ab C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
                                 0xcd4 (size before relaxing)
- .debug_str     0x00007821      0xd41 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
+ .debug_str     0x00007821      0xd41 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
                                0x1950 (size before relaxing)
- .debug_str     0x00008562      0x9b2 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
+ .debug_str     0x00008562      0x9b2 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
                                0x197a (size before relaxing)
- .debug_str     0x00008f14      0x7a8 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
+ .debug_str     0x00008f14      0x7a8 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
                                0x13e0 (size before relaxing)
- .debug_str     0x000096bc      0x67f C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
+ .debug_str     0x000096bc      0x67f C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
                                 0xd50 (size before relaxing)
- .debug_str     0x00009d3b      0x423 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
+ .debug_str     0x00009d3b      0x423 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
                                 0xb3f (size before relaxing)
- .debug_str     0x0000a15e      0x399 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
+ .debug_str     0x0000a15e      0x399 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
                                 0x8c5 (size before relaxing)
- .debug_str     0x0000a4f7      0x51e C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
+ .debug_str     0x0000a4f7      0x51e C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
                                0x1366 (size before relaxing)
- .debug_str     0x0000aa15      0x434 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
+ .debug_str     0x0000aa15      0x434 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
                                 0xf30 (size before relaxing)
- .debug_str     0x0000ae49      0x32a C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
+ .debug_str     0x0000ae49      0x32a C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
                                 0xc7d (size before relaxing)
- .debug_str     0x0000b173      0xd6d C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
+ .debug_str     0x0000b173      0xd6d C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
                                0x2531 (size before relaxing)
- .debug_str     0x0000bee0      0xbae C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
+ .debug_str     0x0000bee0      0xbae C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
                                0x1197 (size before relaxing)
- .debug_str     0x0000ca8e      0x364 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
+ .debug_str     0x0000ca8e      0x364 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
                                 0xcf9 (size before relaxing)
- .debug_str     0x0000cdf2      0x1e0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
+ .debug_str     0x0000cdf2      0x1e0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
                                 0xc5f (size before relaxing)
- .debug_str     0x0000cfd2       0xd1 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
+ .debug_str     0x0000cfd2       0xd1 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
                                 0x406 (size before relaxing)
- .debug_str     0x0000d0a3        0xb C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans20.ltrans.o
+ .debug_str     0x0000d0a3        0xb C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans20.ltrans.o
                                 0x211 (size before relaxing)
- .debug_str     0x0000d0ae       0x19 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
+ .debug_str     0x0000d0ae       0x19 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
                                 0xa9d (size before relaxing)
 
 .comment        0x00000000       0x7f
- .comment       0x00000000       0x7f C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
                                  0x80 (size before relaxing)
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans20.ltrans.o
- .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans20.ltrans.o
+ .comment       0x0000007f       0x80 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
 
 .debug_frame    0x00000000     0x2134
- .debug_frame   0x00000000       0x54 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans0.ltrans.o
- .debug_frame   0x00000054       0x44 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans1.ltrans.o
- .debug_frame   0x00000098       0x44 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans2.ltrans.o
- .debug_frame   0x000000dc       0x50 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans3.ltrans.o
- .debug_frame   0x0000012c      0x2c0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans4.ltrans.o
- .debug_frame   0x000003ec       0xa4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans5.ltrans.o
- .debug_frame   0x00000490      0x124 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans6.ltrans.o
- .debug_frame   0x000005b4      0x308 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans7.ltrans.o
- .debug_frame   0x000008bc      0x140 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans8.ltrans.o
- .debug_frame   0x000009fc      0x17c C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans9.ltrans.o
- .debug_frame   0x00000b78      0x1a4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans10.ltrans.o
- .debug_frame   0x00000d1c       0xe4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans11.ltrans.o
- .debug_frame   0x00000e00      0x1ac C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans12.ltrans.o
- .debug_frame   0x00000fac      0x178 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans13.ltrans.o
- .debug_frame   0x00001124      0x154 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans14.ltrans.o
- .debug_frame   0x00001278      0x1e4 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans15.ltrans.o
- .debug_frame   0x0000145c      0x200 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans16.ltrans.o
- .debug_frame   0x0000165c      0x1b0 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans17.ltrans.o
- .debug_frame   0x0000180c       0x58 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans18.ltrans.o
- .debug_frame   0x00001864       0x68 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans19.ltrans.o
- .debug_frame   0x000018cc       0x20 C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans20.ltrans.o
- .debug_frame   0x000018ec       0x2c C:\Users\Mihir\AppData\Local\Temp\ccJHBR3b.ltrans21.ltrans.o
+ .debug_frame   0x00000000       0x54 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans0.ltrans.o
+ .debug_frame   0x00000054       0x44 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans1.ltrans.o
+ .debug_frame   0x00000098       0x44 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans2.ltrans.o
+ .debug_frame   0x000000dc       0x50 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans3.ltrans.o
+ .debug_frame   0x0000012c      0x2c0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans4.ltrans.o
+ .debug_frame   0x000003ec       0xa4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans5.ltrans.o
+ .debug_frame   0x00000490      0x124 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans6.ltrans.o
+ .debug_frame   0x000005b4      0x308 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans7.ltrans.o
+ .debug_frame   0x000008bc      0x140 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans8.ltrans.o
+ .debug_frame   0x000009fc      0x17c C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans9.ltrans.o
+ .debug_frame   0x00000b78      0x1a4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans10.ltrans.o
+ .debug_frame   0x00000d1c       0xe4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans11.ltrans.o
+ .debug_frame   0x00000e00      0x1ac C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans12.ltrans.o
+ .debug_frame   0x00000fac      0x178 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans13.ltrans.o
+ .debug_frame   0x00001124      0x154 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans14.ltrans.o
+ .debug_frame   0x00001278      0x1e4 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans15.ltrans.o
+ .debug_frame   0x0000145c      0x200 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans16.ltrans.o
+ .debug_frame   0x0000165c      0x1b0 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans17.ltrans.o
+ .debug_frame   0x0000180c       0x58 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans18.ltrans.o
+ .debug_frame   0x00001864       0x68 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans19.ltrans.o
+ .debug_frame   0x000018cc       0x20 C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans20.ltrans.o
+ .debug_frame   0x000018ec       0x2c C:\Users\Mihir\AppData\Local\Temp\cc0UtO1M.ltrans21.ltrans.o
  .debug_frame   0x00001918       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_cos.o)
  .debug_frame   0x0000194c       0x48 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_lrint.o)
  .debug_frame   0x00001994       0x34 d:/mihir/semester 6/cygnus/tools/toolchain/gcc-arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-sf_sin.o)

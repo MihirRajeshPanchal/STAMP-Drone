@@ -97,3 +97,5 @@ Slide 15 SDLC and Workflow - Sarid
     collaboratively. For STAMP we followed the agile development model of software engineering with continuous integration and continuous
     developemnt of operations maintained by different softwares. Github, Clickup, Figma, Amazon Web Services are the few notable resources
     we used. 
+
+ 
